@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="so3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>SO3: The Laplace Transform (Second-Order Equations)</title>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can use the Laplace transform to solve second-order, linear differential equations.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+   <p>
+    
+   </p>
+</section>

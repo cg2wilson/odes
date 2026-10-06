@@ -1,0 +1,13 @@
+WARNING : Using CLI version 2.20.0 but project's `requirements.txt`
+WARNING : is configured to use 2.55.0. Consider either installing
+WARNING : CLI version 2.55.0 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.20.0.
+INFO    : 
+Stopping server.
+ERROR   : Attempt to terminate PreTeXt web server failed for process 4513 on port 8129.
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

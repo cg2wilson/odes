@@ -1,0 +1,4 @@
+INFO    : Staging deployment according to strategy pelican_default
+INFO    : Staging `course` at `/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/output/stage/course`.
+ERROR   : Pelican is not installed. Please install Pelican to use this feature.
+INFO    : Initializing project with Git.

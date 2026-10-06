@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Include common macros etc: -->
+  <xi:include href="./docinfo.ptx" />
+  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+  <book>
+    <title>Ordinary Differential Equations</title>
+
+    <subtitle>MATH 2314 Spring 2027</subtitle>
+
+    <!-- Optional: include frontmatter with author info and date -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <chapter xml:id="course-documents">
+      <title>Course Documents</title>
+        <xi:include href="./homework/homework-01.ptx"/>
+      <!-- Course syllabus -->
+      <!--<xi:include href="./syllabus/syllabus.ptx" />-->
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
+
+    <xi:include href="./notes/fo/main.ptx" />
+    <xi:include href="./notes/so/main.ptx" />
+    <xi:include href="./notes/sd/main.ptx" />
+    </book>
+  </pretext>

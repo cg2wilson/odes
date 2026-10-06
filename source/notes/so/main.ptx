@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <chapter xml:id="mod2" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Module SO: Second-Order Differential Equations</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./so1.ptx"/>
+      <xi:include href="./so2.ptx"/>
+      <xi:include href="./so3.ptx"/>
+      <xi:include href="./so4.ptx"/>
+      <xi:include href="./so5.ptx"/>
+      <xi:include href="./so6.ptx"/>
+
+    </chapter>

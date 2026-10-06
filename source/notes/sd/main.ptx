@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <chapter xml:id="mod3" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Module SD: Systems of Differential Equations</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./sd1.ptx"/>
+      <xi:include href="./sd2.ptx"/>
+      <xi:include href="./sd3.ptx"/>
+      <xi:include href="./sd4.ptx"/>
+      <xi:include href="./sd5.ptx"/>
+      <xi:include href="./sd6.ptx"/>
+
+
+    </chapter>

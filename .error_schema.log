@@ -1,0 +1,5 @@
+/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/source/main.ptx:17:0:ERROR:RELAXNGV:RELAXNG_ERR_NOTELEM: Expecting an element got text
+/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/source/main.ptx:17:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element title failed to validate content
+/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element worksheet there
+/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got worksheet
+/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got worksheet

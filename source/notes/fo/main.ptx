@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <chapter xml:id="mod1" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Module FO: First-Order Differential Equations</title>
+
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      </introduction>
+
+      <xi:include href="./fo1.ptx"/>
+      <xi:include href="./fo2.ptx"/>
+      <xi:include href="./fo3.ptx"/>
+      <xi:include href="./fo4.ptx"/>
+      <xi:include href="./fo5.ptx"/>
+      <xi:include href="./fo6.ptx"/>
+      <xi:include href="./fo7.ptx"/>
+      <xi:include href="./fo8.ptx"/>
+
+
+    </chapter>

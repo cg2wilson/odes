@@ -1,0 +1,36 @@
+INFO    : Building target print
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+WARNING : (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo". The publisher file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : verifying and expanding input directory: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\assets
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\output\print.
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+WARNING : (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo". The publisher file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : verifying and expanding input directory: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\assets
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : converting C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx to LaTeX as C:\Users\CORYG~1.WIL\AppData\Local\Temp\ptx-awyc_uin\main.tex
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\pretext-latex.xsl
+INFO    : messages from the log for XSL processing (prefaced with a *):
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\pretext-latex.xsl
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : Rerunning LaTeX for main.tex (pass 2)
+INFO    : Removing temporary directory C:\Users\CORYG~1.WIL\AppData\Local\Temp\ptx-awyc_uin
+INFO    : Removing temporary directory C:\Users\CORYG~1.WIL\AppData\Local\Temp\ptx-x7k067ha
+INFO    : Removing temporary directory C:\Users\CORYG~1.WIL\AppData\Local\Temp\ptx-mrjagh1b
+INFO    : 
+Finished build for target print. The output is in C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\output\print.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

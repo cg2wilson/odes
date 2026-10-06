@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="so5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>SO5: The Laplace Transform (Convolutions)</title>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can use the Laplace transform to compute the convolution of two functions.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+   <p>
+    
+   </p>
+</section>

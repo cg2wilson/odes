@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="so4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>SO4: The Laplace Transform (Unit Step and Impulse Functions)</title>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can use the Laplace transform to solve differential equations involving unit step or impulse functions.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+   <p>
+    
+   </p>
+</section>

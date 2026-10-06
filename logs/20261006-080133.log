@@ -1,0 +1,34 @@
+INFO    : Building target course
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+WARNING : (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo". The publisher file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : verifying and expanding input directory: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\assets
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\output\course.
+WARNING : Node.js must be installed to build CSS files.  Please install node.js and npm.
+ Will try to use prebuilt CSS files instead.
+WARNING : Cannot find npm.  Will try to use prebuilt CSS files instead.
+WARNING : Unable to install npm packages to build css files.  Non-default CSS themes require node.js and npm to be installed.  See https://pretextbook.org/doc/guide/html/node-and-npm.html
+WARNING : 
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+WARNING : (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo". The publisher file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : verifying and expanding input directory: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\assets
+INFO    : discovering source file's directory name: C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source
+INFO    : XSL conversion of C:\Users\cory.g.wilson\Dropbox\school\occc\20262027\2413sp27\notes\source\main.ptx by C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : successful application of C:\Users\cory.g.wilson\.ptx\2.55.0\core\xsl\utilities\report-publisher-variables.xsl
+FATAL   : the publisher variable 'b-cdn-resources' could not be located.
+Did you spell it correctly or does it need implementation?
+If the latter, read instructions in code comments in the relevant routines.
+INFO    : ------------------------
+exit    : Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
