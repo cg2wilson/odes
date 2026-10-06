@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ordinary Differential Equations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/css/theme-default-modern.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Ordinary Differential Equations">
+<meta property="book:author" content="Cory Wilson">
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lib/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lib/jquery.sticky.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lib/jquery.espy.min.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/pretext.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/pretext_add_on.js?x=1"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.7.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/pretext_search.js"></script><script src="https://cdn.jsdelivr.net/gh/PreTeXtBook/html-static@2.20/dist/_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Ordinary Differential Equations</span> <span class="subtitle">MATH 2314 Spring 2027</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\lrpar}[1]{\left( #1 \right)}
+\newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="root-1-2.html#course-documents" class="internal"><span class="codenumber">1</span> <span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="root-1-2.html#course-documents-2" class="internal"><span class="codenumber">1.1</span> <span class="title">Homework 01</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="root-1-2.html#mod1" class="internal"><span class="codenumber">2</span> <span class="title">Module FO: First-Order Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="root-1-2.html#fo1" class="internal"><span class="codenumber">2.1</span> <span class="title">FO1: Solutions to Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="root-1-2.html#fo1-what-is-ode" class="internal"><span class="codenumber">2.1.1</span> <span class="title">What Is a Differential Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="root-1-2.html#fo1-solutions-odes" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Testing Solutions to ODEs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo2" class="internal"><span class="codenumber">2.2</span> <span class="title">FO2: Separation of Variables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo3" class="internal"><span class="codenumber">2.3</span> <span class="title">FO3: The Integrating Factor</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo4" class="internal"><span class="codenumber">2.4</span> <span class="title">FO4: The Laplace Transform (First-Order Equations)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo5" class="internal"><span class="codenumber">2.5</span> <span class="title">FO5: Applications of First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo6" class="internal"><span class="codenumber">2.6</span> <span class="title">FO6: Slope Fields</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo7" class="internal"><span class="codenumber">2.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#fo8" class="internal"><span class="codenumber">2.8</span> <span class="title">FO8: Bifurcations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="root-1-2.html#mod2" class="internal"><span class="codenumber">3</span> <span class="title">Module SO: Second-Order Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so1" class="internal"><span class="codenumber">3.1</span> <span class="title">SO1: Linear HomogeneousDifferential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so2" class="internal"><span class="codenumber">3.2</span> <span class="title">SO2: Linear Non-Homogeneous Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so3" class="internal"><span class="codenumber">3.3</span> <span class="title">SO3: The Laplace Transform (Second-Order Equations)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so4" class="internal"><span class="codenumber">3.4</span> <span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so5" class="internal"><span class="codenumber">3.5</span> <span class="title">SO5: The Laplace Transform (Convolutions)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#so6" class="internal"><span class="codenumber">3.6</span> <span class="title">SO6: Applications of Second-Order Differential Equations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="root-1-2.html#mod3" class="internal"><span class="codenumber">4</span> <span class="title">Module SD: Systems of Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd1" class="internal"><span class="codenumber">4.1</span> <span class="title">SD1: Solutions to Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd2" class="internal"><span class="codenumber">4.2</span> <span class="title">SD2: Eigenvalues &amp; Eigenvectors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd3" class="internal"><span class="codenumber">4.3</span> <span class="title">SD3: Linear Independence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd4" class="internal"><span class="codenumber">4.4</span> <span class="title">SD4: Complex &amp; Real Eigenvalues</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd5" class="internal"><span class="codenumber">4.5</span> <span class="title">SD5: Repeated Eigenvalues</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="root-1-2.html#sd6" class="internal"><span class="codenumber">4.6</span> <span class="title">SD6: Applications of Systems of Differential Equations</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="root-1-2"><section class="frontmatter" id="frontmatter"><h2 class="heading">
+<span class="title">Ordinary Differential Equations</span><span class="subtitle">MATH 2314 Spring 2027</span>
+</h2>
+<div class="author">
+<div class="author-name">Cory Wilson</div>
+<div class="author-info">Department of Mathematics<br>Oklahoma City Community College</div>
+</div>
+<div class="date">Last Updated: October 6, 2026</div>
+<div class="autopermalink" data-description="Front Matter"><a href="#frontmatter" title="Copy heading and permalink for Front Matter">🔗</a></div></section><section class="chapter" id="course-documents"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Course Documents</span>
+</h2>
+<section class="worksheet" id="course-documents-2"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Homework 01</span>
+</h3>
+<section class="introduction" id="course-documents-2-2"><div class="para" id="course-documents-2-2-1">
+<em class="alert">Instructions:</em> Complete all the exercises below and submit your work by the due date.<div class="autopermalink" data-description="Paragraph"><a href="#course-documents-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="course-documents-2-3"><article class="exercise exercise-like" id="course-documents-2-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="course-documents-2-3-1-1-1">This is the first homework exercise.<div class="autopermalink" data-description="Paragraph"><a href="#course-documents-2-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 1.1.1"><a href="#course-documents-2-3-1" title="Copy heading and permalink for Worksheet Exercise 1.1.1">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet 1.1: Homework 01"><a href="#course-documents-2" title="Copy heading and permalink for Worksheet 1.1: Homework 01">🔗</a></div></section><div class="autopermalink" data-description="Chapter 1: Course Documents"><a href="#course-documents" title="Copy heading and permalink for Chapter 1: Course Documents">🔗</a></div></section><section class="chapter" id="mod1"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">2</span><span class="space"> </span><span class="title">Module FO: First-Order Differential Equations</span>
+</h2>
+<section class="introduction" id="mod1-2"><div class="para" id="mod1-2-1">The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.<div class="autopermalink" data-description="Paragraph"><a href="#mod1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="section" id="fo1"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">FO1: Solutions to Differential Equations</span>
+</h3>
+<article class="objectives goal-like" id="fo1-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="fo1-2-1"><li id="fo1-2-1-1">
+<div class="para" id="fo1-2-1-1-1">I can determine if a function or family of functions is a solution to a given differential equation.<div class="autopermalink" data-description="Paragraph"><a href="#fo1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#fo1-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 2.1"><a href="#fo1-2" title="Copy heading and permalink for Objectives 2.1">🔗</a></div></article><section class="subsection" id="fo1-what-is-ode"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">What Is a Differential Equation?</span>
+</h4>
+<article class="definition definition-like" id="def-ode-pde"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Ordinary/Partial) Differential Equation.</span>
+</h5>
+<div class="para" id="def-ode-pde-4-1">A <dfn class="terminology">differential equation</dfn> is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#def-ode-pde-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.1: (Ordinary/Partial) Differential Equation"><a href="#def-ode-pde" title="Copy heading and permalink for Definition 2.1.1: (Ordinary/Partial) Differential Equation">🔗</a></div></article><details id="fo1-what-is-ode-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="fo1-what-is-ode-3-1-1">
+<div class="para">An example of an ordinary differential equation is the familiar</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-3-1-1-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">which asks the question: "What function y(x) has a derivative equal to 2x?" The solution to this differential equation is the family of functions</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-3-1-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">where C is an arbitrary constant. We can check that this is a solution by differentiating; <span class="process-math">\(\dfrac{d}{dx}(x^2 + C) = 2x\text{,}\)</span> so we have have satisfied the condition stated by the differential equation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-what-is-ode-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.2"><a href="#fo1-what-is-ode-3" title="Copy heading and permalink for Example 2.1.2">🔗</a></div></article></details><details id="fo1-what-is-ode-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="fo1-what-is-ode-4-1-1">
+<div class="para">Other examples of ordinary differential equations are</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-4-1-1-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-4-1-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-4-1-1-3">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-what-is-ode-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.3"><a href="#fo1-what-is-ode-4" title="Copy heading and permalink for Example 2.1.3">🔗</a></div></article></details><details id="fo1-what-is-ode-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="fo1-what-is-ode-5-1-1">Below are examples of partial differential equations:<div class="autopermalink" data-description="Paragraph"><a href="#fo1-what-is-ode-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="fo1-what-is-ode-5-1-2">
+<div class="para">The wave equation:</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-5-1-2-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-what-is-ode-5-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="fo1-what-is-ode-5-1-3">
+<div class="para">The heat equation:</div>
+<div class="displaymath process-math" id="fo1-what-is-ode-5-1-3-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-what-is-ode-5-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.4"><a href="#fo1-what-is-ode-5" title="Copy heading and permalink for Example 2.1.4">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.1: What Is a Differential Equation?"><a href="#fo1-what-is-ode" title="Copy heading and permalink for Subsection 2.1.1: What Is a Differential Equation?">🔗</a></div></section><section class="subsection" id="fo1-solutions-odes"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Testing Solutions to ODEs</span>
+</h4>
+<article class="definition definition-like" id="def-solution-to-de"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Solution to a Differential Equation.</span>
+</h5>
+<div class="para" id="def-solution-to-de-3-1">A <dfn class="terminology">solution to a differential equation</dfn> is a function which satisfies the rules imposed by the equation.<div class="autopermalink" data-description="Paragraph"><a href="#def-solution-to-de-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.1.5: Solution to a Differential Equation"><a href="#def-solution-to-de" title="Copy heading and permalink for Definition 2.1.5: Solution to a Differential Equation">🔗</a></div></article><details id="fo1-solutions-odes-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="fo1-solutions-odes-3-1-1">
+<div class="para">The family of functions <span class="process-math">\(y(x) = x^2 + C\)</span> are solutions to the differential equation</div>
+<div class="displaymath process-math" id="fo1-solutions-odes-3-1-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">because <span class="process-math">\(y'(x) = \dfrac{dy}{dx} = 2x\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-solutions-odes-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.6"><a href="#fo1-solutions-odes-3" title="Copy heading and permalink for Example 2.1.6">🔗</a></div></article></details><details id="exponential-growth-intro" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Growth.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="exponential-growth-intro-2-1">
+<div class="para">The family <span class="process-math">\(x(t) = Ce^{kt}\)</span> is a solution to the differential equation</div>
+<div class="displaymath process-math" id="exponential-growth-intro-2-1-2">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">for some constant <span class="process-math">\(a\in \R\)</span> because <span class="process-math">\(x'(t) = Cke^{kt}\)</span> and <span class="process-math">\(x''(t) = Ck^2e^{kt}\text{.}\)</span> Setting <span class="process-math">\(a = k^2\text{,}\)</span> we have <span class="process-math">\(x''(t) = aCe^{kt} = ax(t)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exponential-growth-intro-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exponential-growth-intro-2-2">This differential equation models <em class="emphasis">exponential growth</em>. In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.<div class="autopermalink" data-description="Paragraph"><a href="#exponential-growth-intro-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.7: Exponential Growth"><a href="#exponential-growth-intro" title="Copy heading and permalink for Example 2.1.7: Exponential Growth">🔗</a></div></article></details><details id="fo1-solutions-odes-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Logistic Growth.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="fo1-solutions-odes-5-2-1">A population which needs to compete for resources will not grow exponentially-- think of environmental constraints such as access to food, water, shelter. In the absence of predators, this population will grow up to a certain point and stabilize; we can modify the exponential growth equation (see <a href="root-1-2.html#exponential-growth-intro" class="internal" title="Example 2.1.7: Exponential Growth">Example 2.1.7</a>) to<div class="autopermalink" data-description="Paragraph"><a href="#fo1-solutions-odes-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.1.8: Logistic Growth"><a href="#fo1-solutions-odes-5" title="Copy heading and permalink for Example 2.1.8: Logistic Growth">🔗</a></div></article></details><details id="fo1-solutions-odes-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h5></summary><article class="exercise exercise-like knowl__content"><div class="para" id="fo1-solutions-odes-6-1-1">Show that the family <span class="process-math">\(x(t) = C\cosh(kt) = \dfrac{1}{2}\lrpar{e^t+e^{-t}}\)</span> is also a solution to the exponential growth equation.<div class="autopermalink" data-description="Paragraph"><a href="#fo1-solutions-odes-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.1.9"><a href="#fo1-solutions-odes-6" title="Copy heading and permalink for Checkpoint 2.1.9">🔗</a></div></article></details><details id="fo1-solutions-odes-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h5></summary><article class="exercise exercise-like knowl__content"><div class="para logical" id="fo1-solutions-odes-7-1-1">
+<div class="para">For the differential equation</div>
+<div class="displaymath process-math" id="fo1-solutions-odes-7-1-1-1">
+\begin{gather*}
+\end{gather*}
+</div>
+<div class="para">Show that the families <span class="process-math">\(f_1(x) = C_1e^{3t}\)</span> and <span class="process-math">\(f_2(x) = C_2xe^{3x}\)</span> are both solutions to the ODE. What do you think might be true of <span class="process-math">\(f_3(x) = f_1(x) + f_2(x)\text{?}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#fo1-solutions-odes-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.1.10"><a href="#fo1-solutions-odes-7" title="Copy heading and permalink for Checkpoint 2.1.10">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.1.2: Testing Solutions to ODEs"><a href="#fo1-solutions-odes" title="Copy heading and permalink for Subsection 2.1.2: Testing Solutions to ODEs">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: FO1: Solutions to Differential Equations"><a href="#fo1" title="Copy heading and permalink for Section 2.1: FO1: Solutions to Differential Equations">🔗</a></div></section><section class="section" id="fo2"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">FO2: Separation of Variables</span>
+</h3>
+<div class="para" id="fo2-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.2: FO2: Separation of Variables"><a href="#fo2" title="Copy heading and permalink for Section 2.2: FO2: Separation of Variables">🔗</a></div></section><section class="section" id="fo3"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">FO3: The Integrating Factor</span>
+</h3>
+<div class="para" id="fo3-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.3: FO3: The Integrating Factor"><a href="#fo3" title="Copy heading and permalink for Section 2.3: FO3: The Integrating Factor">🔗</a></div></section><section class="section" id="fo4"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">FO4: The Laplace Transform (First-Order Equations)</span>
+</h3>
+<div class="para" id="fo4-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.4: FO4: The Laplace Transform (First-Order Equations)"><a href="#fo4" title="Copy heading and permalink for Section 2.4: FO4: The Laplace Transform (First-Order Equations)">🔗</a></div></section><section class="section" id="fo5"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">FO5: Applications of First-Order Differential Equations</span>
+</h3>
+<div class="para" id="fo5-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.5: FO5: Applications of First-Order Differential Equations"><a href="#fo5" title="Copy heading and permalink for Section 2.5: FO5: Applications of First-Order Differential Equations">🔗</a></div></section><section class="section" id="fo6"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.6</span><span class="space"> </span><span class="title">FO6: Slope Fields</span>
+</h3>
+<div class="para" id="fo6-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.6: FO6: Slope Fields"><a href="#fo6" title="Copy heading and permalink for Section 2.6: FO6: Slope Fields">🔗</a></div></section><section class="section" id="fo7"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span>
+</h3>
+<div class="para" id="fo7-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo7-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.7: FO7: Equilibrium Points &amp; Autonomous Equations"><a href="#fo7" title="Copy heading and permalink for Section 2.7: FO7: Equilibrium Points &amp; Autonomous Equations">🔗</a></div></section><section class="section" id="fo8"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.8</span><span class="space"> </span><span class="title">FO8: Bifurcations</span>
+</h3>
+<div class="para" id="fo8-2">test<div class="autopermalink" data-description="Paragraph"><a href="#fo8-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 2.8: FO8: Bifurcations"><a href="#fo8" title="Copy heading and permalink for Section 2.8: FO8: Bifurcations">🔗</a></div></section><div class="autopermalink" data-description="Chapter 2: Module FO: First-Order Differential Equations"><a href="#mod1" title="Copy heading and permalink for Chapter 2: Module FO: First-Order Differential Equations">🔗</a></div></section><section class="chapter" id="mod2"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">3</span><span class="space"> </span><span class="title">Module SO: Second-Order Differential Equations</span>
+</h2>
+<section class="introduction" id="mod2-2"><div class="para" id="mod2-2-1">The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.<div class="autopermalink" data-description="Paragraph"><a href="#mod2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="section" id="so1"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">SO1: Linear HomogeneousDifferential Equations</span>
+</h3>
+<article class="objectives goal-like" id="so1-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so1-2-1"><li id="so1-2-1-1">
+<div class="para" id="so1-2-1-1-1">I can solve linear, homogenous differential equations of any order.<div class="autopermalink" data-description="Paragraph"><a href="#so1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so1-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.1"><a href="#so1-2" title="Copy heading and permalink for Objectives 3.1">🔗</a></div></article><div class="para" id="so1-3"><div class="autopermalink" data-description="Paragraph"><a href="#so1-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.1: SO1: Linear HomogeneousDifferential Equations"><a href="#so1" title="Copy heading and permalink for Section 3.1: SO1: Linear HomogeneousDifferential Equations">🔗</a></div></section><section class="section" id="so2"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">SO2: Linear Non-Homogeneous Differential Equations</span>
+</h3>
+<article class="objectives goal-like" id="so2-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so2-2-1"><li id="so2-2-1-1">
+<div class="para" id="so2-2-1-1-1">I can solve linear, non-homogeneous differential equations of any order.<div class="autopermalink" data-description="Paragraph"><a href="#so2-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so2-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.2"><a href="#so2-2" title="Copy heading and permalink for Objectives 3.2">🔗</a></div></article><div class="para" id="so2-3"><div class="autopermalink" data-description="Paragraph"><a href="#so2-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.2: SO2: Linear Non-Homogeneous Differential Equations"><a href="#so2" title="Copy heading and permalink for Section 3.2: SO2: Linear Non-Homogeneous Differential Equations">🔗</a></div></section><section class="section" id="so3"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">SO3: The Laplace Transform (Second-Order Equations)</span>
+</h3>
+<article class="objectives goal-like" id="so3-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so3-2-1"><li id="so3-2-1-1">
+<div class="para" id="so3-2-1-1-1">I can use the Laplace transform to solve second-order, linear differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#so3-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so3-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.3"><a href="#so3-2" title="Copy heading and permalink for Objectives 3.3">🔗</a></div></article><div class="para" id="so3-3"><div class="autopermalink" data-description="Paragraph"><a href="#so3-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.3: SO3: The Laplace Transform (Second-Order Equations)"><a href="#so3" title="Copy heading and permalink for Section 3.3: SO3: The Laplace Transform (Second-Order Equations)">🔗</a></div></section><section class="section" id="so4"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span>
+</h3>
+<article class="objectives goal-like" id="so4-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so4-2-1"><li id="so4-2-1-1">
+<div class="para" id="so4-2-1-1-1">I can use the Laplace transform to solve differential equations involving unit step or impulse functions.<div class="autopermalink" data-description="Paragraph"><a href="#so4-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so4-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.4"><a href="#so4-2" title="Copy heading and permalink for Objectives 3.4">🔗</a></div></article><div class="para" id="so4-3"><div class="autopermalink" data-description="Paragraph"><a href="#so4-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.4: SO4: The Laplace Transform (Unit Step and Impulse Functions)"><a href="#so4" title="Copy heading and permalink for Section 3.4: SO4: The Laplace Transform (Unit Step and Impulse Functions)">🔗</a></div></section><section class="section" id="so5"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.5</span><span class="space"> </span><span class="title">SO5: The Laplace Transform (Convolutions)</span>
+</h3>
+<article class="objectives goal-like" id="so5-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so5-2-1"><li id="so5-2-1-1">
+<div class="para" id="so5-2-1-1-1">I can use the Laplace transform to compute the convolution of two functions.<div class="autopermalink" data-description="Paragraph"><a href="#so5-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so5-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.5"><a href="#so5-2" title="Copy heading and permalink for Objectives 3.5">🔗</a></div></article><div class="para" id="so5-3"><div class="autopermalink" data-description="Paragraph"><a href="#so5-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.5: SO5: The Laplace Transform (Convolutions)"><a href="#so5" title="Copy heading and permalink for Section 3.5: SO5: The Laplace Transform (Convolutions)">🔗</a></div></section><section class="section" id="so6"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.6</span><span class="space"> </span><span class="title">SO6: Applications of Second-Order Differential Equations</span>
+</h3>
+<article class="objectives goal-like" id="so6-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="so6-2-1"><li id="so6-2-1-1">
+<div class="para" id="so6-2-1-1-1">I can solve applied problems resulting from second-order differential equations.<div class="autopermalink" data-description="Paragraph"><a href="#so6-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#so6-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 3.6"><a href="#so6-2" title="Copy heading and permalink for Objectives 3.6">🔗</a></div></article><div class="para" id="so6-3"><div class="autopermalink" data-description="Paragraph"><a href="#so6-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 3.6: SO6: Applications of Second-Order Differential Equations"><a href="#so6" title="Copy heading and permalink for Section 3.6: SO6: Applications of Second-Order Differential Equations">🔗</a></div></section><div class="autopermalink" data-description="Chapter 3: Module SO: Second-Order Differential Equations"><a href="#mod2" title="Copy heading and permalink for Chapter 3: Module SO: Second-Order Differential Equations">🔗</a></div></section><section class="chapter" id="mod3"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">4</span><span class="space"> </span><span class="title">Module SD: Systems of Differential Equations</span>
+</h2>
+<section class="introduction" id="mod3-2"><div class="para" id="mod3-2-1">The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.<div class="autopermalink" data-description="Paragraph"><a href="#mod3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="section" id="sd1"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">SD1: Solutions to Differential Equations</span>
+</h3>
+<article class="objectives goal-like" id="sd1-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd1-2-1"><li id="sd1-2-1-1">
+<div class="para" id="sd1-2-1-1-1">I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.<div class="autopermalink" data-description="Paragraph"><a href="#sd1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd1-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.1"><a href="#sd1-2" title="Copy heading and permalink for Objectives 4.1">🔗</a></div></article><div class="para" id="sd1-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd1-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.1: SD1: Solutions to Differential Equations"><a href="#sd1" title="Copy heading and permalink for Section 4.1: SD1: Solutions to Differential Equations">🔗</a></div></section><section class="section" id="sd2"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">SD2: Eigenvalues &amp; Eigenvectors</span>
+</h3>
+<article class="objectives goal-like" id="sd2-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd2-2-1"><li id="sd2-2-1-1">
+<div class="para" id="sd2-2-1-1-1">I can find the eigenvalues and eigenvectors for a 2x2 matrix.<div class="autopermalink" data-description="Paragraph"><a href="#sd2-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd2-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.2"><a href="#sd2-2" title="Copy heading and permalink for Objectives 4.2">🔗</a></div></article><div class="para" id="sd2-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd2-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.2: SD2: Eigenvalues &amp; Eigenvectors"><a href="#sd2" title="Copy heading and permalink for Section 4.2: SD2: Eigenvalues &amp; Eigenvectors">🔗</a></div></section><section class="section" id="sd3"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">SD3: Linear Independence</span>
+</h3>
+<article class="objectives goal-like" id="sd3-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd3-2-1"><li id="sd3-2-1-1">
+<div class="para" id="sd3-2-1-1-1">I can determine if two vectors are linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#sd3-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd3-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.3"><a href="#sd3-2" title="Copy heading and permalink for Objectives 4.3">🔗</a></div></article><div class="para" id="sd3-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd3-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.3: SD3: Linear Independence"><a href="#sd3" title="Copy heading and permalink for Section 4.3: SD3: Linear Independence">🔗</a></div></section><section class="section" id="sd4"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">SD4: Complex &amp; Real Eigenvalues</span>
+</h3>
+<article class="objectives goal-like" id="sd4-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd4-2-1"><li id="sd4-2-1-1">
+<div class="para" id="sd4-2-1-1-1">I can solve a system of differential equations with complex or distinct real eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#sd4-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd4-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.4"><a href="#sd4-2" title="Copy heading and permalink for Objectives 4.4">🔗</a></div></article><div class="para" id="sd4-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd4-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.4: SD4: Complex &amp; Real Eigenvalues"><a href="#sd4" title="Copy heading and permalink for Section 4.4: SD4: Complex &amp; Real Eigenvalues">🔗</a></div></section><section class="section" id="sd5"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">SD5: Repeated Eigenvalues</span>
+</h3>
+<article class="objectives goal-like" id="sd5-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd5-2-1"><li id="sd5-2-1-1">
+<div class="para" id="sd5-2-1-1-1">I can solve a system of differential equations with repeated real eigenvalues.<div class="autopermalink" data-description="Paragraph"><a href="#sd5-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd5-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.5"><a href="#sd5-2" title="Copy heading and permalink for Objectives 4.5">🔗</a></div></article><div class="para" id="sd5-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd5-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.5: SD5: Repeated Eigenvalues"><a href="#sd5" title="Copy heading and permalink for Section 4.5: SD5: Repeated Eigenvalues">🔗</a></div></section><section class="section" id="sd6"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.6</span><span class="space"> </span><span class="title">SD6: Applications of Systems of Differential Equations</span>
+</h3>
+<article class="objectives goal-like" id="sd6-2"><h4 class="heading"><span class="type">Objectives</span></h4>
+<ul class="disc" id="sd6-2-1"><li id="sd6-2-1-1">
+<div class="para" id="sd6-2-1-1-1">I can use systems of differential equations to solve applied problems.<div class="autopermalink" data-description="Paragraph"><a href="#sd6-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sd6-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Objectives 4.6"><a href="#sd6-2" title="Copy heading and permalink for Objectives 4.6">🔗</a></div></article><div class="para" id="sd6-3"><div class="autopermalink" data-description="Paragraph"><a href="#sd6-3" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Section 4.6: SD6: Applications of Systems of Differential Equations"><a href="#sd6" title="Copy heading and permalink for Section 4.6: SD6: Applications of Systems of Differential Equations">🔗</a></div></section><div class="autopermalink" data-description="Chapter 4: Module SD: Systems of Differential Equations"><a href="#mod3" title="Copy heading and permalink for Chapter 4: Module SD: Systems of Differential Equations">🔗</a></div></section><div class="autopermalink" data-description="Book: Ordinary Differential Equations"><a href="#root-1-2" title="Copy heading and permalink for Book: Ordinary Differential Equations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script>var ptx_lunr_search_style = "textbook";
+var ptx_lunr_docs = [
+{
+  "id": "root-1-2",
+  "level": "1",
+  "url": "root-1-2.html",
+  "type": "Book",
+  "number": "",
+  "title": "Ordinary Differential Equations",
+  "body": " Ordinary Differential Equations  MATH 2314 Spring 2027     Cory Wilson Department of Mathematics Oklahoma City Community College  Last Updated:          Course Documents   Homework 01    Instructions: Complete all the exercises below and submit your work by the due date.      This is the first homework exercise.           Module FO: First-Order Differential Equations   The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.    FO1: Solutions to Differential Equations     I can determine if a function or family of functions is a solution to a given differential equation.      What Is a Differential Equation?   (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.      An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.      Other examples of ordinary differential equations are         Below are examples of partial differential equations:  The wave equation:   The heat equation:       Testing Solutions to ODEs   Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.      The family of functions are solutions to the differential equation because      Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.     Logistic Growth   A population which needs to compete for resources will not grow exponentially-- think of environmental constraints such as access to food, water, shelter. In the absence of predators, this population will grow up to a certain point and stabilize; we can modify the exponential growth equation (see ) to      Show that the family is also a solution to the exponential growth equation.      For the differential equation Show that the families and are both solutions to the ODE. What do you think might be true of ?       FO2: Separation of Variables  test    FO3: The Integrating Factor  test    FO4: The Laplace Transform (First-Order Equations)  test    FO5: Applications of First-Order Differential Equations  test    FO6: Slope Fields  test    FO7: Equilibrium Points & Autonomous Equations  test    FO8: Bifurcations  test     Module SO: Second-Order Differential Equations   The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.    SO1: Linear HomogeneousDifferential Equations     I can solve linear, homogenous differential equations of any order.         SO2: Linear Non-Homogeneous Differential Equations     I can solve linear, non-homogeneous differential equations of any order.         SO3: The Laplace Transform (Second-Order Equations)     I can use the Laplace transform to solve second-order, linear differential equations.         SO4: The Laplace Transform (Unit Step and Impulse Functions)     I can use the Laplace transform to solve differential equations involving unit step or impulse functions.         SO5: The Laplace Transform (Convolutions)     I can use the Laplace transform to compute the convolution of two functions.         SO6: Applications of Second-Order Differential Equations     I can solve applied problems resulting from second-order differential equations.          Module SD: Systems of Differential Equations   The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.    SD1: Solutions to Differential Equations     I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.         SD2: Eigenvalues & Eigenvectors     I can find the eigenvalues and eigenvectors for a 2x2 matrix.         SD3: Linear Independence     I can determine if two vectors are linearly independent.         SD4: Complex & Real Eigenvalues     I can solve a system of differential equations with complex or distinct real eigenvalues.         SD5: Repeated Eigenvalues     I can solve a system of differential equations with repeated real eigenvalues.         SD6: Applications of Systems of Differential Equations     I can use systems of differential equations to solve applied problems.         "
+},
+{
+  "id": "course-documents-2-3-1",
+  "level": "2",
+  "url": "root-1-2.html#course-documents-2-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1.1.1",
+  "title": "",
+  "body": "  This is the first homework exercise.   "
+},
+{
+  "id": "fo1-2",
+  "level": "2",
+  "url": "root-1-2.html#fo1-2",
+  "type": "Objectives",
+  "number": "2.1",
+  "title": "",
+  "body": "   I can determine if a function or family of functions is a solution to a given differential equation.    "
+},
+{
+  "id": "def-ode-pde",
+  "level": "2",
+  "url": "root-1-2.html#def-ode-pde",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "(Ordinary\/Partial) Differential Equation.",
+  "body": " (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.   "
+},
+{
+  "id": "fo1-what-is-ode-3",
+  "level": "2",
+  "url": "root-1-2.html#fo1-what-is-ode-3",
+  "type": "Example",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.   "
+},
+{
+  "id": "fo1-what-is-ode-4",
+  "level": "2",
+  "url": "root-1-2.html#fo1-what-is-ode-4",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  Other examples of ordinary differential equations are      "
+},
+{
+  "id": "fo1-what-is-ode-5",
+  "level": "2",
+  "url": "root-1-2.html#fo1-what-is-ode-5",
+  "type": "Example",
+  "number": "2.1.4",
+  "title": "",
+  "body": "  Below are examples of partial differential equations:  The wave equation:   The heat equation:    "
+},
+{
+  "id": "def-solution-to-de",
+  "level": "2",
+  "url": "root-1-2.html#def-solution-to-de",
+  "type": "Definition",
+  "number": "2.1.5",
+  "title": "Solution to a Differential Equation.",
+  "body": " Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.   "
+},
+{
+  "id": "fo1-solutions-odes-3",
+  "level": "2",
+  "url": "root-1-2.html#fo1-solutions-odes-3",
+  "type": "Example",
+  "number": "2.1.6",
+  "title": "",
+  "body": "  The family of functions are solutions to the differential equation because    "
+},
+{
+  "id": "exponential-growth-intro",
+  "level": "2",
+  "url": "root-1-2.html#exponential-growth-intro",
+  "type": "Example",
+  "number": "2.1.7",
+  "title": "Exponential Growth.",
+  "body": " Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.   "
+},
+{
+  "id": "fo1-solutions-odes-5",
+  "level": "2",
+  "url": "root-1-2.html#fo1-solutions-odes-5",
+  "type": "Example",
+  "number": "2.1.8",
+  "title": "Logistic Growth.",
+  "body": " Logistic Growth   A population which needs to compete for resources will not grow exponentially-- think of environmental constraints such as access to food, water, shelter. In the absence of predators, this population will grow up to a certain point and stabilize; we can modify the exponential growth equation (see ) to   "
+},
+{
+  "id": "fo1-solutions-odes-6",
+  "level": "2",
+  "url": "root-1-2.html#fo1-solutions-odes-6",
+  "type": "Checkpoint",
+  "number": "2.1.9",
+  "title": "",
+  "body": "  Show that the family is also a solution to the exponential growth equation.   "
+},
+{
+  "id": "fo1-solutions-odes-7",
+  "level": "2",
+  "url": "root-1-2.html#fo1-solutions-odes-7",
+  "type": "Checkpoint",
+  "number": "2.1.10",
+  "title": "",
+  "body": "  For the differential equation Show that the families and are both solutions to the ODE. What do you think might be true of ?   "
+},
+{
+  "id": "so1-2",
+  "level": "2",
+  "url": "root-1-2.html#so1-2",
+  "type": "Objectives",
+  "number": "3.1",
+  "title": "",
+  "body": "   I can solve linear, homogenous differential equations of any order.    "
+},
+{
+  "id": "so2-2",
+  "level": "2",
+  "url": "root-1-2.html#so2-2",
+  "type": "Objectives",
+  "number": "3.2",
+  "title": "",
+  "body": "   I can solve linear, non-homogeneous differential equations of any order.    "
+},
+{
+  "id": "so3-2",
+  "level": "2",
+  "url": "root-1-2.html#so3-2",
+  "type": "Objectives",
+  "number": "3.3",
+  "title": "",
+  "body": "   I can use the Laplace transform to solve second-order, linear differential equations.    "
+},
+{
+  "id": "so4-2",
+  "level": "2",
+  "url": "root-1-2.html#so4-2",
+  "type": "Objectives",
+  "number": "3.4",
+  "title": "",
+  "body": "   I can use the Laplace transform to solve differential equations involving unit step or impulse functions.    "
+},
+{
+  "id": "so5-2",
+  "level": "2",
+  "url": "root-1-2.html#so5-2",
+  "type": "Objectives",
+  "number": "3.5",
+  "title": "",
+  "body": "   I can use the Laplace transform to compute the convolution of two functions.    "
+},
+{
+  "id": "so6-2",
+  "level": "2",
+  "url": "root-1-2.html#so6-2",
+  "type": "Objectives",
+  "number": "3.6",
+  "title": "",
+  "body": "   I can solve applied problems resulting from second-order differential equations.    "
+},
+{
+  "id": "sd1-2",
+  "level": "2",
+  "url": "root-1-2.html#sd1-2",
+  "type": "Objectives",
+  "number": "4.1",
+  "title": "",
+  "body": "   I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.    "
+},
+{
+  "id": "sd2-2",
+  "level": "2",
+  "url": "root-1-2.html#sd2-2",
+  "type": "Objectives",
+  "number": "4.2",
+  "title": "",
+  "body": "   I can find the eigenvalues and eigenvectors for a 2x2 matrix.    "
+},
+{
+  "id": "sd3-2",
+  "level": "2",
+  "url": "root-1-2.html#sd3-2",
+  "type": "Objectives",
+  "number": "4.3",
+  "title": "",
+  "body": "   I can determine if two vectors are linearly independent.    "
+},
+{
+  "id": "sd4-2",
+  "level": "2",
+  "url": "root-1-2.html#sd4-2",
+  "type": "Objectives",
+  "number": "4.4",
+  "title": "",
+  "body": "   I can solve a system of differential equations with complex or distinct real eigenvalues.    "
+},
+{
+  "id": "sd5-2",
+  "level": "2",
+  "url": "root-1-2.html#sd5-2",
+  "type": "Objectives",
+  "number": "4.5",
+  "title": "",
+  "body": "   I can solve a system of differential equations with repeated real eigenvalues.    "
+},
+{
+  "id": "sd6-2",
+  "level": "2",
+  "url": "root-1-2.html#sd6-2",
+  "type": "Objectives",
+  "number": "4.6",
+  "title": "",
+  "body": "   I can use systems of differential equations to solve applied problems.    "
+}
+]
+
+var ptx_lunr_idx = lunr(function () {
+  this.ref('id')
+  this.field('title')
+  this.field('body')
+  this.metadataWhitelist = ['position']
+
+  ptx_lunr_docs.forEach(function (doc) {
+    this.add(doc)
+  }, this)
+})
+</script>
+</body>
+</html>

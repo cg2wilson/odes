@@ -1,0 +1,9 @@
+INFO    : 
+Stopping server.
+ERROR   : Attempt to terminate PreTeXt web server failed for process 7570 on port 8129.
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
