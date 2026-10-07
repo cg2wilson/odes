@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "FO1: Solutions to Differential Equations",
-  "body": " FO1: Solutions to Differential Equations     I can determine if a function or family of functions is a solution to a given differential equation.      What Is a Differential Equation?   (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.      An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.      Other examples of ordinary differential equations are         Below are examples of partial differential equations:  The wave equation:   The heat equation:       Testing Solutions to ODEs   Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.      The family of functions are solutions to the differential equation because      Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.     Logistic Growth   A population which needs to compete for resources will not grow exponentially-- think of environmental constraints such as access to food, water, shelter. In the absence of predators, this population will grow up to a certain point and stabilize; we can modify the exponential growth equation (see ) to      Show that the family is also a solution to the exponential growth equation.      For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?     "
+  "body": " FO1: Solutions to Differential Equations     I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.      What Is a Differential Equation?   (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.      An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.      Other examples of ordinary differential equations are         Below are examples of partial differential equations:  The wave equation:   The heat equation:       Testing Solutions to ODEs   Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.      The family of functions are solutions to the differential equation because      Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.      The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .      Show that the family is is a solution to the differential equation       For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?      Let , , and . Show that each of these functions is a solution to the differential equation What about ?     Principle of Superposition  principle of superposition   Linear combinations of solutions to a differential equation are also solutions to the same differential equation.      Classifying Differential Equations   Linear\/Nonlinear Differential Equations  differential equations (linear)  differential equations (nonlinear)   A differential equation is linear if it can be written in the form where the coefficients and depend only on the independent variable . Otherwise, the differential equation is nonlinear .     Order of a Differential Equation  differential equation (order)   The order of a differential equation is the order of the highest derivative in the equation.     (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .     A homogeneous, linear ODE can always be put into the form      The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.      Determine the order, linearity status, and homogeneity status of the following ODEs:                "
 },
 {
   "id": "fo1-2",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "",
   "title": "",
-  "body": "   I can determine if a function or family of functions is a solution to a given differential equation.    "
+  "body": "   I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.    "
 },
 {
   "id": "def-ode-pde",
@@ -105,8 +105,8 @@ var ptx_lunr_docs = [
   "url": "fo1.html#fo1-solutions-odes-5",
   "type": "Example",
   "number": "8",
-  "title": "Logistic Growth.",
-  "body": " Logistic Growth   A population which needs to compete for resources will not grow exponentially-- think of environmental constraints such as access to food, water, shelter. In the absence of predators, this population will grow up to a certain point and stabilize; we can modify the exponential growth equation (see ) to   "
+  "title": "",
+  "body": "  The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .   "
 },
 {
   "id": "fo1-solutions-odes-6",
@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "9",
   "title": "",
-  "body": "  Show that the family is also a solution to the exponential growth equation.   "
+  "body": "  Show that the family is is a solution to the differential equation    "
 },
 {
   "id": "fo1-solutions-odes-7",
@@ -125,6 +125,78 @@ var ptx_lunr_docs = [
   "number": "10",
   "title": "",
   "body": "  For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?   "
+},
+{
+  "id": "fo1-solutions-odes-8",
+  "level": "2",
+  "url": "fo1.html#fo1-solutions-odes-8",
+  "type": "Checkpoint",
+  "number": "11",
+  "title": "",
+  "body": "  Let , , and . Show that each of these functions is a solution to the differential equation What about ?   "
+},
+{
+  "id": "thm-linear-combinations-odes-solution",
+  "level": "2",
+  "url": "fo1.html#thm-linear-combinations-odes-solution",
+  "type": "Theorem",
+  "number": "12",
+  "title": "Principle of Superposition.",
+  "body": " Principle of Superposition  principle of superposition   Linear combinations of solutions to a differential equation are also solutions to the same differential equation.   "
+},
+{
+  "id": "def-linear-nonlinear-odes",
+  "level": "2",
+  "url": "fo1.html#def-linear-nonlinear-odes",
+  "type": "Definition",
+  "number": "13",
+  "title": "Linear\/Nonlinear Differential Equations.",
+  "body": " Linear\/Nonlinear Differential Equations  differential equations (linear)  differential equations (nonlinear)   A differential equation is linear if it can be written in the form where the coefficients and depend only on the independent variable . Otherwise, the differential equation is nonlinear .   "
+},
+{
+  "id": "def-order-ode",
+  "level": "2",
+  "url": "fo1.html#def-order-ode",
+  "type": "Definition",
+  "number": "14",
+  "title": "Order of a Differential Equation.",
+  "body": " Order of a Differential Equation  differential equation (order)   The order of a differential equation is the order of the highest derivative in the equation.   "
+},
+{
+  "id": "def-homogeneous-nonhomogeneous-ode",
+  "level": "2",
+  "url": "fo1.html#def-homogeneous-nonhomogeneous-ode",
+  "type": "Definition",
+  "number": "15",
+  "title": "(Non)Homogeneous Differential Equation.",
+  "body": " (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .   "
+},
+{
+  "id": "fo1-classifying-odes-5",
+  "level": "2",
+  "url": "fo1.html#fo1-classifying-odes-5",
+  "type": "Note",
+  "number": "16",
+  "title": "",
+  "body": " A homogeneous, linear ODE can always be put into the form   "
+},
+{
+  "id": "fo1-classifying-odes-6",
+  "level": "2",
+  "url": "fo1.html#fo1-classifying-odes-6",
+  "type": "Example",
+  "number": "17",
+  "title": "",
+  "body": "  The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.   "
+},
+{
+  "id": "fo1-classifying-odes-7",
+  "level": "2",
+  "url": "fo1.html#fo1-classifying-odes-7",
+  "type": "Checkpoint",
+  "number": "18",
+  "title": "",
+  "body": "  Determine the order, linearity status, and homogeneity status of the following ODEs:              "
 },
 {
   "id": "fo2",

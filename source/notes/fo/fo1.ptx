@@ -7,8 +7,7 @@
         <ul>
             <li>
                 <p>
-                    I can determine if a function or family of functions is a
-                    solution to a given differential equation.
+                    I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.
                 </p>
             </li>
         </ul>
@@ -108,8 +107,7 @@
             <idx><h>differential equation (solution to)</h></idx>
             <statement>
                 <p>
-                    A <term>solution to a differential equation</term> is a
-                    function which satisfies the rules imposed by the equation.
+                    A <term>solution to a differential equation</term> is a function  which satisfies the rules imposed by the equation.
                 </p>
             </statement>
         </definition>
@@ -117,8 +115,7 @@
         <example>
             <statement>
                 <p>
-                    The family of functions <m>y(x) = x^2 + C</m> are solutions
-                    to the differential equation
+                    The family of functions <m>y(x) = x^2 + C</m> are solutions to the differential equation
                     <md>
                         \dfrac{dy}{dx} = 2x
                     </md>
@@ -132,40 +129,34 @@
 
             <statement>
                 <p>
-                    The family <m>x(t) = Ce^{kt}</m> is a solution to the
-                    differential equation
+                    The family <m>x(t) = Ce^{kt}</m> is a solution to the differential equation
                     <md>
                         x'(t) = ax
                     </md>
-                    for some constant <m>a\in \R</m> because
-                    <m>x'(t) = Cke^{kt}</m> and <m>x''(t) = Ck^2e^{kt}</m>.
-                    Setting <m>a = k^2</m>, we have
-                    <m>x''(t) = aCe^{kt} = ax(t)</m>.
+                    for some constant <m>a\in \R</m> because <m>x'(t) = Cke^{kt}</m> and <m>x''(t) = Ck^2e^{kt}</m>. Setting <m>a = k^2</m>, we have <m>x''(t) = aCe^{kt} = ax(t)</m>.
                 </p>
 
                 <p>
-                    This differential equation models
-                    <em>exponential growth</em>.
-                    In reality, few things grow exponentially due to constraints
-                    in the environment.
-                    Despite its lack of realism, we can use the exponential
-                    growth equation to help build other, more useful models.
+                    This differential equation models <em>exponential growth</em>. In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential  growth equation to help build other, more useful models.
                 </p>
             </statement>
         </example>
 
         <example>
-            <title>Logistic Growth</title>
-
             <statement>
                 <p>
-                    A population which needs to compete for resources will not
-                    grow exponentially-- think of environmental constraints such
-                    as access to food, water, shelter.
-                    In the absence of predators, this population will grow up to
-                    a certain point and stabilize; we can modify the exponential
-                    growth equation (see <xref ref="exponential-growth-intro"/>
-                    ) to
+                    The acceleration of an object in free-fall is given by <m>a(t) = \dfrac{d^2s}{dt^2} = -g</m> where <m>g</m> is the gravitational constant. Find its position function, knowing that <m>s(0) = 1000</m>m and <m>v(0) = -25</m>m/s.
+                </p>
+                <p>
+                    You likely would have encountered this kind of problem when learning integration/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have
+                    <md>
+                        v(t) = \dfrac{ds}{dt} = -gt + C
+                    </md>
+                    Since <m>v(0) = -25</m>, we have <m>C = -25</m> and <m>v(t) = -gt - 25</m>. Next, we integrate again to find position:
+                    <md>
+                        s(t) = \dfrac{-gt^2}{2} - 25t + C
+                    </md>
+                    Since <m>s(0) = 1000</m>, we have <m>C = 1000</m> and <m>s(t) = \dfrac{-gt^2}{2} - 25t + 1000</m>.
                 </p>
             </statement>
         </example>
@@ -175,7 +166,10 @@
                 <p>
                     Show that the family
                     <m>x(t) = C\cosh(kt) = \dfrac{1}{2}\lrpar{e^t+e^{-t}}</m> is
-                    also a solution to the exponential growth equation.
+                    is a solution to the differential equation
+                    <md>
+                        x''(t) = k^2x
+                    </md>
                 </p>
             </statement>
         </exercise>
@@ -187,9 +181,119 @@
                     <md>
                         y'' -6y' + 9y = 0
                     </md>
-                    Show that the families <m>f_1(x) = C_1e^{3t}</m> and
-                    <m>f_2(x) = C_2xe^{3x}</m> are both solutions to the ODE.
-                    Is <m>f_3(x) = f_1(x) + f_2(x)</m> a solution as well?
+                    Show that the families <m>y_1(x) = C_1e^{3t}</m> and <m>y_2(x) = C_2xe^{3x}</m> are both solutions to the ODE. Is <m>y_3(x) = y_1(x) + y_2(x)</m> a solution as well?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    Let <m>f_1(x) = c_1x</m>, <m>f_2(x) = c_2x^2</m>, and <m>f_3(x) = c_3x^{-1}</m>. Show that each of these functions is a solution to the differential equation
+                    <md>
+                        x^3f''' + x^2f'' - 2xf' + 2f = 0
+                    </md>
+                    What about <m>f_4(x) = f_1(x) + f_3(x)</m>?
+                </p>
+            </statement>
+        </exercise>
+
+        <theorem xml:id="thm-linear-combinations-odes-solution">
+            <title>Principle of Superposition</title>
+            <idx><h>principle of superposition</h></idx>            
+            <statement>
+                <p>
+                    Linear combinations of solutions to a differential equation are also solutions to the same differential equation. 
+                </p>
+            </statement>
+        </theorem>
+    </subsection>
+
+    <subsection xml:id="fo1-classifying-odes">
+        <title>Classifying Differential Equations</title>
+            
+        <definition xml:id="def-linear-nonlinear-odes">
+            <title>Linear/Nonlinear Differential Equations</title>
+            <idx><h>differential equations (linear)</h></idx>
+            <idx><h>differential equations (nonlinear)</h></idx>
+            <statement>
+                <p>
+                    A differential equation is <term>linear</term> if it can be written in the form
+                    <md>
+                        a_n(x)y^{(n)} + a_{n-1}(x)y^{(n-1)} + \cdots + a_1(x)y' + a_0(x)y = g(x)
+                    </md>
+                    where the coefficients <m>a_i(x)</m> and <m>g(x)</m> depend only on the independent variable <m>x</m>. Otherwise, the differential equation is <term>nonlinear</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <definition xml:id="def-order-ode">
+            <title>Order of a Differential Equation</title>
+            <idx><h>differential equation (order)</h></idx>
+            <statement>
+                <p>
+                    The <term>order</term> of a differential equation is the order of the highest derivative in the equation.
+                </p>
+            </statement>
+        </definition>
+
+        <definition xml:id="def-homogeneous-nonhomogeneous-ode">
+            <title>(Non)Homogeneous Differential Equation</title>
+            <idx><h>differential equation (homogeneous)</h></idx>
+            <idx><h>differential equation (nonhomogeneous)</h></idx>
+            <statement>
+                <p>
+                    A differential equation is <term>homogeneous</term> if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is <term>nonhomogeneous</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <note>
+            <p>
+                A homogeneous, linear ODE can always be put into the form
+                <md>
+                    a_n(x)\dfrac{d^ny}{dx^n} + a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}} + \cdots + a_1(x)\dfrac{dy}{dx} + a_0(x)y = 0
+                </md>
+            </p>
+        </note>
+
+        <example>
+            <statement>
+                <p>
+                    The equation
+                    <md>
+                        y''' - x^2y' + y = 0
+                    </md>
+                    has order 3, is linear, and homogeneous. However,
+                    <md>
+                        y''' - x^2y' + y = x
+                    </md>
+                    is nonhomogeneous.
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    Determine the order, linearity status, and homogeneity status of the following ODEs:
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                <m>\sin(t)\dfrac{d^2x}{dt^2} + \cos(t) x = t^2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y'' + 3y + 5x = 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>x'' + tx^2 = t</m>
+                            </p>
+                        </li>
+                    </ol>
                 </p>
             </statement>
         </exercise>
