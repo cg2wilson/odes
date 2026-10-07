@@ -109,7 +109,7 @@
                 <p>
                     The family <m>x(t) = Ce^{kt}</m> is a solution to the differential equation
                     <md>
-                        x''(t) = x
+                        x'(t) = ax
                     </md>
                     for some constant <m>a\in \R</m> because <m>x'(t) = Cke^{kt}</m> and <m>x''(t) = Ck^2e^{kt}</m>. Setting <m>a = k^2</m>, we have <m>x''(t) = aCe^{kt} = ax(t)</m>.
                 </p>
@@ -148,5 +148,7 @@
                 </p>
             </statement>
         </exercise>
+
+
     </subsection>
 </section>
