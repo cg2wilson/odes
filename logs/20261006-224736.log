@@ -1,0 +1,84 @@
+INFO    : Now preparing local server to preview your project directory `/Users/cw/Library/CloudStorage/Dropbox/school/occc/20262027/2413sp27/notes-old`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : setting up PreTeXt web server ...
+WARNING : Port 8128 could not be used.
+WARNING : Trying port 8129 instead.
+
+WARNING : Port 8129 could not be used.
+WARNING : Trying port 8130 instead.
+
+WARNING : Port 8130 could not be used.
+WARNING : Trying port 8131 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8131 localhost
+
+INFO    : Server will soon be available at http://localhost:8131
+INFO    : Opening browser for target `course` at http://localhost:8131/output/course
+WARNING : Port 8131 could not be used.
+WARNING : Trying port 8132 instead.
+
+WARNING : Port 8132 could not be used.
+WARNING : Trying port 8133 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8133 localhost
+
+INFO    : Server will soon be available at http://localhost:8133
+INFO    : Opening browser for target `course` at http://localhost:8133/output/course
+WARNING : Port 8133 could not be used.
+WARNING : Trying port 8134 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8134 localhost
+
+INFO    : Server will soon be available at http://localhost:8134
+INFO    : Opening browser for target `course` at http://localhost:8134/output/course
+WARNING : Port 8134 could not be used.
+WARNING : Trying port 8135 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8135 localhost
+
+INFO    : Server will soon be available at http://localhost:8135
+INFO    : Opening browser for target `course` at http://localhost:8135/output/course
+WARNING : Port 8135 could not be used.
+WARNING : Trying port 8136 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8136 localhost
+
+INFO    : Server will soon be available at http://localhost:8136
+INFO    : Opening browser for target `course` at http://localhost:8136/output/course
+WARNING : Port 8136 could not be used.
+WARNING : Trying port 8137 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8137 localhost
+
+INFO    : Server will soon be available at http://localhost:8137
+INFO    : Opening browser for target `course` at http://localhost:8137/output/course
+WARNING : Port 8137 could not be used.
+WARNING : Trying port 8138 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8138 localhost
+
+INFO    : Server will soon be available at http://localhost:8138
+INFO    : Opening browser for target `course` at http://localhost:8138/output/course
+WARNING : Port 8138 could not be used.
+WARNING : Trying port 8139 instead.
+
+INFO    : Added pretext web server entry c58f850fa5 28565 8139 localhost
+
+INFO    : Server will soon be available at http://localhost:8139
+INFO    : Opening browser for target `course` at http://localhost:8139/output/course
+WARNING : Port 8139 could not be used.
+WARNING : Trying port 8140 instead.
+
+INFO    : There are 10 or more servers on file. Cleaning up ...
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22879 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22879 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22879 with laddr 
+INFO    : Found PreTeXt web server at localhost:8132
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 28565 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 28565 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 28565 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 28565 with laddr 

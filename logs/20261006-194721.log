@@ -1,0 +1,12 @@
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22508 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22508 with laddr 
+ERROR   : BUG: the `pretext view` command encountered an error.  Please report this: process 22508 with laddr 
+INFO    : Found PreTeXt web server at localhost:8131
+INFO    : Server is already available at http://localhost:8131
+INFO    : Now opening browser for target `course` at http://localhost:8131/output/course
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
