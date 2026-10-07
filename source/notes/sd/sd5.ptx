@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sd5" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>SD5: Repeated Eigenvalues</title>
+    <title>SD5: Applications of Systems of Equations</title>
     <objectives>
         <ul>
             <li>
                 <p>
-                   I can solve a system of differential equations with repeated real eigenvalues.
+                   I can use systems of differential equations to solve applied problems.
                 </p>
             </li>
         </ul>

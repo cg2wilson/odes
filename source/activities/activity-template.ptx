@@ -12,10 +12,18 @@
   </introduction>
 
   <!-- Exercises start here. -->
-  <exercise workspace="2in">
+  <exercise workspace="6in">
     <statement>
       <p>
         This is the first exercise.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        test
       </p>
     </statement>
   </exercise>

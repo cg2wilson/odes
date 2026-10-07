@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sd4" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>SD4: Complex &amp; Real Eigenvalues</title>
+    <title>SD4: Repeated Eigenvalues</title>
     <objectives>
         <ul>
             <li>
                 <p>
-                    I can solve a system of differential equations with complex or distinct real eigenvalues.
+                   I can solve a system of differential equations with repeated real eigenvalues.
                 </p>
             </li>
         </ul>

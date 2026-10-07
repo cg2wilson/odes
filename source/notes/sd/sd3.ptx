@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sd3" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>SD3: Linear Independence</title>
+    <title>SD3: Complex &amp; Real Eigenvalues</title>
     <objectives>
         <ul>
             <li>
                 <p>
-                    I can determine if two vectors are linearly independent.
+                    I can solve a system of differential equations with complex or distinct real eigenvalues.
                 </p>
             </li>
         </ul>

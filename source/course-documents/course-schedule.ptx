@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="schedule" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Course Details</title>
+
+  <!-- Include chapters -->
+  <subsection xml:id="sec-course-calendar">
+    <title>Course Calendar</title>
+    <p>
+       <interactive
+            xml:id="course-calendar"
+            iframe="https://calendar.google.com/calendar/embed?src=2535f40691d6608c57425804b2a7a8070a70310777aee2714cf4bd003f5a4cef%40group.calendar.google.com&amp;ctz=America%2FChicago"
+            width="100%"
+            aspect="4:3"
+            resize-behavior="responsive"
+        /> 
+    </p>
+    
+  </subsection>
+  <subsection xml:id="sec-course-information">
+    <title>Course Information</title>
+
+    <p>
+      This is the course information <term>Math 2413-TR02S</term> for Spring 2027.
+      <!-- use a description list (dl) for short items -->
+      <dl>
+        <li>
+          <title>Instructor</title>
+
+          <p>
+            Cory Wilson
+          </p>
+        </li>
+        <li>
+          <title>Office &amp; Email</title>
+          <p>
+            SEM 2B6(B) | <url href="mailto:cory.g.wilson@occc.edu">email here</url>
+          </p>
+        </li>
+        <li>
+          <title>Student Hours</title>
+
+          <p>
+            See Moodle
+          </p>
+        </li>
+
+        <li>
+          <title>Class Meets</title>
+
+          <p>
+            TR 11:00pm - 12:15pm, 2C4
+          </p>
+        </li>
+      </dl>
+    </p>
+
+  <!-- Use paragraphs to break apart subsections -->
+  <!--  
+  <paragraphs>
+      <title>Course Overview</title>
+
+      <p>
+      </p>
+    </paragraphs>
+  -->
+  </subsection>
+
+</section>

@@ -36,8 +36,8 @@ lang: "en-US",
 <meta name="twitter:title" content="Ordinary Differential Equations">
 <meta property="og:title" content="Ordinary Differential Equations">
 <meta property="book:title" content="Ordinary Differential Equations">
-<meta name="twitter:description" content="MATH 2314 Spring 2027">
-<meta property="og:description" content="MATH 2314 Spring 2027">
+<meta name="twitter:description" content="Spring 2027">
+<meta property="og:description" content="Spring 2027">
 <meta name="twitter:card" content="summary">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.55"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.55"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
@@ -75,7 +75,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
-<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Ordinary Differential Equations</span> <span class="subtitle">MATH 2314 Spring 2027</span></a></div>
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Ordinary Differential Equations</span> <span class="subtitle">Spring 2027</span></a></div>
 <p class="byline">Cory Wilson</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
@@ -130,6 +130,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\lrpar}[1]{\left( #1 \right)}
 \newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+\newocmmand{\ds}{\displaystyle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -140,15 +141,21 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">1</span> <span class="title">Course Documents</span></a></div>
-<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="course-documents-2.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Homework 01</span></a></div></li></ul>
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">0</span> <span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="schedule.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Course Details</span></a></div>
+<ul id="ptx-toc-group-schedule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="schedule.html#sec-course-calendar" class="internal"><span class="title">Course Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="schedule.html#sec-course-information" class="internal"><span class="title">Course Information</span></a></div></li>
+</ul>
+</li></ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="mod1.html" class="internal"><span class="codenumber">2</span> <span class="title">Module FO: First-Order Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="mod1.html" class="internal"><span class="codenumber">1</span> <span class="title">Module FO: First-Order Differential Equations</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-mod1">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="mod1-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="fo1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">FO1: Solutions to Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="fo1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">FO1: Solutions to Differential Equations</span></a></div>
 <ul id="ptx-toc-group-fo1" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#ode-what-is" class="internal"><span class="title">What Is a Differential Equation?</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#ode-solutions-to" class="internal"><span class="title">Testing Solutions to ODEs</span></a></div></li>
@@ -156,49 +163,54 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="fo2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">FO2: Separation of Variables</span></a></div>
+<div class="toc-title-box"><a href="fo2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">FO2: Separation of Variables</span></a></div>
 <ul class="structural toc-item-list active" id="ptx-toc-group-fo2">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#separation-of-variables-intro" class="internal"><span class="title">Separation of Variables</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#separation-of-variables-applications" class="internal"><span class="title">Applications of Separation of Variables</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">FO3: The Integrating Factor</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">FO4: The Laplace Transform (First-Order Equations)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">FO5: Applications of First-Order Differential Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">FO6: Slope Fields</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">FO8: Bifurcations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="fo3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">FO3: The Integrating Factor</span></a></div>
+<ul id="ptx-toc-group-fo3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#linear-equations" class="internal"><span class="title">Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#integrating-factor" class="internal"><span class="title">The Integrating Factor</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">FO4: The Laplace Transform (First-Order Equations)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">FO5: Applications of First-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">FO6: Slope Fields</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">FO8: Bifurcations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="mod2.html" class="internal"><span class="codenumber">3</span> <span class="title">Module SO: Second-Order Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="mod2.html" class="internal"><span class="codenumber">2</span> <span class="title">Module SO: Second-Order Differential Equations</span></a></div>
 <ul id="ptx-toc-group-mod2" class="structural toc-item-list">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="mod2-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">SO1: Linear HomogeneousDifferential Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">SO2: Linear Non-Homogeneous Differential Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">SO3: The Laplace Transform (Second-Order Equations)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">SO5: The Laplace Transform (Convolutions)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">SO6: Applications of Second-Order Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">SO1: Linear HomogeneousDifferential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">SO2: Linear Non-Homogeneous Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">SO3: The Laplace Transform (Second-Order Equations)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">SO5: The Laplace Transform (Convolutions)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">SO6: Applications of Second-Order Differential Equations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="mod3.html" class="internal"><span class="codenumber">4</span> <span class="title">Module SD: Systems of Differential Equations</span></a></div>
+<div class="toc-title-box"><a href="mod3.html" class="internal"><span class="codenumber">3</span> <span class="title">Module SD: Systems of Differential Equations</span></a></div>
 <ul id="ptx-toc-group-mod3" class="structural toc-item-list">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="mod3-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">SD1: Solutions to Differential Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">SD2: Eigenvalues &amp; Eigenvectors</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">SD3: Linear Independence</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">SD4: Complex &amp; Real Eigenvalues</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">SD5: Repeated Eigenvalues</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">SD6: Applications of Systems of Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">SD1: Solutions to Differential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">SD2: Eigenvalues &amp; Eigenvectors; Linear Independence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">SD3: Complex &amp; Real Eigenvalues</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">SD4: Repeated Eigenvalues</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sd5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">SD5: Applications of Systems of Equations</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="fo2">
 <h1 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">FO2: Separation of Variables</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">FO2: Separation of Variables</span>
 </h1>
 <article class="objectives goal-like" id="fo2-2"><h2 class="heading"><span class="type">Objectives</span></h2>
 <ul class="disc" id="fo2-2-1">
@@ -208,14 +220,14 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Objective"><a tabindex="-1" href="#fo2-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" aria-hidden="true" data-description="Objectives 2.2"><a tabindex="-1" href="#fo2-2" title="Copy heading and permalink for Objectives 2.2" aria-label="Copy heading and permalink for Objectives 2.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives 1.2"><a tabindex="-1" href="#fo2-2" title="Copy heading and permalink for Objectives 1.2" aria-label="Copy heading and permalink for Objectives 1.2">🔗</a></div>
 </article>
 <section class="subsection" id="separation-of-variables-intro">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separation of Variables</span>
 </h2>
 <article class="definition definition-like" id="def-separable-ode"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separable Differential Equation.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separable Differential Equation.</span>
 </h3>
 <div class="para logical" id="def-separable-ode-4-1">
 <div class="para">A differential equation is said to be <dfn class="terminology">separable</dfn> if it can be written in the form</div>
@@ -237,10 +249,10 @@ G(y)\,dy - f(x)\,dx = 0
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-separable-ode-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 2.2.1: Separable Differential Equation"><a tabindex="-1" href="#def-separable-ode" title="Copy heading and permalink for Definition 2.2.1: Separable Differential Equation" aria-label="Copy heading and permalink for Definition 2.2.1: Separable Differential Equation">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 1.2.1: Separable Differential Equation"><a tabindex="-1" href="#def-separable-ode" title="Copy heading and permalink for Definition 1.2.1: Separable Differential Equation" aria-label="Copy heading and permalink for Definition 1.2.1: Separable Differential Equation">🔗</a></div>
 </article>
 <article class="example example-like" id="separation-of-variables-intro-3"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="separation-of-variables-intro-3-1-1">
 <div class="para">The equation</div>
@@ -265,10 +277,10 @@ y \amp = Ce^{e^x}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.2"><a tabindex="-1" href="#separation-of-variables-intro-3" title="Copy heading and permalink for Example 2.2.2" aria-label="Copy heading and permalink for Example 2.2.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.2.2"><a tabindex="-1" href="#separation-of-variables-intro-3" title="Copy heading and permalink for Example 1.2.2" aria-label="Copy heading and permalink for Example 1.2.2">🔗</a></div>
 </article>
 <details id="separation-of-variables-intro-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para logical" id="separation-of-variables-intro-4-1-1">
@@ -278,30 +290,30 @@ y \amp = Ce^{e^x}
 <div class="para" id="separation-of-variables-intro-4-1-1-1-1-1">
 <span class="process-math">\(\displaystyle y' = x^2y\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.3.a"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-1" title="Copy heading and permalink for Item 2.2.3.a" aria-label="Copy heading and permalink for Item 2.2.3.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.2.3.a"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-1" title="Copy heading and permalink for Item 1.2.3.a" aria-label="Copy heading and permalink for Item 1.2.3.a">🔗</a></div>
 </li>
 <li id="separation-of-variables-intro-4-1-1-1-2">
 <div class="para" id="separation-of-variables-intro-4-1-1-1-2-1">
 <span class="process-math">\(xy' = y + 2x^2y\)</span> with <span class="process-math">\(y(1) = 1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.3.b"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-2" title="Copy heading and permalink for Item 2.2.3.b" aria-label="Copy heading and permalink for Item 2.2.3.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.2.3.b"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-2" title="Copy heading and permalink for Item 1.2.3.b" aria-label="Copy heading and permalink for Item 1.2.3.b">🔗</a></div>
 </li>
 <li id="separation-of-variables-intro-4-1-1-1-3">
 <div class="para" id="separation-of-variables-intro-4-1-1-1-3-1">
 <span class="process-math">\(\displaystyle y'' + y = 0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.3.c"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-3" title="Copy heading and permalink for Item 2.2.3.c" aria-label="Copy heading and permalink for Item 2.2.3.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.2.3.c"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-3" title="Copy heading and permalink for Item 1.2.3.c" aria-label="Copy heading and permalink for Item 1.2.3.c">🔗</a></div>
 </li>
 <li id="separation-of-variables-intro-4-1-1-1-4">
 <div class="para" id="separation-of-variables-intro-4-1-1-1-4-1">
 <span class="process-math">\(\displaystyle y'' + x = 0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.3.d"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-4" title="Copy heading and permalink for Item 2.2.3.d" aria-label="Copy heading and permalink for Item 2.2.3.d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.2.3.d"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1-1-4" title="Copy heading and permalink for Item 1.2.3.d" aria-label="Copy heading and permalink for Item 1.2.3.d">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-intro-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.3"><a tabindex="-1" href="#separation-of-variables-intro-4" title="Copy heading and permalink for Checkpoint 2.2.3" aria-label="Copy heading and permalink for Checkpoint 2.2.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.2.3"><a tabindex="-1" href="#separation-of-variables-intro-4" title="Copy heading and permalink for Checkpoint 1.2.3" aria-label="Copy heading and permalink for Checkpoint 1.2.3">🔗</a></div>
 </article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection: Separation of Variables"><a tabindex="-1" href="#separation-of-variables-intro" title="Copy heading and permalink for Subsection: Separation of Variables" aria-label="Copy heading and permalink for Subsection: Separation of Variables">🔗</a></div>
 </section>
 <section class="subsection" id="separation-of-variables-applications">
@@ -309,10 +321,10 @@ y \amp = Ce^{e^x}
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications of Separation of Variables</span>
 </h2>
 <article class="example example-like" id="exponential-growth-proof"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exponential Growth/Decay.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exponential Growth/Decay.</span>
 </h3>
 <div class="para logical" id="exponential-growth-proof-2-1">
-<div class="para">Exponential growth, introduced in <a href="fo1.html#exponential-growth-intro" class="xref" data-knowl="./knowl/xref/exponential-growth-intro.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.7: Exponential Growth">Example 2.1.7</a>, is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time <span class="process-math">\(t\text{.}\)</span> Because growth describes a rate of change, we have</div>
+<div class="para">Exponential growth, introduced in <a href="fo1.html#exponential-growth-intro" class="xref" data-knowl="./knowl/xref/exponential-growth-intro.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.1.7: Exponential Growth">Example 1.1.7</a>, is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time <span class="process-math">\(t\text{.}\)</span> Because growth describes a rate of change, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/exponential-growth-intro.html" id="exponential-growth-proof-2-1-3">
 \begin{equation*}
 \dfrac{dP}{dt} = kP
@@ -333,18 +345,18 @@ P = Ce^{kt}
 <div class="para">If <span class="process-math">\(k \gt 0\text{,}\)</span> we say that the population is experiencing growth; if <span class="process-math">\(k\lt 0\text{,}\)</span> the population experiences decay.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exponential-growth-proof-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.4: Exponential Growth/Decay"><a tabindex="-1" href="#exponential-growth-proof" title="Copy heading and permalink for Example 2.2.4: Exponential Growth/Decay" aria-label="Copy heading and permalink for Example 2.2.4: Exponential Growth/Decay">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.2.4: Exponential Growth/Decay"><a tabindex="-1" href="#exponential-growth-proof" title="Copy heading and permalink for Example 1.2.4: Exponential Growth/Decay" aria-label="Copy heading and permalink for Example 1.2.4: Exponential Growth/Decay">🔗</a></div>
 </article>
 <details id="separation-of-variables-applications-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="separation-of-variables-applications-3-1-1">The mean half-life of a prescription drug is 12.5 hours. Find the constant of proportionality for the drug.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-applications-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.5"><a tabindex="-1" href="#separation-of-variables-applications-3" title="Copy heading and permalink for Checkpoint 2.2.5" aria-label="Copy heading and permalink for Checkpoint 2.2.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.2.5"><a tabindex="-1" href="#separation-of-variables-applications-3" title="Copy heading and permalink for Checkpoint 1.2.5" aria-label="Copy heading and permalink for Checkpoint 1.2.5">🔗</a></div>
 </article></details>
 <article class="example example-like" id="logistic-growth"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logistic Growth/Decay.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logistic Growth/Decay.</span>
 </h3>
 <div class="para" id="logistic-growth-2-1">Exponential growth is not realistic for most population situations. Environmental constraints such as access to food, shelter, etc. will naturally limit the rate of population growth.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#logistic-growth-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -375,10 +387,10 @@ P = \dfrac{N}{1+Ce^{-kt}}
 <div class="para">here <span class="process-math">\(N\)</span> is called the <dfn class="terminology">carrying capacity</dfn> of the population/system.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#logistic-growth-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.6: Logistic Growth/Decay"><a tabindex="-1" href="#logistic-growth" title="Copy heading and permalink for Example 2.2.6: Logistic Growth/Decay" aria-label="Copy heading and permalink for Example 2.2.6: Logistic Growth/Decay">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.2.6: Logistic Growth/Decay"><a tabindex="-1" href="#logistic-growth" title="Copy heading and permalink for Example 1.2.6: Logistic Growth/Decay" aria-label="Copy heading and permalink for Example 1.2.6: Logistic Growth/Decay">🔗</a></div>
 </article>
 <article class="example example-like" id="newtons-law-cooling"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Newton’s Law of Cooling.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Newton’s Law of Cooling.</span>
 </h3>
 <div class="para logical" id="newtons-law-cooling-2-1">
 <div class="para">Consider an object taken from a hotter environment and placed in a cooler one. We might assume that it cools in a way that is proportional the difference of its temperature and the temperature of the cooler environment. This results in the following differential equation:</div>
@@ -395,17 +407,17 @@ T = A + Ce^{-kt}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#newtons-law-cooling-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.7: Newton’s Law of Cooling"><a tabindex="-1" href="#newtons-law-cooling" title="Copy heading and permalink for Example 2.2.7: Newton’s Law of Cooling" aria-label="Copy heading and permalink for Example 2.2.7: Newton’s Law of Cooling">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.2.7: Newton’s Law of Cooling"><a tabindex="-1" href="#newtons-law-cooling" title="Copy heading and permalink for Example 1.2.7: Newton’s Law of Cooling" aria-label="Copy heading and permalink for Example 1.2.7: Newton’s Law of Cooling">🔗</a></div>
 </article>
 <details id="separation-of-variables-applications-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="separation-of-variables-applications-6-1-1">Starbucks’ tea is poured from a machine which dispenses water at approximately <span class="process-math">\(190^\circ F\text{.}\)</span> You really don’t want to drink basically boiling water, so you wait until it cools down to about <span class="process-math">\(100^\circ F\text{.}\)</span> How long should you wait to drink the tea if the ambient temperature is <span class="process-math">\(71^\circ F\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#separation-of-variables-applications-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.8"><a tabindex="-1" href="#separation-of-variables-applications-6" title="Copy heading and permalink for Checkpoint 2.2.8" aria-label="Copy heading and permalink for Checkpoint 2.2.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 1.2.8"><a tabindex="-1" href="#separation-of-variables-applications-6" title="Copy heading and permalink for Checkpoint 1.2.8" aria-label="Copy heading and permalink for Checkpoint 1.2.8">🔗</a></div>
 </article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection: Applications of Separation of Variables"><a tabindex="-1" href="#separation-of-variables-applications" title="Copy heading and permalink for Subsection: Applications of Separation of Variables" aria-label="Copy heading and permalink for Subsection: Applications of Separation of Variables">🔗</a></div>
-</section><div class="autopermalink" aria-hidden="true" data-description="Section 2.2: FO2: Separation of Variables"><a tabindex="-1" href="#fo2" title="Copy heading and permalink for Section 2.2: FO2: Separation of Variables" aria-label="Copy heading and permalink for Section 2.2: FO2: Separation of Variables">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.2: FO2: Separation of Variables"><a tabindex="-1" href="#fo2" title="Copy heading and permalink for Section 1.2: FO2: Separation of Variables" aria-label="Copy heading and permalink for Section 1.2: FO2: Separation of Variables">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

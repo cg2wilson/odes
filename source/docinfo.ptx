@@ -16,6 +16,7 @@
     \newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
     \newcommand{\lrpar}[1]{\left( #1 \right)}
     \newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+    \newocmmand{\ds}{\displaystyle}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

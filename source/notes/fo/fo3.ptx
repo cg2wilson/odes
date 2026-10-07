@@ -2,7 +2,131 @@
 
 <section xml:id="fo3" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO3: The Integrating Factor</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can determine when to use the integrating factor to solve a first-order differential equation and appropriately apply the technique to find a solution.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+
+    <subsection xml:id="linear-equations">
+        <title>Linear Equations</title>
+        <definition xml:id="def-linear-equation">
+            <title>Linear Equation</title>
+            <idx><h>linear equation</h></idx>
+            <statement>
+                <p>
+                    A <term>linear equation</term> is a differential equation of the form
+                    <md>
+                        y' + p(x)y = q(x)
+                    </md>
+                    where <m>p(x),q(x)</m> are known functions. 
+                </p>
+            </statement>
+        </definition>       
+        
+        <example>
+            <statement>
+                <p>
+                    The equation <m>y' - 6y = 3</m> is a linear equation with <m>p(x) = -6</m> and <m>q(x) = 3</m>.
+                </p>
+                <p>
+                    The equation <m>ty' + 2y = t^3</m> isn't in a linear form, but can be manipulated to be in one; dividing both sides by <m>t</m> (assuming <m>t\neq 0</m>), we get
+                    <md>
+                        y' + \dfrac{2}{t}y = t^2
+                    </md>
+                    so that <m>p(t) = \dfrac{2}{t}</m> and <m>q(t) = t^2</m>
+                </p>
+            </statement>
+        </example>
+    </subsection>
+
+    <subsection xml:id="integrating-factor">
+        <title>The Integrating Factor</title>
+        
+        <definition xml:id="def-integrating-factor">
+            <title>The Integrating Factor</title>
+            <idx><h>integrating factor</h></idx>
+            <statement>
+                <p>
+                    The <term>integrating factor</term> of a linear equation <m>y' + p(x)y = q(x)</m>is the expression 
+                    <md>
+                        \mu(x) = e^{\int p(x)\, dx}
+                    </md>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Consider again the equation
+                    <md>
+                        y' -6y = 3
+                    </md>
+                    Here <m>p(x) = -6</m>. This means that the integrating factor is given by
+                    <md>
+                        \mu(x) = e^{\int -6\, dx} = e^{-6x}
+                    </md>
+                    We can ignore the constant of integration, as it gets taken care of later.  
+                </p>
+                <p>
+                    The purpose of the integrating factor is to help mimic the product rule; this means that we need to multiply both sides of the equation by <m>\mu</m>:
+                    <md>
+                        <mrow>y' - 6y \amp = 3 </mrow>
+                        <mrow>\mu y' - 6\mu y \amp = 3\mu </mrow>
+                        <mrow>e^{-6x}y' - 6e^{-6x}y \amp = 3e^{-6x} </mrow>
+                    </md>
+                    Using the product rule to collapse the left hand side gives us
+                    <md>
+                        \dfrac{d}{dx}\lrpar{e^{-6x}y} = 3e^{-6x}
+                    </md>
+                    Now we can integrate both sides:
+                    <md>
+                        <mrow> \int \dfrac{d}{dx}\lrpar{e^{-6x}y}\, dx \amp = \int 3e^{-6x}\, dx </mrow>
+                        <mrow>e^{-6x}y \amp = -\dfrac{1}{2}e^{-6x} + C </mrow>
+                    </md>
+                    so that 
+                    <md>
+                        y = -\dfrac{1}{2} + Ce^{6x}
+                    </md>
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    Show that the solution to the initial value problem 
+                    <md>
+                        2t y' + y + 12t^{3/2} = 0,\quad y(1) = -1
+                    </md>
+                    is precisely 
+                    <md>
+                        y = 2t^{-1/2} - 3t^{3/2}
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    According to Kirchoff's voltage law, the sum of the voltage drop across the inductor <m>L\dfrac{di}{dt}</m> and voltage drop across the resistor <m>Ri</m> is the same as the impressed voltage <m>E(t)</m> on the circuit.
+                </p>
+                <p>
+                    Write the corresponding ODE and show that, for a fixed impressed voltage <m>E(t) = E_0</m>,
+                    <md>
+                        i(t) = \dfrac{E_0}{R} + Ce^{-Rt/L}
+                    </md>
+                </p>
+            </statement>
+        </exercise>
+
+    </subsection>
+
+    
 </section>

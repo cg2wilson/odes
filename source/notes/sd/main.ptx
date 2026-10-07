@@ -15,7 +15,6 @@
       <xi:include href="./sd3.ptx"/>
       <xi:include href="./sd4.ptx"/>
       <xi:include href="./sd5.ptx"/>
-      <xi:include href="./sd6.ptx"/>
 
 
     </chapter>

@@ -8,14 +8,14 @@
   <book>
     <title>Ordinary Differential Equations</title>
 
-    <subtitle>MATH 2314 Spring 2027</subtitle>
+    <subtitle>Spring 2027</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
     <chapter xml:id="course-documents">
       <title>Course Documents</title>
-        <xi:include href="./homework/homework-01.ptx"/>
+        <xi:include href="course-documents/course-schedule.ptx"/>
       <!-- Course syllabus -->
       <!--<xi:include href="./syllabus/syllabus.ptx" />-->
       <!-- Other documents could go here, like a schedule, project description, etc. -->
