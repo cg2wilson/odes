@@ -13,7 +13,7 @@
         </ul>
     </objectives>
 
-    <subsection xml:id="fo1-what-is-ode">
+    <subsection xml:id="ode-what-is">
         <title>What Is a Differential Equation?</title>
 
         <definition xml:id="def-ode-pde">
@@ -98,7 +98,7 @@
         </example>
     </subsection>
 
-    <subsection xml:id="fo1-solutions-odes">
+    <subsection xml:id="ode-solutions-to">
         <title>Testing Solutions to ODEs</title>
 
         <definition xml:id="def-solution-to-de">
@@ -209,7 +209,7 @@
         </theorem>
     </subsection>
 
-    <subsection xml:id="fo1-classifying-odes">
+    <subsection xml:id="ode-classifying">
         <title>Classifying Differential Equations</title>
             
         <definition xml:id="def-linear-nonlinear-odes">

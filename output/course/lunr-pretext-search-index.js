@@ -5,7 +5,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "course-documents-2.html",
   "type": "Worksheet",
-  "number": "",
+  "number": "1.1",
   "title": "Homework 01",
   "body": " Homework 01    Instructions: Complete all the exercises below and submit your work by the due date.      This is the first homework exercise.     "
 },
@@ -14,7 +14,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "course-documents-2.html#course-documents-2-3-1",
   "type": "Worksheet Exercise",
-  "number": "1",
+  "number": "1.1.1",
   "title": "",
   "body": "  This is the first homework exercise.   "
 },
@@ -23,16 +23,16 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo1.html",
   "type": "Section",
-  "number": "",
+  "number": "2.1",
   "title": "FO1: Solutions to Differential Equations",
-  "body": " FO1: Solutions to Differential Equations     I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.      What Is a Differential Equation?   (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.      An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.      Other examples of ordinary differential equations are         Below are examples of partial differential equations:  The wave equation:   The heat equation:       Testing Solutions to ODEs   Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.      The family of functions are solutions to the differential equation because      Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.      The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .      Show that the family is is a solution to the differential equation       For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?      Let , , and . Show that each of these functions is a solution to the differential equation What about ?     Principle of Superposition  principle of superposition   Linear combinations of solutions to a differential equation are also solutions to the same differential equation.      Classifying Differential Equations   Linear\/Nonlinear Differential Equations  differential equations (linear)  differential equations (nonlinear)   A differential equation is linear if it can be written in the form where the coefficients and depend only on the independent variable . Otherwise, the differential equation is nonlinear .     Order of a Differential Equation  differential equation (order)   The order of a differential equation is the order of the highest derivative in the equation.     (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .     A homogeneous, linear ODE can always be put into the form      The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.      Determine the order, linearity status, and homogeneity status of the following ODEs:                "
+  "body": " FO1: Solutions to Differential Equations     I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.      What Is a Differential Equation?   (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.      An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.      Other examples of ordinary differential equations are         Below are examples of partial differential equations:  The wave equation:   The heat equation:       Testing Solutions to ODEs   Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.      The family of functions are solutions to the differential equation because      Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.      The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .      Show that the family is is a solution to the differential equation       For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?      Let , , and . Show that each of these functions is a solution to the differential equation What about ?     Principle of Superposition  principle of superposition   Linear combinations of solutions to a differential equation are also solutions to the same differential equation.      Classifying Differential Equations   Linear\/Nonlinear Differential Equations  differential equations (linear)  differential equations (nonlinear)   A differential equation is linear if it can be written in the form where the coefficients and depend only on the independent variable . Otherwise, the differential equation is nonlinear .     Order of a Differential Equation  differential equation (order)   The order of a differential equation is the order of the highest derivative in the equation.     (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .     A homogeneous, linear ODE can always be put into the form      The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.      Determine the order, linearity status, and homogeneity status of the following ODEs:                      "
 },
 {
   "id": "fo1-2",
   "level": "2",
   "url": "fo1.html#fo1-2",
   "type": "Objectives",
-  "number": "",
+  "number": "2.1",
   "title": "",
   "body": "   I can determine if a function or family of functions is a solution to a given differential equation, classify a differential equation as linear or nonlinear, and identify its order.    "
 },
@@ -41,34 +41,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#def-ode-pde",
   "type": "Definition",
-  "number": "1",
+  "number": "2.1.1",
   "title": "(Ordinary\/Partial) Differential Equation.",
   "body": " (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.   "
 },
 {
-  "id": "fo1-what-is-ode-3",
+  "id": "ode-what-is-3",
   "level": "2",
-  "url": "fo1.html#fo1-what-is-ode-3",
+  "url": "fo1.html#ode-what-is-3",
   "type": "Example",
-  "number": "2",
+  "number": "2.1.2",
   "title": "",
   "body": "  An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.   "
 },
 {
-  "id": "fo1-what-is-ode-4",
+  "id": "ode-what-is-4",
   "level": "2",
-  "url": "fo1.html#fo1-what-is-ode-4",
+  "url": "fo1.html#ode-what-is-4",
   "type": "Example",
-  "number": "3",
+  "number": "2.1.3",
   "title": "",
   "body": "  Other examples of ordinary differential equations are      "
 },
 {
-  "id": "fo1-what-is-ode-5",
+  "id": "ode-what-is-5",
   "level": "2",
-  "url": "fo1.html#fo1-what-is-ode-5",
+  "url": "fo1.html#ode-what-is-5",
   "type": "Example",
-  "number": "4",
+  "number": "2.1.4",
   "title": "",
   "body": "  Below are examples of partial differential equations:  The wave equation:   The heat equation:    "
 },
@@ -77,16 +77,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#def-solution-to-de",
   "type": "Definition",
-  "number": "5",
+  "number": "2.1.5",
   "title": "Solution to a Differential Equation.",
   "body": " Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.   "
 },
 {
-  "id": "fo1-solutions-odes-3",
+  "id": "ode-solutions-to-3",
   "level": "2",
-  "url": "fo1.html#fo1-solutions-odes-3",
+  "url": "fo1.html#ode-solutions-to-3",
   "type": "Example",
-  "number": "6",
+  "number": "2.1.6",
   "title": "",
   "body": "  The family of functions are solutions to the differential equation because    "
 },
@@ -95,43 +95,43 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#exponential-growth-intro",
   "type": "Example",
-  "number": "7",
+  "number": "2.1.7",
   "title": "Exponential Growth.",
   "body": " Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.   "
 },
 {
-  "id": "fo1-solutions-odes-5",
+  "id": "ode-solutions-to-5",
   "level": "2",
-  "url": "fo1.html#fo1-solutions-odes-5",
+  "url": "fo1.html#ode-solutions-to-5",
   "type": "Example",
-  "number": "8",
+  "number": "2.1.8",
   "title": "",
   "body": "  The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .   "
 },
 {
-  "id": "fo1-solutions-odes-6",
+  "id": "ode-solutions-to-6",
   "level": "2",
-  "url": "fo1.html#fo1-solutions-odes-6",
+  "url": "fo1.html#ode-solutions-to-6",
   "type": "Checkpoint",
-  "number": "9",
+  "number": "2.1.9",
   "title": "",
   "body": "  Show that the family is is a solution to the differential equation    "
 },
 {
-  "id": "fo1-solutions-odes-7",
+  "id": "ode-solutions-to-7",
   "level": "2",
-  "url": "fo1.html#fo1-solutions-odes-7",
+  "url": "fo1.html#ode-solutions-to-7",
   "type": "Checkpoint",
-  "number": "10",
+  "number": "2.1.10",
   "title": "",
   "body": "  For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?   "
 },
 {
-  "id": "fo1-solutions-odes-8",
+  "id": "ode-solutions-to-8",
   "level": "2",
-  "url": "fo1.html#fo1-solutions-odes-8",
+  "url": "fo1.html#ode-solutions-to-8",
   "type": "Checkpoint",
-  "number": "11",
+  "number": "2.1.11",
   "title": "",
   "body": "  Let , , and . Show that each of these functions is a solution to the differential equation What about ?   "
 },
@@ -140,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#thm-linear-combinations-odes-solution",
   "type": "Theorem",
-  "number": "12",
+  "number": "2.1.12",
   "title": "Principle of Superposition.",
   "body": " Principle of Superposition  principle of superposition   Linear combinations of solutions to a differential equation are also solutions to the same differential equation.   "
 },
@@ -149,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#def-linear-nonlinear-odes",
   "type": "Definition",
-  "number": "13",
+  "number": "2.1.13",
   "title": "Linear\/Nonlinear Differential Equations.",
   "body": " Linear\/Nonlinear Differential Equations  differential equations (linear)  differential equations (nonlinear)   A differential equation is linear if it can be written in the form where the coefficients and depend only on the independent variable . Otherwise, the differential equation is nonlinear .   "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#def-order-ode",
   "type": "Definition",
-  "number": "14",
+  "number": "2.1.14",
   "title": "Order of a Differential Equation.",
   "body": " Order of a Differential Equation  differential equation (order)   The order of a differential equation is the order of the highest derivative in the equation.   "
 },
@@ -167,52 +167,133 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "fo1.html#def-homogeneous-nonhomogeneous-ode",
   "type": "Definition",
-  "number": "15",
+  "number": "2.1.15",
   "title": "(Non)Homogeneous Differential Equation.",
   "body": " (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .   "
 },
 {
-  "id": "fo1-classifying-odes-5",
+  "id": "ode-classifying-5",
   "level": "2",
-  "url": "fo1.html#fo1-classifying-odes-5",
+  "url": "fo1.html#ode-classifying-5",
   "type": "Note",
-  "number": "16",
+  "number": "2.1.16",
   "title": "",
   "body": " A homogeneous, linear ODE can always be put into the form   "
 },
 {
-  "id": "fo1-classifying-odes-6",
+  "id": "ode-classifying-6",
   "level": "2",
-  "url": "fo1.html#fo1-classifying-odes-6",
+  "url": "fo1.html#ode-classifying-6",
   "type": "Example",
-  "number": "17",
+  "number": "2.1.17",
   "title": "",
   "body": "  The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.   "
 },
 {
-  "id": "fo1-classifying-odes-7",
+  "id": "ode-classifying-7",
   "level": "2",
-  "url": "fo1.html#fo1-classifying-odes-7",
+  "url": "fo1.html#ode-classifying-7",
   "type": "Checkpoint",
-  "number": "18",
+  "number": "2.1.18",
   "title": "",
-  "body": "  Determine the order, linearity status, and homogeneity status of the following ODEs:              "
+  "body": "  Determine the order, linearity status, and homogeneity status of the following ODEs:                    "
 },
 {
   "id": "fo2",
   "level": "1",
   "url": "fo2.html",
   "type": "Section",
-  "number": "",
+  "number": "2.2",
   "title": "FO2: Separation of Variables",
-  "body": " FO2: Separation of Variables  test  "
+  "body": " FO2: Separation of Variables     I can determine when to use separation of variables to solve a first-order differential equation and appropriately apply the technique to find a solution.      Separation of Variables   Separable Differential Equation  separable differential equation  differential equation (separable)   A differential equation is said to be separable if it can be written in the form   Alternately, one can write a separable equation as where .      The equation is separable because we can write it as To solve it, we integrate both sides:       For the following ODEs, determine if it is separable. If it is, find the general solution. If it isn't, explain why.         with                    Applications of Separation of Variables   Exponential Growth\/Decay   Exponential growth, introduced in , is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time . Because growth describes a rate of change, we have Separation of variables shows that or If , we say that the population is experiencing growth; if , the population experiences decay.      The mean half-life of a prescription drug is 12.5 hours. Find the constant of proportionality for the drug.     Logistic Growth\/Decay   Exponential growth is not realistic for most population situations. Environmental constraints such as access to food, shelter, etc. will naturally limit the rate of population growth.  Let's make the assumption that the rate of change of population is positive until a certain value is reached; call that number . After the population reaches , the growth rate becomes negative (note: not the population , its growth rate). Based on these assumptions, we modify the exponential growth equation by multiplying by a function : What does look like? When is smaller than , we want to be close to 1; when , we want . After some experimentation, we might settle on . In particular, this tells us that when , there is zero population growth, which makes sense based on our assumptions.  Now we have which is a separable equation. You should check (this requires partial fraction decomposition, some log rules, and algebra) that the solution is given by here is called the carrying capacity of the population\/system.     Newton's Law of Cooling   Consider an object taken from a hotter environment and placed in a cooler one. We might assume that it cools in a way that is proportional the difference of its temperature and the temperature of the cooler environment. This results in the following differential equation: where is the temperature of the object, is a proportionality constant, and is the ambient temperature. This is a separable equation and results in the solution       Starbucks' tea is poured from a machine which dispenses water at approximately . You really don't want to drink basically boiling water, so you wait until it cools down to about . How long should you wait to drink the tea if the ambient temperature is ?     "
+},
+{
+  "id": "fo2-2",
+  "level": "2",
+  "url": "fo2.html#fo2-2",
+  "type": "Objectives",
+  "number": "2.2",
+  "title": "",
+  "body": "   I can determine when to use separation of variables to solve a first-order differential equation and appropriately apply the technique to find a solution.    "
+},
+{
+  "id": "def-separable-ode",
+  "level": "2",
+  "url": "fo2.html#def-separable-ode",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "Separable Differential Equation.",
+  "body": " Separable Differential Equation  separable differential equation  differential equation (separable)   A differential equation is said to be separable if it can be written in the form   Alternately, one can write a separable equation as where .   "
+},
+{
+  "id": "separation-of-variables-intro-3",
+  "level": "2",
+  "url": "fo2.html#separation-of-variables-intro-3",
+  "type": "Example",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  The equation is separable because we can write it as To solve it, we integrate both sides:    "
+},
+{
+  "id": "separation-of-variables-intro-4",
+  "level": "2",
+  "url": "fo2.html#separation-of-variables-intro-4",
+  "type": "Checkpoint",
+  "number": "2.2.3",
+  "title": "",
+  "body": "  For the following ODEs, determine if it is separable. If it is, find the general solution. If it isn't, explain why.         with                 "
+},
+{
+  "id": "exponential-growth-proof",
+  "level": "2",
+  "url": "fo2.html#exponential-growth-proof",
+  "type": "Example",
+  "number": "2.2.4",
+  "title": "Exponential Growth\/Decay.",
+  "body": " Exponential Growth\/Decay   Exponential growth, introduced in , is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time . Because growth describes a rate of change, we have Separation of variables shows that or If , we say that the population is experiencing growth; if , the population experiences decay.   "
+},
+{
+  "id": "separation-of-variables-applications-3",
+  "level": "2",
+  "url": "fo2.html#separation-of-variables-applications-3",
+  "type": "Checkpoint",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  The mean half-life of a prescription drug is 12.5 hours. Find the constant of proportionality for the drug.   "
+},
+{
+  "id": "logistic-growth",
+  "level": "2",
+  "url": "fo2.html#logistic-growth",
+  "type": "Example",
+  "number": "2.2.6",
+  "title": "Logistic Growth\/Decay.",
+  "body": " Logistic Growth\/Decay   Exponential growth is not realistic for most population situations. Environmental constraints such as access to food, shelter, etc. will naturally limit the rate of population growth.  Let's make the assumption that the rate of change of population is positive until a certain value is reached; call that number . After the population reaches , the growth rate becomes negative (note: not the population , its growth rate). Based on these assumptions, we modify the exponential growth equation by multiplying by a function : What does look like? When is smaller than , we want to be close to 1; when , we want . After some experimentation, we might settle on . In particular, this tells us that when , there is zero population growth, which makes sense based on our assumptions.  Now we have which is a separable equation. You should check (this requires partial fraction decomposition, some log rules, and algebra) that the solution is given by here is called the carrying capacity of the population\/system.   "
+},
+{
+  "id": "newtons-law-cooling",
+  "level": "2",
+  "url": "fo2.html#newtons-law-cooling",
+  "type": "Example",
+  "number": "2.2.7",
+  "title": "Newton’s Law of Cooling.",
+  "body": " Newton's Law of Cooling   Consider an object taken from a hotter environment and placed in a cooler one. We might assume that it cools in a way that is proportional the difference of its temperature and the temperature of the cooler environment. This results in the following differential equation: where is the temperature of the object, is a proportionality constant, and is the ambient temperature. This is a separable equation and results in the solution    "
+},
+{
+  "id": "separation-of-variables-applications-6",
+  "level": "2",
+  "url": "fo2.html#separation-of-variables-applications-6",
+  "type": "Checkpoint",
+  "number": "2.2.8",
+  "title": "",
+  "body": "  Starbucks' tea is poured from a machine which dispenses water at approximately . You really don't want to drink basically boiling water, so you wait until it cools down to about . How long should you wait to drink the tea if the ambient temperature is ?   "
 },
 {
   "id": "fo3",
   "level": "1",
   "url": "fo3.html",
   "type": "Section",
-  "number": "",
+  "number": "2.3",
   "title": "FO3: The Integrating Factor",
   "body": " FO3: The Integrating Factor  test  "
 },
@@ -221,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo4.html",
   "type": "Section",
-  "number": "",
+  "number": "2.4",
   "title": "FO4: The Laplace Transform (First-Order Equations)",
   "body": " FO4: The Laplace Transform (First-Order Equations)  test  "
 },
@@ -230,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo5.html",
   "type": "Section",
-  "number": "",
+  "number": "2.5",
   "title": "FO5: Applications of First-Order Differential Equations",
   "body": " FO5: Applications of First-Order Differential Equations  test  "
 },
@@ -239,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo6.html",
   "type": "Section",
-  "number": "",
+  "number": "2.6",
   "title": "FO6: Slope Fields",
   "body": " FO6: Slope Fields  test  "
 },
@@ -248,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo7.html",
   "type": "Section",
-  "number": "",
+  "number": "2.7",
   "title": "FO7: Equilibrium Points &amp; Autonomous Equations",
   "body": " FO7: Equilibrium Points & Autonomous Equations  test  "
 },
@@ -257,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "fo8.html",
   "type": "Section",
-  "number": "",
+  "number": "2.8",
   "title": "FO8: Bifurcations",
   "body": " FO8: Bifurcations  test  "
 },
@@ -266,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so1.html",
   "type": "Section",
-  "number": "",
+  "number": "3.1",
   "title": "SO1: Linear HomogeneousDifferential Equations",
   "body": " SO1: Linear HomogeneousDifferential Equations     I can solve linear, homogenous differential equations of any order.       "
 },
@@ -275,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so1.html#so1-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.1",
   "title": "",
   "body": "   I can solve linear, homogenous differential equations of any order.    "
 },
@@ -284,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so2.html",
   "type": "Section",
-  "number": "",
+  "number": "3.2",
   "title": "SO2: Linear Non-Homogeneous Differential Equations",
   "body": " SO2: Linear Non-Homogeneous Differential Equations     I can solve linear, non-homogeneous differential equations of any order.       "
 },
@@ -293,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so2.html#so2-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.2",
   "title": "",
   "body": "   I can solve linear, non-homogeneous differential equations of any order.    "
 },
@@ -302,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so3.html",
   "type": "Section",
-  "number": "",
+  "number": "3.3",
   "title": "SO3: The Laplace Transform (Second-Order Equations)",
   "body": " SO3: The Laplace Transform (Second-Order Equations)     I can use the Laplace transform to solve second-order, linear differential equations.       "
 },
@@ -311,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so3.html#so3-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.3",
   "title": "",
   "body": "   I can use the Laplace transform to solve second-order, linear differential equations.    "
 },
@@ -320,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so4.html",
   "type": "Section",
-  "number": "",
+  "number": "3.4",
   "title": "SO4: The Laplace Transform (Unit Step and Impulse Functions)",
   "body": " SO4: The Laplace Transform (Unit Step and Impulse Functions)     I can use the Laplace transform to solve differential equations involving unit step or impulse functions.       "
 },
@@ -329,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so4.html#so4-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.4",
   "title": "",
   "body": "   I can use the Laplace transform to solve differential equations involving unit step or impulse functions.    "
 },
@@ -338,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so5.html",
   "type": "Section",
-  "number": "",
+  "number": "3.5",
   "title": "SO5: The Laplace Transform (Convolutions)",
   "body": " SO5: The Laplace Transform (Convolutions)     I can use the Laplace transform to compute the convolution of two functions.       "
 },
@@ -347,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so5.html#so5-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.5",
   "title": "",
   "body": "   I can use the Laplace transform to compute the convolution of two functions.    "
 },
@@ -356,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "so6.html",
   "type": "Section",
-  "number": "",
+  "number": "3.6",
   "title": "SO6: Applications of Second-Order Differential Equations",
   "body": " SO6: Applications of Second-Order Differential Equations     I can solve applied problems resulting from second-order differential equations.       "
 },
@@ -365,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "so6.html#so6-2",
   "type": "Objectives",
-  "number": "",
+  "number": "3.6",
   "title": "",
   "body": "   I can solve applied problems resulting from second-order differential equations.    "
 },
@@ -374,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd1.html",
   "type": "Section",
-  "number": "",
+  "number": "4.1",
   "title": "SD1: Solutions to Differential Equations",
   "body": " SD1: Solutions to Differential Equations     I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.       "
 },
@@ -383,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd1.html#sd1-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.1",
   "title": "",
   "body": "   I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.    "
 },
@@ -392,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd2.html",
   "type": "Section",
-  "number": "",
+  "number": "4.2",
   "title": "SD2: Eigenvalues &amp; Eigenvectors",
   "body": " SD2: Eigenvalues & Eigenvectors     I can find the eigenvalues and eigenvectors for a 2x2 matrix.       "
 },
@@ -401,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd2.html#sd2-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.2",
   "title": "",
   "body": "   I can find the eigenvalues and eigenvectors for a 2x2 matrix.    "
 },
@@ -410,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd3.html",
   "type": "Section",
-  "number": "",
+  "number": "4.3",
   "title": "SD3: Linear Independence",
   "body": " SD3: Linear Independence     I can determine if two vectors are linearly independent.       "
 },
@@ -419,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd3.html#sd3-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.3",
   "title": "",
   "body": "   I can determine if two vectors are linearly independent.    "
 },
@@ -428,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd4.html",
   "type": "Section",
-  "number": "",
+  "number": "4.4",
   "title": "SD4: Complex &amp; Real Eigenvalues",
   "body": " SD4: Complex & Real Eigenvalues     I can solve a system of differential equations with complex or distinct real eigenvalues.       "
 },
@@ -437,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd4.html#sd4-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.4",
   "title": "",
   "body": "   I can solve a system of differential equations with complex or distinct real eigenvalues.    "
 },
@@ -446,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd5.html",
   "type": "Section",
-  "number": "",
+  "number": "4.5",
   "title": "SD5: Repeated Eigenvalues",
   "body": " SD5: Repeated Eigenvalues     I can solve a system of differential equations with repeated real eigenvalues.       "
 },
@@ -455,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd5.html#sd5-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.5",
   "title": "",
   "body": "   I can solve a system of differential equations with repeated real eigenvalues.    "
 },
@@ -464,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sd6.html",
   "type": "Section",
-  "number": "",
+  "number": "4.6",
   "title": "SD6: Applications of Systems of Differential Equations",
   "body": " SD6: Applications of Systems of Differential Equations     I can use systems of differential equations to solve applied problems.       "
 },
@@ -473,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sd6.html#sd6-2",
   "type": "Objectives",
-  "number": "",
+  "number": "4.6",
   "title": "",
   "body": "   I can use systems of differential equations to solve applied problems.    "
 }

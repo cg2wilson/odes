@@ -2,7 +2,182 @@
 
 <section xml:id="fo2" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO2: Separation of Variables</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can determine when to use separation of variables to solve a first-order differential equation and appropriately apply the technique to find a solution.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
+
+    <subsection xml:id="separation-of-variables-intro">
+        <title>Separation of Variables</title>
+        
+        <definition xml:id="def-separable-ode">
+            <title>Separable Differential Equation</title>
+            <idx><h>separable differential equation</h></idx>
+            <idx><h>differential equation (separable)</h></idx>
+            <statement>
+                <p>
+                    A differential equation is said to be <term>separable</term> if it can be written in the form
+                    <md>
+                        \dfrac{dy}{dx} = f(x)g(y)
+                    </md>      
+                </p>
+                <p>
+                    Alternately, one can write a separable equation as
+                    <md>
+                        G(y)\,dy - f(x)\,dx = 0
+                    </md>
+                    where <m>G(y) = \dfrac{1}{g(y)}</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    The equation
+                    <md>
+                        \dfrac{dy}{dx} = ye^x
+                    </md>
+                    is separable because we can write it as
+                    <md>
+                        \dfrac{dy}{y} = e^x\, dx
+                    </md>
+                    To solve it, we integrate both sides:
+                    <md>
+                        <mrow>
+                            \int\dfrac{dy}{y} \amp = \int e^x\, dx
+                        </mrow>
+                        <mrow>
+                            \ln|y| \amp = e^x + C 
+                        </mrow>
+                        <mrow>
+                            y \amp = Ce^{e^x} 
+                        </mrow>
+                    </md>
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    For the following ODEs, determine if it is separable. If it is, find the general solution. If it isn't, explain why.
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                <m>y' = x^2y</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>xy' = y + 2x^2y</m> with <m>y(1) = 1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y'' + y = 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y'' + x = 0</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+
+    <subsection xml:id="separation-of-variables-applications">
+        <title>Applications of Separation of Variables</title>
+        
+        <example xml:id="exponential-growth-proof">
+            <title>Exponential Growth/Decay</title>
+            <statement>
+                <p>
+                    Exponential growth, introduced in <xref ref="exponential-growth-intro"/>, is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time <m>t</m>. Because growth describes a rate of change, we have
+                    <md>
+                        \dfrac{dP}{dt} = kP
+                    </md>
+                    Separation of variables shows that
+                    <md>
+                        \ln|P| = kt + C
+                    </md>
+                    or
+                    <md>
+                        P = Ce^{kt}
+                    </md>
+                    If <m>k \gt 0</m>, we say that the population is experiencing growth; if <m>k\lt 0</m>, the population experiences decay.
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    The mean half-life of a prescription drug is 12.5 hours. Find the constant of proportionality for the drug.
+                </p>
+            </statement>
+        </exercise>
+        
+        <example xml:id="logistic-growth">
+            <title>Logistic Growth/Decay</title>
+            <statement>
+                <p>
+                    Exponential growth is not realistic for most population situations. Environmental constraints such as access to food, shelter, etc. will naturally limit the rate of population growth.
+                </p>
+                <p>
+                    Let's make the assumption that the rate of change of population is positive until a certain value is reached; call that number <m>N</m>. After the population reaches <m>N</m>, the growth rate becomes negative (note: not the <em>population</em>, its growth rate). Based on these assumptions, we modify the exponential growth equation by multiplying by a function <m>f(P)</m>:
+                    <md>
+                        \dfrac{dP}{dt} = kP\cdot f(P)
+                    </md>
+                    What does <m>f(P)</m> look like? When <m>P</m> is smaller than <m>N</m>, we want <m>f(P)</m> to be close to 1; when <m>P \gt N</m>, we want <m>f(P)\lt 0</m>. After some experimentation, we might settle on <m>f(P) = 1 - \dfrac{P}{N}</m>. In particular, this tells us that when <m>P = N</m>, there is zero population growth, which makes sense based on our assumptions.
+                </p>
+                <p>
+                    Now we have
+                    <md>
+                        \dfrac{dP}{dt} = kP\lrpar{1-\dfrac{P}{N}}
+                    </md>
+                    which is a separable equation. You should check (this requires partial fraction decomposition, some log rules, and algebra) that the solution is given by
+                    <md>
+                        P = \dfrac{N}{1+Ce^{-kt}}
+                    </md>
+                    here <m>N</m> is called the <term>carrying capacity</term> of the population/system.                     
+                </p>
+            </statement>
+        </example>
+
+        <example xml:id="newtons-law-cooling">
+            <title>Newton's Law of Cooling</title>
+            <statement>
+                <p>
+                    Consider an object taken from a hotter environment and placed in a cooler one. We might assume that it cools in a way that is proportional the difference of its temperature and the temperature of the cooler environment. This results in the following differential equation:
+                    <md>
+                        \dfrac{dT}{dt} = k(A-T)
+                    </md>
+                    where <m>T</m> is the temperature of the object, <m>k\gt 0</m> is a proportionality constant, and <m>A</m> is the ambient temperature. This is a separable equation and results in the solution
+                    <md>
+                        T = A + Ce^{-kt}
+                    </md>
+                     
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    Starbucks' tea is poured from a machine which dispenses water at approximately <m>190^\circ F</m>. You really don't want to drink basically boiling water, so you wait until it cools down to about <m>100^\circ F</m>. How long should you wait to drink the tea if the ambient temperature is <m>71^\circ F</m>?
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+
 </section>
