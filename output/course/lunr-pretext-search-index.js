@@ -367,7 +367,97 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "FO4: The Laplace Transform (First-Order Equations)",
-  "body": " FO4: The Laplace Transform (First-Order Equations)  test  "
+  "body": " FO4: The Laplace Transform (First-Order Equations)     I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.      The Laplace Transform   The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be      Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.      The Laplace transform of a constant function is computed below: So       The inverse Laplace transform of the function is .      Show that for , . You will need to use integration by parts:       Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?     Table of Laplace Transforms (First)       1 ,    ,    , ,    , ,    ,    ,    ,    ,    ,    ,    , ,        Properties of the Laplace Transform   The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,       Convince yourself why this is true- think about the definition of the transform.     "
+},
+{
+  "id": "fo4-2",
+  "level": "2",
+  "url": "fo4.html#fo4-2",
+  "type": "Objectives",
+  "number": "1.4",
+  "title": "",
+  "body": "   I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.    "
+},
+{
+  "id": "def-laplace-transform",
+  "level": "2",
+  "url": "fo4.html#def-laplace-transform",
+  "type": "Definition",
+  "number": "1.4.1",
+  "title": "The Laplace Transform.",
+  "body": " The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be    "
+},
+{
+  "id": "def-inverse-laplace-transform",
+  "level": "2",
+  "url": "fo4.html#def-inverse-laplace-transform",
+  "type": "Definition",
+  "number": "1.4.2",
+  "title": "Inverse Laplace Transform.",
+  "body": " Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.   "
+},
+{
+  "id": "laplace-transform-intro-4",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-intro-4",
+  "type": "Example",
+  "number": "1.4.3",
+  "title": "",
+  "body": "  The Laplace transform of a constant function is computed below: So    "
+},
+{
+  "id": "laplace-transform-intro-5",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-intro-5",
+  "type": "Example",
+  "number": "1.4.4",
+  "title": "",
+  "body": "  The inverse Laplace transform of the function is .   "
+},
+{
+  "id": "laplace-transform-intro-6",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-intro-6",
+  "type": "Checkpoint",
+  "number": "1.4.5",
+  "title": "",
+  "body": "  Show that for , . You will need to use integration by parts:    "
+},
+{
+  "id": "laplace-transform-intro-7",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-intro-7",
+  "type": "Checkpoint",
+  "number": "1.4.6",
+  "title": "",
+  "body": "  Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?   "
+},
+{
+  "id": "table-laplace-transforms-first",
+  "level": "2",
+  "url": "fo4.html#table-laplace-transforms-first",
+  "type": "Table",
+  "number": "1.4.7",
+  "title": "Table of Laplace Transforms (First)",
+  "body": " Table of Laplace Transforms (First)       1 ,    ,    , ,    , ,    ,    ,    ,    ,    ,    ,    , ,     "
+},
+{
+  "id": "thm-laplace-transform-linear",
+  "level": "2",
+  "url": "fo4.html#thm-laplace-transform-linear",
+  "type": "Theorem",
+  "number": "1.4.8",
+  "title": "The Laplace Transform Is Linear.",
+  "body": " The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,    "
+},
+{
+  "id": "laplace-transform-properties-3",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-properties-3",
+  "type": "Checkpoint",
+  "number": "1.4.9",
+  "title": "",
+  "body": "  Convince yourself why this is true- think about the definition of the transform.   "
 },
 {
   "id": "fo5",
