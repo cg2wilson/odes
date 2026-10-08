@@ -466,7 +466,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "FO5: Applications of First-Order Differential Equations",
-  "body": " FO5: Applications of First-Order Differential Equations  test  "
+  "body": " FO5: Applications of First-Order Differential Equations     I can solve applied problems resulting from first-order differential equations.      Mixing Problems       "
+},
+{
+  "id": "fo5-2",
+  "level": "2",
+  "url": "fo5.html#fo5-2",
+  "type": "Objectives",
+  "number": "1.5",
+  "title": "",
+  "body": "   I can solve applied problems resulting from first-order differential equations.    "
+},
+{
+  "id": "applications-mixing-first-order-2",
+  "level": "2",
+  "url": "fo5.html#applications-mixing-first-order-2",
+  "type": "Example",
+  "number": "1.5.1",
+  "title": "",
+  "body": "   "
 },
 {
   "id": "fo6",
