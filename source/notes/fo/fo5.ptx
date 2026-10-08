@@ -2,7 +2,23 @@
 
 <section xml:id="fo5" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO5: Applications of First-Order Differential Equations</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can solve applied problems resulting from first-order differential equations.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
+    <subsection xml:id="applications-mixing-first-order">
+        <title>Mixing Problems</title>
+        
+        <example>
+            <p>
+                
+            </p>
+        </example>
+    </subsection>
 </section>
