@@ -130,6 +130,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\lrpar}[1]{\left( #1 \right)}
 \newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+\newcommand{\inv}[1]{#1^{-1}}
 \newocmmand{\ds}{\displaystyle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -181,11 +182,16 @@ eBookConfig.enable_chatcodes =  false;
 <ul id="ptx-toc-group-fo4" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-intro" class="internal"><span class="title">The Laplace Transform</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-properties" class="internal"><span class="title">Properties of the Laplace Transform</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-solving-first-order" class="internal"><span class="title">Solving First Order Equations with the Laplace Transform</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">FO5: Applications of First-Order Differential Equations</span></a></div>
-<ul id="ptx-toc-group-fo5" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-mixing-first-order" class="internal"><span class="title">Mixing Problems</span></a></div></li></ul>
+<ul id="ptx-toc-group-fo5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-mixing-first-order" class="internal"><span class="title">Mixing Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-finance" class="internal"><span class="title">Financial Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-physics-engineering" class="internal"><span class="title">Physics/Engineering Applications</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="fo6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">FO6: Slope Fields</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="fo7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div></li>
@@ -196,7 +202,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="mod2.html" class="internal"><span class="codenumber">2</span> <span class="title">Module SO: Second-Order Differential Equations</span></a></div>
 <ul id="ptx-toc-group-mod2" class="structural toc-item-list">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="mod2-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">SO1: Linear HomogeneousDifferential Equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">SO1: Linear Homogeneous Differential Equations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">SO2: Linear Non-Homogeneous Differential Equations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">SO3: The Laplace Transform (Second-Order Equations)</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span></a></div></li>
@@ -221,9 +227,16 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">FO6: Slope Fields</span>
 </h1>
-<div class="para" id="fo6-2">test<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fo6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="objectives goal-like" id="fo6-2"><h2 class="heading"><span class="type">Objectives</span></h2>
+<ul class="disc" id="fo6-2-1">
+<li id="fo6-2-1-1">
+<div class="para" id="fo6-2-1-1-1">I can use a slope field to analyze the behaviors of solutions to a differential equation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fo6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Section 1.6: FO6: Slope Fields"><a tabindex="-1" href="#fo6" title="Copy heading and permalink for Section 1.6: FO6: Slope Fields" aria-label="Copy heading and permalink for Section 1.6: FO6: Slope Fields">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective"><a tabindex="-1" href="#fo6-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives 1.6"><a tabindex="-1" href="#fo6-2" title="Copy heading and permalink for Objectives 1.6" aria-label="Copy heading and permalink for Objectives 1.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Section 1.6: FO6: Slope Fields"><a tabindex="-1" href="#fo6" title="Copy heading and permalink for Section 1.6: FO6: Slope Fields" aria-label="Copy heading and permalink for Section 1.6: FO6: Slope Fields">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

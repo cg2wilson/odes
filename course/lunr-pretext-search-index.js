@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "FO4: The Laplace Transform (First-Order Equations)",
-  "body": " FO4: The Laplace Transform (First-Order Equations)     I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.      The Laplace Transform   The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be      Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.      The Laplace transform of a constant function is computed below: So       The inverse Laplace transform of the function is .      Show that for , . You will need to use integration by parts:       Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?     Table of Laplace Transforms (First)       1 ,    ,    , ,    , ,    ,    ,    ,    ,    ,    ,    , ,        Properties of the Laplace Transform   The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,       Convince yourself why this is true- think about the definition of the transform.     "
+  "body": " FO4: The Laplace Transform (First-Order Equations)     I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.      The Laplace Transform   The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be      Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.      The Laplace transform of a constant function is computed below: So       The inverse Laplace transform of the function is .      Show that for , . You will need to use integration by parts:       Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?     Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    , ,        Properties of the Laplace Transform   The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,       Convince yourself why this is true- think about the definition of the transform.      Solving First Order Equations with the Laplace Transform    We can compute the Laplace transform of a derivative. Consider a function and its derivative, . We can use integration by parts to find : So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function .      Let and ; to find , we know that But we also know that from , so we have or so that Using to find the inverse transform, we get which is what we would have gotten if we solved the initial value problem using the techniques we already know.     Solving First-Order ODEs with the Laplace Transform  To solve a differential equation of the form ,   Compute the transform of the left hand side    Find the transform of the right hand side    Solve for     Use algebra to rewrite the right hand side so that you can apply the inverse transform from .        Suppose we wish to solve the initial value problem using the Laplace transform.  Begin by taking the transform of both sides. and So all together, the transformed equation is   Rearranging to solve for , we have The first term requires partial fraction decomposition. Write it as Now, from which we get the system and the solutions of , and . This gives   To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with . First, Now applying the inverse transform to each term gives us   We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.      Show that the solution to the IVP is given by      "
 },
 {
   "id": "fo4-2",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "1.4.7",
   "title": "Table of Laplace Transforms (First)",
-  "body": " Table of Laplace Transforms (First)       1 ,    ,    , ,    , ,    ,    ,    ,    ,    ,    ,    , ,     "
+  "body": " Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    , ,     "
 },
 {
   "id": "thm-laplace-transform-linear",
@@ -460,13 +460,49 @@ var ptx_lunr_docs = [
   "body": "  Convince yourself why this is true- think about the definition of the transform.   "
 },
 {
+  "id": "laplace-transform-solving-first-order-2",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-solving-first-order-2",
+  "type": "Example",
+  "number": "1.4.10",
+  "title": "",
+  "body": "  We can compute the Laplace transform of a derivative. Consider a function and its derivative, . We can use integration by parts to find : So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function .   "
+},
+{
+  "id": "laplace-transform-solving-first-order-3",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-solving-first-order-3",
+  "type": "Example",
+  "number": "1.4.11",
+  "title": "",
+  "body": "  Let and ; to find , we know that But we also know that from , so we have or so that Using to find the inverse transform, we get which is what we would have gotten if we solved the initial value problem using the techniques we already know.   "
+},
+{
+  "id": "laplace-transform-solving-first-order-5",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-solving-first-order-5",
+  "type": "Example",
+  "number": "1.4.12",
+  "title": "",
+  "body": "  Suppose we wish to solve the initial value problem using the Laplace transform.  Begin by taking the transform of both sides. and So all together, the transformed equation is   Rearranging to solve for , we have The first term requires partial fraction decomposition. Write it as Now, from which we get the system and the solutions of , and . This gives   To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with . First, Now applying the inverse transform to each term gives us   We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.   "
+},
+{
+  "id": "laplace-transform-solving-first-order-6",
+  "level": "2",
+  "url": "fo4.html#laplace-transform-solving-first-order-6",
+  "type": "Checkpoint",
+  "number": "1.4.13",
+  "title": "",
+  "body": "  Show that the solution to the IVP is given by    "
+},
+{
   "id": "fo5",
   "level": "1",
   "url": "fo5.html",
   "type": "Section",
   "number": "1.5",
   "title": "FO5: Applications of First-Order Differential Equations",
-  "body": " FO5: Applications of First-Order Differential Equations     I can solve applied problems resulting from first-order differential equations.      Mixing Problems       "
+  "body": " FO5: Applications of First-Order Differential Equations     I can solve applied problems resulting from first-order differential equations.      Mixing Problems   mixing problem here     Financial Applications   continuous compounding (constanda)    annuities\/loan repayment (constanda)     Physics\/Engineering Applications   free fall in gravity (constanda, goodwine)    circuits (constanda, hermann\/saravi)    toricelli's law (edwards\/penney odes-bvps)    catenary equation (edwards\/penney odes-bvps p43 no69)    "
 },
 {
   "id": "fo5-2",
@@ -484,7 +520,61 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.1",
   "title": "",
-  "body": "   "
+  "body": " mixing problem here  "
+},
+{
+  "id": "applications-finance-2",
+  "level": "2",
+  "url": "fo5.html#applications-finance-2",
+  "type": "Example",
+  "number": "1.5.2",
+  "title": "",
+  "body": " continuous compounding (constanda)  "
+},
+{
+  "id": "applications-finance-3",
+  "level": "2",
+  "url": "fo5.html#applications-finance-3",
+  "type": "Example",
+  "number": "1.5.3",
+  "title": "",
+  "body": " annuities\/loan repayment (constanda)  "
+},
+{
+  "id": "applications-physics-engineering-2",
+  "level": "2",
+  "url": "fo5.html#applications-physics-engineering-2",
+  "type": "Example",
+  "number": "1.5.4",
+  "title": "",
+  "body": " free fall in gravity (constanda, goodwine)  "
+},
+{
+  "id": "applications-physics-engineering-3",
+  "level": "2",
+  "url": "fo5.html#applications-physics-engineering-3",
+  "type": "Example",
+  "number": "1.5.5",
+  "title": "",
+  "body": " circuits (constanda, hermann\/saravi)  "
+},
+{
+  "id": "applications-physics-engineering-4",
+  "level": "2",
+  "url": "fo5.html#applications-physics-engineering-4",
+  "type": "Example",
+  "number": "1.5.6",
+  "title": "",
+  "body": " toricelli's law (edwards\/penney odes-bvps)  "
+},
+{
+  "id": "applications-physics-engineering-5",
+  "level": "2",
+  "url": "fo5.html#applications-physics-engineering-5",
+  "type": "Example",
+  "number": "1.5.7",
+  "title": "",
+  "body": " catenary equation (edwards\/penney odes-bvps p43 no69)  "
 },
 {
   "id": "fo6",
@@ -493,7 +583,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "FO6: Slope Fields",
-  "body": " FO6: Slope Fields  test  "
+  "body": " FO6: Slope Fields     I can use a slope field to analyze the behaviors of solutions to a differential equation.     "
+},
+{
+  "id": "fo6-2",
+  "level": "2",
+  "url": "fo6.html#fo6-2",
+  "type": "Objectives",
+  "number": "1.6",
+  "title": "",
+  "body": "   I can use a slope field to analyze the behaviors of solutions to a differential equation.    "
 },
 {
   "id": "fo7",
@@ -502,7 +601,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.7",
   "title": "FO7: Equilibrium Points &amp; Autonomous Equations",
-  "body": " FO7: Equilibrium Points & Autonomous Equations  test  "
+  "body": " FO7: Equilibrium Points & Autonomous Equations     I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.     "
+},
+{
+  "id": "fo7-2",
+  "level": "2",
+  "url": "fo7.html#fo7-2",
+  "type": "Objectives",
+  "number": "1.7",
+  "title": "",
+  "body": "   I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.    "
 },
 {
   "id": "fo8",
@@ -511,7 +619,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.8",
   "title": "FO8: Bifurcations",
-  "body": " FO8: Bifurcations  test  "
+  "body": " FO8: Bifurcations     I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.     "
+},
+{
+  "id": "fo8-2",
+  "level": "2",
+  "url": "fo8.html#fo8-2",
+  "type": "Objectives",
+  "number": "1.8",
+  "title": "",
+  "body": "   I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.    "
 },
 {
   "id": "so1",
@@ -519,8 +636,8 @@ var ptx_lunr_docs = [
   "url": "so1.html",
   "type": "Section",
   "number": "2.1",
-  "title": "SO1: Linear HomogeneousDifferential Equations",
-  "body": " SO1: Linear HomogeneousDifferential Equations     I can solve linear, homogenous differential equations of any order.       "
+  "title": "SO1: Linear Homogeneous Differential Equations",
+  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.       "
 },
 {
   "id": "so1-2",
