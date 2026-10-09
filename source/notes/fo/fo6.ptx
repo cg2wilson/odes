@@ -2,7 +2,14 @@
 
 <section xml:id="fo6" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO6: Slope Fields</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can use a slope field to analyze the behaviors of solutions to a differential equation.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
 </section>

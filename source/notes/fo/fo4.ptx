@@ -33,7 +33,7 @@
             <idx><h>Laplace transform (inverse)</h></idx>
             <statement>
                 <p>
-                    The <term>inverse Laplace transform</term> of a function <m>F(s)</m> is the function <m>\inv{\mathcal{L}}\lbrace{F(s)} = f(t)</m> whose Laplace transform is <m>F(s)</m>, i.e the inverse Laplace transform <q>undoes</q> the Laplace transform.                    
+                    The <term>inverse Laplace transform</term> of a function <m>F(s)</m> is the function <m>\inv{\mathcal{L}}\lrbrace{F(s)} = f(t)</m> whose Laplace transform is <m>F(s)</m>, i.e the inverse Laplace transform <q>undoes</q> the Laplace transform.                    
                 </p>
             </statement>
         </definition>
@@ -78,7 +78,7 @@
                 <p>
                     Show that for <m>f(t) = e^{at}</m> (where <m>a</m> is constant), 
                     <md>
-                        \mathcal{L}\lbrace{e^{at}} = \dfrac{1}{s-a}
+                        \mathcal{L}\lrbrace{e^{at}} = \dfrac{1}{s-a}
                     </md>
                     What condition(s) on <m>s</m> must be considered in order for the Laplace transform to exist?
                 </p>
@@ -99,9 +99,6 @@
                 </row>
                 <row>
                     <cell><m>t^n</m>, <m>n \in {\mathbb N}</m></cell><cell><m>n!/s^{n+1}</m>, <m>s \gt 0</m></cell>
-                </row>
-                <row>
-                    <cell><m>t^a</m>, <m>a \gt -1</m></cell><cell><m>\Gamma(a + 1)/s^{a + 1}</m>, <m>s \gt 0</m></cell>
                 </row>
                 <row>
                     <cell><m>\sin at</m></cell><cell><m>a/(s^2 + a^2)</m>, <m>s \gt 0</m></cell>
@@ -148,6 +145,169 @@
             <statement>
                 <p>
                     Convince yourself why this is true- think about the definition of the transform.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+
+    <subsection xml:id="laplace-transform-solving-first-order">
+        <title>Solving First Order Equations with the Laplace Transform</title>
+        
+        <example>
+            <statement>
+                <p>
+                    We can compute the Laplace transform of a derivative. Consider a function <m>f(t)</m> and its derivative, <m>f'(t)</m>. We can use integration by parts to find <m>\mathcal{L}\lrbrace{f'(t)}</m>:
+                    <md>
+                        <mrow>\mathcal{L}\lrbrace{f'(t)} \amp = \lim_{N\to\infty} \int_0^N f'(t)e^{-st}\, dt </mrow>
+                        <mrow> \amp = \lim_{N\to\infty}\left[f(t)e^{-st}\bigg\rvert_0^N - \int_0^N -s\cdot f(t)e^{-st}\right]</mrow>
+                        <mrow> \amp = -f(0) + s\mathcal{L}\lrbrace{f(t)}</mrow>
+                        <mrow> \amp = sF(s) - f(0)</mrow>
+                    </md>
+                    So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function <m>f(t)</m>.
+                </p>
+            </statement>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>f'(t) = 2t</m> and <m>f(0) = 5</m>; to find <m>\mathcal{L}\lrbrace{f'(t)}</m>, we know that
+                    <md>
+                        <mrow>\mathcal{L}\lrbrace{f'(t)} \amp = sF(s) - f(0)</mrow>
+                        <mrow> \amp = sF(s) - 5 </mrow>
+                    </md>
+                    But we also know that <m>\mathcal{L}\lrbrace{2t} = \dfrac{2}{s^2}</m> from <xref ref="table-laplace-transforms-first"/>, so we have
+                    <md>
+                        \dfrac{2}{s^2} = sF(s) - 5
+                    </md>
+                    or 
+                    <md>
+                        \dfrac{2}{s^2} + 5 = sF(s)
+                    </md>
+                    so that
+                    <md>
+                        F(s) = \dfrac{2}{s^3} + \dfrac{5}{s}
+                    </md>
+                    Using <xref ref="table-laplace-transforms-first"/> to find the inverse transform, we get 
+                    <md>
+                        f(t) = t^2 + 5
+                    </md>
+                    which is what we would have gotten if we solved the initial value problem using the techniques we already know.      
+                </p>
+            </statement>
+        </example>
+
+        <assemblage>
+            <title>Solving First-Order ODEs with the Laplace Transform</title>
+            <p>
+                To solve a differential equation of the form <m>ay'(t) + by(t) = f(t)</m>,
+                <ol>
+                    <li>
+                        <p>
+                            Compute the transform of the left hand side
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the transform of the right hand side
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Solve for <m>F(s)</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Use algebra to rewrite the right hand side so that you can apply the inverse transform from <xref ref="table-laplace-transforms-first"/>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </assemblage>
+
+        <example>
+            <statement>
+                <p>
+                    Suppose we wish to solve the initial value problem
+                    <md>
+                        2y' - y = \cos(2x),\quad y(0) = -1
+                    </md>
+                    using the Laplace transform.
+                </p>
+                <p>
+                    Begin by taking the transform of both sides. 
+                    <md>
+                        <mrow>\mathcal{L}\lrbrace{2y' - y} \amp = 2\mathcal{L}\lrbrace{y'} - \mathcal{L}\lrbrace{y} </mrow>
+                        <mrow> \amp = 2(sY(s) - y(0)) - Y(s) </mrow>
+                        <mrow> \amp = 2sY(s) + 2 - Y(s) </mrow>
+                        <mrow> \amp = (2s-1)Y(s) + 2</mrow>
+                    </md>
+                    and
+                    <md>
+                        \mathcal{L}\lrbrace{\cos(2x)} = \dfrac{s}{s^2 + 4}
+                    </md>
+                    So all together, the transformed equation is
+                    <md>
+                        (2s-1)Y(s) + 2 = \dfrac{s}{s^2 + 4}
+                    </md>
+                </p>
+                <p>
+                    Rearranging to solve for <m>Y(s)</m>, we have
+                    <md>
+                        Y(s) = \dfrac{s}{(s^2+4)(2s-1)} - \dfrac{2}{2s-1}
+                    </md>
+                    The first term requires partial fraction decomposition. Write it as
+                    <md>
+                        \dfrac{s}{(s^2+4)(2s-1)} = \dfrac{As+B}{s^2+4} + \dfrac{C}{2s-1}
+                    </md>
+                    Now, 
+                    <md>
+                        s = (As+B)(2s-1) + C(s^2+4)
+                    </md>
+                    from which we get the system
+                    <md>
+                        \begin{cases}
+                            2A + C \amp = 0 \\
+                            2B - A \amp = 1 \\
+                            4C - B \amp = 0
+                        \end{cases}
+                    </md>
+                    and the solutions of <m>A = -\dfrac{1}{17}</m>, <m>B = \dfrac{8}{17}</m> and <m>C = \dfrac{2}{17}</m>. This gives 
+                    <md>
+                        Y(s) = \dfrac{(-1/17)s + (8/17)}{s^2 + 4} + \dfrac{2/17}{2s-1} - \dfrac{2}{2s-1} = \dfrac{(-1/17)s+(8/17)}{s^2+4} + \dfrac{-32/17}{2s-1}
+                    </md>
+                </p>
+                <p>
+                    To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with <xref ref="table-laplace-transforms-first"/>. First, 
+                    <md>
+                        <mrow> \dfrac{(-1/17)s+(8/17)}{s^2+4} - \dfrac{32/17}{2s-1}\amp = \dfrac{(-1/17)s}{s^2+4} + \dfrac{8/17}{s^2+4} - \dfrac{32/17}{2s-1}</mrow>
+                        <mrow> \amp = -\dfrac{1}{17}\lrpar{\dfrac{s}{s^2+4}} + \dfrac{4}{17}\lrpar{\dfrac{2}{s^2+4}} - \dfrac{16}{17}\lrpar{\dfrac{1}{s-1/2}} </mrow>
+                    </md>
+                    Now applying the inverse transform to each term gives us
+                    <md>
+                        y(x) = -\dfrac{1}{17}\cos(2x) + \dfrac{4}{17}\sin(2x) - \dfrac{16}{17}e^{1/2x}
+                    </md>
+                    
+                </p>
+                <p>
+                    We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    Show that the solution to the IVP
+                    <md>
+                        y' + 6y = e^{-t},\quad y(0) = 6
+                    </md>
+                    is given by
+                    <md>
+                        y(t) = \dfrac{1}{5}e^{-t} + \dfrac{29}{5}e^{-6t}
+                    </md>
+                    
                 </p>
             </statement>
         </exercise>

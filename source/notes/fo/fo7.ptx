@@ -2,7 +2,14 @@
 
 <section xml:id="fo7" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO7: Equilibrium Points &amp; Autonomous Equations</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
 </section>

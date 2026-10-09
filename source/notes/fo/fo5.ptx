@@ -17,7 +17,51 @@
         
         <example>
             <p>
-                
+                mixing problem here
+            </p>
+        </example>
+    </subsection>
+
+    <subsection xml:id="applications-finance">
+        <title>Financial Applications</title>
+        
+        <example>
+            <p>
+                continuous compounding (constanda)
+            </p>
+        </example>
+
+        <example>
+            <p>
+                annuities/loan repayment (constanda)
+            </p>
+        </example>
+    </subsection>
+
+    <subsection xml:id="applications-physics-engineering">
+        <title>Physics/Engineering Applications</title>
+        
+        <example>
+            <p>
+                free fall in gravity (constanda, goodwine)
+            </p>
+        </example>
+
+        <example>
+            <p>
+                circuits (constanda, hermann/saravi)
+            </p>
+        </example>
+
+        <example>
+            <p>
+                toricelli's law (edwards/penney odes-bvps)
+            </p>
+        </example>
+
+        <example>
+            <p>
+                catenary equation (edwards/penney odes-bvps p43 no69)
             </p>
         </example>
     </subsection>

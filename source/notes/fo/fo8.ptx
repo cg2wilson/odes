@@ -2,7 +2,14 @@
 
 <section xml:id="fo8" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>FO8: Bifurcations</title>
-    <p>
-        test
-    </p>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+    
 </section>
