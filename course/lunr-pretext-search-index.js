@@ -1,18 +1,18 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "schedule",
+  "id": "course-schedule",
   "level": "1",
-  "url": "schedule.html",
+  "url": "course-schedule.html",
   "type": "Section",
   "number": "0.1",
-  "title": "Course Details",
-  "body": " Course Details    Course Calendar       Course Information  This is the course information Math 2413-TR02S for Spring 2027.    Instructor  Cory Wilson    Office & Email  SEM 2B6(B) | email here     Student Hours  See Moodle    Class Meets  TR 11:00pm - 12:15pm, 2C4        "
+  "title": "Course Schedule",
+  "body": " Course Schedule    Course Calendar       Course Information  This is the course information Math 2413-TR02S for Spring 2027.    Instructor  Cory Wilson    Office & Email  SEM 2B6(B) | email here     Student Hours  See Moodle    Class Meets  TR 11:00pm - 12:15pm, 2C4        "
 },
 {
   "id": "sec-course-information-2",
   "level": "2",
-  "url": "schedule.html#sec-course-information-2",
+  "url": "course-schedule.html#sec-course-information-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "FO5: Applications of First-Order Differential Equations",
-  "body": " FO5: Applications of First-Order Differential Equations     I can solve applied problems resulting from first-order differential equations.      Mixing Problems   mixing problem here     Financial Applications   continuous compounding (constanda)    annuities\/loan repayment (constanda)     Physics\/Engineering Applications   free fall in gravity (constanda, goodwine)    circuits (constanda, hermann\/saravi)    toricelli's law (edwards\/penney odes-bvps)    catenary equation (edwards\/penney odes-bvps p43 no69)    "
+  "body": " FO5: Applications of First-Order Differential Equations     I can solve applied problems resulting from first-order differential equations.      Mixing Problems   A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?  We need to find the differential equation which results from this setup. Let be the number of kilograms of salt in the tank, and let denote the time in minutes. Let denote the inflow rate of brine, denote the outflow rate from the tank, denote the brine concentration for the inflow, and denote the brine outflow concentration.  For some small change in time, , the change in ( ) is approximately given by Dividing through by and taking the limit as , we get So for this example, we have                   , where , so that    This gives our differential equation   We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when , or . So,      Financial Applications   Suppose a sum of money is deposited in a savings account that pays interest compounded continuously at a constant rate of per unit of money per unit time. If is the size of the deposit at time , then the approximate increment in is given by which resolves to the equality This is a separable equation, so we get the solution     Suppose is the amount of an outstanding loan at time , and let be the constant rate at which the money has been borrowed. Let be the repayment per unit time. For a short period of time, we have which resolves to which is a linear equation. Solving gives for the initial loan amount of .     Physics\/Engineering Applications   We will derive the formula for free fall in gravity. Let be the constant mass of an object falling in a gravitational field and let be the position, velocity, and acceleration (respectively) for the object at time . Let be the acceleration due to gravity, and let be a coefficient which characterizes the resistance of the ambient medium to the motion of the object.  Newton's Second Law of motion indicates that . To build the model, we make the assumption that the resistance in the falling body is proportional to the object's velocity. This means that the force experienced by the body is given by Since , we can rewrite which is a linear equation. Rearranging, we have Whether by the techniques of or (and noting that ), we have Since , using the initial condition , we can solve for :     "
 },
 {
   "id": "fo5-2",
@@ -520,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.1",
   "title": "",
-  "body": " mixing problem here  "
+  "body": " A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?  We need to find the differential equation which results from this setup. Let be the number of kilograms of salt in the tank, and let denote the time in minutes. Let denote the inflow rate of brine, denote the outflow rate from the tank, denote the brine concentration for the inflow, and denote the brine outflow concentration.  For some small change in time, , the change in ( ) is approximately given by Dividing through by and taking the limit as , we get So for this example, we have                   , where , so that    This gives our differential equation   We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when , or . So,   "
 },
 {
   "id": "applications-finance-2",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.2",
   "title": "",
-  "body": " continuous compounding (constanda)  "
+  "body": " Suppose a sum of money is deposited in a savings account that pays interest compounded continuously at a constant rate of per unit of money per unit time. If is the size of the deposit at time , then the approximate increment in is given by which resolves to the equality This is a separable equation, so we get the solution   "
 },
 {
   "id": "applications-finance-3",
@@ -538,7 +538,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.3",
   "title": "",
-  "body": " annuities\/loan repayment (constanda)  "
+  "body": " Suppose is the amount of an outstanding loan at time , and let be the constant rate at which the money has been borrowed. Let be the repayment per unit time. For a short period of time, we have which resolves to which is a linear equation. Solving gives for the initial loan amount of .  "
 },
 {
   "id": "applications-physics-engineering-2",
@@ -547,34 +547,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.4",
   "title": "",
-  "body": " free fall in gravity (constanda, goodwine)  "
-},
-{
-  "id": "applications-physics-engineering-3",
-  "level": "2",
-  "url": "fo5.html#applications-physics-engineering-3",
-  "type": "Example",
-  "number": "1.5.5",
-  "title": "",
-  "body": " circuits (constanda, hermann\/saravi)  "
-},
-{
-  "id": "applications-physics-engineering-4",
-  "level": "2",
-  "url": "fo5.html#applications-physics-engineering-4",
-  "type": "Example",
-  "number": "1.5.6",
-  "title": "",
-  "body": " toricelli's law (edwards\/penney odes-bvps)  "
-},
-{
-  "id": "applications-physics-engineering-5",
-  "level": "2",
-  "url": "fo5.html#applications-physics-engineering-5",
-  "type": "Example",
-  "number": "1.5.7",
-  "title": "",
-  "body": " catenary equation (edwards\/penney odes-bvps p43 no69)  "
+  "body": " We will derive the formula for free fall in gravity. Let be the constant mass of an object falling in a gravitational field and let be the position, velocity, and acceleration (respectively) for the object at time . Let be the acceleration due to gravity, and let be a coefficient which characterizes the resistance of the ambient medium to the motion of the object.  Newton's Second Law of motion indicates that . To build the model, we make the assumption that the resistance in the falling body is proportional to the object's velocity. This means that the force experienced by the body is given by Since , we can rewrite which is a linear equation. Rearranging, we have Whether by the techniques of or (and noting that ), we have Since , using the initial condition , we can solve for :   "
 },
 {
   "id": "fo6",
@@ -583,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "FO6: Slope Fields",
-  "body": " FO6: Slope Fields     I can use a slope field to analyze the behaviors of solutions to a differential equation.     "
+  "body": " FO6: Slope Fields     I can use a slope field to analyze the behaviors of solutions to a differential equation.      Slope Field  slope field   For a differential equation of the form , its slope field is the collection of lines of slopes to solution curves at various points in the plane.      The slope field for the differential equation is given below.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.      Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of     "
 },
 {
   "id": "fo6-2",
@@ -593,6 +566,33 @@ var ptx_lunr_docs = [
   "number": "1.6",
   "title": "",
   "body": "   I can use a slope field to analyze the behaviors of solutions to a differential equation.    "
+},
+{
+  "id": "def-slope-field",
+  "level": "2",
+  "url": "fo6.html#def-slope-field",
+  "type": "Definition",
+  "number": "1.6.1",
+  "title": "Slope Field.",
+  "body": " Slope Field  slope field   For a differential equation of the form , its slope field is the collection of lines of slopes to solution curves at various points in the plane.   "
+},
+{
+  "id": "fo6-4",
+  "level": "2",
+  "url": "fo6.html#fo6-4",
+  "type": "Example",
+  "number": "1.6.2",
+  "title": "",
+  "body": "  The slope field for the differential equation is given below.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.   "
+},
+{
+  "id": "fo6-5",
+  "level": "2",
+  "url": "fo6.html#fo6-5",
+  "type": "Example",
+  "number": "1.6.4",
+  "title": "",
+  "body": "  Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of    "
 },
 {
   "id": "fo7",
