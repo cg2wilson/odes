@@ -17,7 +17,57 @@
         
         <example>
             <p>
-                mixing problem here
+                A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?
+            </p>
+            <p>
+                We need to find the differential equation which results from this setup. Let <m>x</m> be the number of kilograms of salt in the tank, and let <m>t</m> denote the time in minutes. Let <m>r_{in}</m> denote the inflow rate of brine, <m>r_{out}</m> denote the outflow rate from the tank,<m>C_{in}</m> denote the brine concentration for the inflow, and <m>C_{out}</m> denote the brine outflow concentration.
+            </p>
+            <p>
+                For some small change in time, <m>\Delta t</m>, the change in <m>x</m> (<m>\Delta x</m>) is approximately given by
+                <md>
+                    \Delta x\approx (r_{in}\cdot C_{in})\Delta t - (r_{out}\cdot C_{out})\Delta t.
+                </md>
+                Dividing through by <m>\Delta t</m> and taking the limit as <m>\Delta t\to 0</m>, we get
+                <md>
+                    \dfrac{dx}{dt} = r_{in}C_{in} - r_{out}C_{out}
+                </md>
+                So for this example, we have
+                <ul>
+                    <li>
+                        <p>
+                            <m>r_{in} = 5</m> 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>C_{in} = 0.1</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>r_{out} = 3</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>C_{out} = \dfrac{x}{V}</m>, where <m>V = V_0 + (r_{in} - r_{out})t = 60 + 2t</m>, so that <m>C_{out} = \dfrac{x}{60+2t}</m>
+                        </p>
+                    </li>
+                </ul>
+                This gives our differential equation
+                <md>
+                    \dfrac{dx}{dt} = 0.5 - 3\lrpar{\dfrac{x}{60+2t}}
+                </md>
+            </p>
+            <p>
+                We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with 
+                <md>
+                    x = \dfrac{60+2t}{10} + \dfrac{240\sqrt{60}}{(60+2t)^{3/2}}
+                </md>
+                To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when <m>60 + 2t = 100</m>, or <m>t=20</m>. So, 
+                <md>
+                    x(20) = 10 + \dfrac{240\sqrt{60}}{(100)^{3/2}}\approx 11.86
+                </md>
             </p>
         </example>
     </subsection>
@@ -27,13 +77,36 @@
         
         <example>
             <p>
-                continuous compounding (constanda)
+                Suppose a sum of money <m>S_0</m> is deposited in a savings account that pays interest compounded continuously at a constant rate of <m>r</m> per unit of money per unit time. If <m>S(t)</m> is the size of the deposit at time <m>t</m>, then the approximate increment <m>\Delta S</m> in <m>S</m> is given by
+                <md>
+                    \Delta S \approx rS\Delta t
+                </md>
+                 which resolves to the equality
+                 <md>
+                    \dfrac{dS}{dt} = rS
+                 </md>
+                 This is a separable equation, so we get the solution
+                 <md>
+                    S = S_0e^{rt}
+                 </md>
             </p>
         </example>
 
         <example>
             <p>
-                annuities/loan repayment (constanda)
+                Suppose <m>A(t)</m> is the amount of an outstanding loan at time <m>t</m>, and let <m>r \gt 0</m> be the constant rate at which the money has been borrowed. Let <m>p \gt 0</m> be the repayment per unit time. For a short period of time, we have
+                <md>
+                    \Delta A \approx rA\Delta t - p\Delta t
+                </md>
+                which resolves to
+                <md>
+                    \dfrac{dA}{dt} - rA = -p
+                </md>
+                which is a linear equation. Solving gives 
+                <md>
+                    A(t) = \dfrac{p}{r} + \lrpar{A_0 - \dfrac{p}{r}}e^{rt}
+                </md>
+                for the initial loan amount of <m>A_0</m>.
             </p>
         </example>
     </subsection>
@@ -43,25 +116,30 @@
         
         <example>
             <p>
-                free fall in gravity (constanda, goodwine)
+                We will derive the formula for free fall in gravity. Let <m>m\gt 0</m> be the constant mass of an object falling in a gravitational field and let <m>y(t), v(t), a(t)</m> be the position, velocity, and acceleration (respectively) for the object at time <m>t</m>. Let <m>g</m> be the acceleration due to gravity, and let <m>\gamma \gt 0</m> be a coefficient which characterizes the resistance of the ambient medium to the motion of the object. 
             </p>
-        </example>
-
-        <example>
             <p>
-                circuits (constanda, hermann/saravi)
-            </p>
-        </example>
-
-        <example>
-            <p>
-                toricelli's law (edwards/penney odes-bvps)
-            </p>
-        </example>
-
-        <example>
-            <p>
-                catenary equation (edwards/penney odes-bvps p43 no69)
+                Newton's Second Law of motion indicates that <m>F = ma</m>. To build the model, we make the assumption that the resistance in the falling body is proportional to the object's velocity. This means that the force experienced by the body is given by
+                <md>
+                    ma = mg - \gamma v
+                </md>
+                Since <m>a(t) = v'(t)</m>, we can rewrite
+                <md>
+                    mv' = mg - \gamma v
+                </md>
+                which is a linear equation. Rearranging, we have
+                <md>
+                    v' + \dfrac{\gamma}{m}v = g
+                </md>
+                Whether by the techniques of <xref ref="fo3"/> or <xref ref="fo4"/> (and noting that <m>v(0) = v_0</m>), we have
+                <md>
+                    v(t) = \dfrac{mg}{\gamma} + \lrpar{v_0 - \dfrac{mg}{\gamma}}e^{-(\gamma/m)t}
+                </md>
+                Since <m>v(t) = y'(t)</m>, using the initial condition <m>y(0) = y_0</m>, we can solve for <m>y(t)</m>:
+                <md>
+                    y(t) = \dfrac{mg}{\gamma}t + \dfrac{m}{\gamma}\lrpar{\dfrac{mg}{\gamma} - v_0}(e^{-(\gamma/m)t} - 1) + y_0
+                </md>
+                
             </p>
         </example>
     </subsection>

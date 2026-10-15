@@ -1,0 +1,35 @@
+<prefigure xmlns="https://prefigure.org" label="slopefield-2">
+    <diagram dimensions ="(300,300)" margins="(60,5,20,25)">
+        <definition>
+            f(t,y) = t - y^2
+        </definition>
+        <coordinates bbox="[-2.5,-5,5,10.5]"> 
+            <!--
+                bbox="[left,bottom,right,top]"
+            -->
+            <grid-axes/>
+
+            <axes decorations="yes"/>
+                <!--
+                    vlabels="(specific outputs for vertical axis)"
+                -->
+            <label anchor="(bbox[2],0)" alignment="e" offset="(8,0)">
+                <m>t</m>
+            </label>
+            <label anchor="(0,bbox[3])" offset="(0,8)">
+                <m>y(t)</m>
+            </label>
+
+            <definition>
+                gap = 1
+            </definition>
+
+            <slope-field function="f" stroke="black" spacings="((-2.5,gap/2,5),(-5,gap,10))" arrows="yes" thickness="1"/>
+
+            <plot-de-solution function="f" t0="-2.5" y0="3" t1="5" stroke="blue"/>
+            <plot-de-solution function="f" t0="-2.5" y0="10" t1="5" stroke="red"/>
+            <plot-de-solution function="f" t0="-2.5" y0="50" t1="5" stroke="green"/>
+        </coordinates>
+    </diagram>
+
+</prefigure>

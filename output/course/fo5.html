@@ -61,15 +61,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.4';
+eBookConfig.runestone_version = '8.3.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.7e4cb14f24eb489b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.54371ed119fe41be.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.40d828091d93b733.css">
+<script src="_static/prefix-runtime.3adcbea95009347b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.7a45395f326e122c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -142,12 +142,12 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">0</span> <span class="title">Course Documents</span></a></div>
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">0</span> <span class="title">Course Information</span></a></div>
 <ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="schedule.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Course Details</span></a></div>
-<ul id="ptx-toc-group-schedule" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="schedule.html#sec-course-calendar" class="internal"><span class="title">Course Calendar</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="schedule.html#sec-course-information" class="internal"><span class="title">Course Information</span></a></div></li>
+<div class="toc-title-box"><a href="course-schedule.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Course Schedule</span></a></div>
+<ul id="ptx-toc-group-course-schedule" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-schedule.html#sec-course-calendar" class="internal"><span class="title">Course Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-schedule.html#sec-course-information" class="internal"><span class="title">Course Information</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -244,7 +244,72 @@ eBookConfig.enable_chatcodes =  false;
 <article class="example example-like" id="applications-mixing-first-order-2"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="applications-mixing-first-order-2-1">mixing problem here<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="applications-mixing-first-order-2-1">A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="applications-mixing-first-order-2-2">We need to find the differential equation which results from this setup. Let <span class="process-math">\(x\)</span> be the number of kilograms of salt in the tank, and let <span class="process-math">\(t\)</span> denote the time in minutes. Let <span class="process-math">\(r_{in}\)</span> denote the inflow rate of brine, <span class="process-math">\(r_{out}\)</span> denote the outflow rate from the tank,<span class="process-math">\(C_{in}\)</span> denote the brine concentration for the inflow, and <span class="process-math">\(C_{out}\)</span> denote the brine outflow concentration.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="applications-mixing-first-order-2-3">
+<div class="para">For some small change in time, <span class="process-math">\(\Delta t\text{,}\)</span> the change in <span class="process-math">\(x\)</span> (<span class="process-math">\(\Delta x\)</span>) is approximately given by</div>
+<div class="displaymath process-math" id="applications-mixing-first-order-2-3-4">
+\begin{equation*}
+\Delta x\approx (r_{in}\cdot C_{in})\Delta t - (r_{out}\cdot C_{out})\Delta t.
+\end{equation*}
+</div>
+<div class="para">Dividing through by <span class="process-math">\(\Delta t\)</span> and taking the limit as <span class="process-math">\(\Delta t\to 0\text{,}\)</span> we get</div>
+<div class="displaymath process-math" id="applications-mixing-first-order-2-3-7">
+\begin{equation*}
+\dfrac{dx}{dt} = r_{in}C_{in} - r_{out}C_{out}
+\end{equation*}
+</div>
+<div class="para">So for this example, we have</div>
+<ul class="disc" id="applications-mixing-first-order-2-3-8">
+<li id="applications-mixing-first-order-2-3-8-1">
+<div class="para" id="applications-mixing-first-order-2-3-8-1-1">
+<span class="process-math">\(\displaystyle r_{in} = 5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="applications-mixing-first-order-2-3-8-2">
+<div class="para" id="applications-mixing-first-order-2-3-8-2-1">
+<span class="process-math">\(\displaystyle C_{in} = 0.1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="applications-mixing-first-order-2-3-8-3">
+<div class="para" id="applications-mixing-first-order-2-3-8-3-1">
+<span class="process-math">\(\displaystyle r_{out} = 3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="applications-mixing-first-order-2-3-8-4">
+<div class="para" id="applications-mixing-first-order-2-3-8-4-1">
+<span class="process-math">\(C_{out} = \dfrac{x}{V}\text{,}\)</span> where <span class="process-math">\(V = V_0 + (r_{in} - r_{out})t = 60 + 2t\text{,}\)</span> so that <span class="process-math">\(C_{out} = \dfrac{x}{60+2t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#applications-mixing-first-order-2-3-8-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">This gives our differential equation</div>
+<div class="displaymath process-math" id="applications-mixing-first-order-2-3-9">
+\begin{equation*}
+\dfrac{dx}{dt} = 0.5 - 3\lrpar{\dfrac{x}{60+2t}}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="applications-mixing-first-order-2-4">
+<div class="para">We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with</div>
+<div class="displaymath process-math" id="applications-mixing-first-order-2-4-1">
+\begin{equation*}
+x = \dfrac{60+2t}{10} + \dfrac{240\sqrt{60}}{(60+2t)^{3/2}}
+\end{equation*}
+</div>
+<div class="para">To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when <span class="process-math">\(60 + 2t = 100\text{,}\)</span> or <span class="process-math">\(t=20\text{.}\)</span> So,</div>
+<div class="displaymath process-math" id="applications-mixing-first-order-2-4-4">
+\begin{equation*}
+x(20) = 10 + \dfrac{240\sqrt{60}}{(100)^{3/2}}\approx 11.86
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-mixing-first-order-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Example 1.5.1"><a tabindex="-1" href="#applications-mixing-first-order-2" title="Copy heading and permalink for Example 1.5.1" aria-label="Copy heading and permalink for Example 1.5.1">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Mixing Problems"><a tabindex="-1" href="#applications-mixing-first-order" title="Copy heading and permalink for Subsection: Mixing Problems" aria-label="Copy heading and permalink for Subsection: Mixing Problems">🔗</a></div>
@@ -256,14 +321,54 @@ eBookConfig.enable_chatcodes =  false;
 <article class="example example-like" id="applications-finance-2"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="applications-finance-2-1">continuous compounding (constanda)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-finance-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="applications-finance-2-1">
+<div class="para">Suppose a sum of money <span class="process-math">\(S_0\)</span> is deposited in a savings account that pays interest compounded continuously at a constant rate of <span class="process-math">\(r\)</span> per unit of money per unit time. If <span class="process-math">\(S(t)\)</span> is the size of the deposit at time <span class="process-math">\(t\text{,}\)</span> then the approximate increment <span class="process-math">\(\Delta S\)</span> in <span class="process-math">\(S\)</span> is given by</div>
+<div class="displaymath process-math" id="applications-finance-2-1-7">
+\begin{equation*}
+\Delta S \approx rS\Delta t
+\end{equation*}
+</div>
+<div class="para">which resolves to the equality</div>
+<div class="displaymath process-math" id="applications-finance-2-1-8">
+\begin{equation*}
+\dfrac{dS}{dt} = rS
+\end{equation*}
+</div>
+<div class="para">This is a separable equation, so we get the solution</div>
+<div class="displaymath process-math" id="applications-finance-2-1-9">
+\begin{equation*}
+S = S_0e^{rt}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-finance-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Example 1.5.2"><a tabindex="-1" href="#applications-finance-2" title="Copy heading and permalink for Example 1.5.2" aria-label="Copy heading and permalink for Example 1.5.2">🔗</a></div>
 </article>
 <article class="example example-like" id="applications-finance-3"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="applications-finance-3-1">annuities/loan repayment (constanda)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-finance-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="applications-finance-3-1">
+<div class="para">Suppose <span class="process-math">\(A(t)\)</span> is the amount of an outstanding loan at time <span class="process-math">\(t\text{,}\)</span> and let <span class="process-math">\(r \gt 0\)</span> be the constant rate at which the money has been borrowed. Let <span class="process-math">\(p \gt 0\)</span> be the repayment per unit time. For a short period of time, we have</div>
+<div class="displaymath process-math" id="applications-finance-3-1-5">
+\begin{equation*}
+\Delta A \approx rA\Delta t - p\Delta t
+\end{equation*}
+</div>
+<div class="para">which resolves to</div>
+<div class="displaymath process-math" id="applications-finance-3-1-6">
+\begin{equation*}
+\dfrac{dA}{dt} - rA = -p
+\end{equation*}
+</div>
+<div class="para">which is a linear equation. Solving gives</div>
+<div class="displaymath process-math" id="applications-finance-3-1-7">
+\begin{equation*}
+A(t) = \dfrac{p}{r} + \lrpar{A_0 - \dfrac{p}{r}}e^{rt}
+\end{equation*}
+</div>
+<div class="para">for the initial loan amount of <span class="process-math">\(A_0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-finance-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Example 1.5.3"><a tabindex="-1" href="#applications-finance-3" title="Copy heading and permalink for Example 1.5.3" aria-label="Copy heading and permalink for Example 1.5.3">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Financial Applications"><a tabindex="-1" href="#applications-finance" title="Copy heading and permalink for Subsection: Financial Applications" aria-label="Copy heading and permalink for Subsection: Financial Applications">🔗</a></div>
@@ -275,30 +380,43 @@ eBookConfig.enable_chatcodes =  false;
 <article class="example example-like" id="applications-physics-engineering-2"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="applications-physics-engineering-2-1">free fall in gravity (constanda, goodwine)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="applications-physics-engineering-2-1">We will derive the formula for free fall in gravity. Let <span class="process-math">\(m\gt 0\)</span> be the constant mass of an object falling in a gravitational field and let <span class="process-math">\(y(t), v(t), a(t)\)</span> be the position, velocity, and acceleration (respectively) for the object at time <span class="process-math">\(t\text{.}\)</span> Let <span class="process-math">\(g\)</span> be the acceleration due to gravity, and let <span class="process-math">\(\gamma \gt 0\)</span> be a coefficient which characterizes the resistance of the ambient medium to the motion of the object.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="applications-physics-engineering-2-2">
+<div class="para">Newton’s Second Law of motion indicates that <span class="process-math">\(F = ma\text{.}\)</span> To build the model, we make the assumption that the resistance in the falling body is proportional to the object’s velocity. This means that the force experienced by the body is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fo3.html ./knowl/xref/fo4.html" id="applications-physics-engineering-2-2-2">
+\begin{equation*}
+ma = mg - \gamma v
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(a(t) = v'(t)\text{,}\)</span> we can rewrite</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fo3.html ./knowl/xref/fo4.html" id="applications-physics-engineering-2-2-4">
+\begin{equation*}
+mv' = mg - \gamma v
+\end{equation*}
+</div>
+<div class="para">which is a linear equation. Rearranging, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fo3.html ./knowl/xref/fo4.html" id="applications-physics-engineering-2-2-5">
+\begin{equation*}
+v' + \dfrac{\gamma}{m}v = g
+\end{equation*}
+</div>
+<div class="para">Whether by the techniques of <a href="fo3.html" class="internal" title="Section 1.3: FO3: The Integrating Factor">Section 1.3</a> or <a href="fo4.html" class="internal" title="Section 1.4: FO4: The Laplace Transform (First-Order Equations)">Section 1.4</a> (and noting that <span class="process-math">\(v(0) = v_0\)</span>), we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fo3.html ./knowl/xref/fo4.html" id="applications-physics-engineering-2-2-9">
+\begin{equation*}
+v(t) = \dfrac{mg}{\gamma} + \lrpar{v_0 - \dfrac{mg}{\gamma}}e^{-(\gamma/m)t}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(v(t) = y'(t)\text{,}\)</span> using the initial condition <span class="process-math">\(y(0) = y_0\text{,}\)</span> we can solve for <span class="process-math">\(y(t)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fo3.html ./knowl/xref/fo4.html" id="applications-physics-engineering-2-2-13">
+\begin{equation*}
+y(t) = \dfrac{mg}{\gamma}t + \dfrac{m}{\gamma}\lrpar{\dfrac{mg}{\gamma} - v_0}(e^{-(\gamma/m)t} - 1) + y_0
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Example 1.5.4"><a tabindex="-1" href="#applications-physics-engineering-2" title="Copy heading and permalink for Example 1.5.4" aria-label="Copy heading and permalink for Example 1.5.4">🔗</a></div>
-</article>
-<article class="example example-like" id="applications-physics-engineering-3"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="applications-physics-engineering-3-1">circuits (constanda, hermann/saravi)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.5"><a tabindex="-1" href="#applications-physics-engineering-3" title="Copy heading and permalink for Example 1.5.5" aria-label="Copy heading and permalink for Example 1.5.5">🔗</a></div>
-</article>
-<article class="example example-like" id="applications-physics-engineering-4"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="applications-physics-engineering-4-1">toricelli’s law (edwards/penney odes-bvps)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.6"><a tabindex="-1" href="#applications-physics-engineering-4" title="Copy heading and permalink for Example 1.5.6" aria-label="Copy heading and permalink for Example 1.5.6">🔗</a></div>
-</article>
-<article class="example example-like" id="applications-physics-engineering-5"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="applications-physics-engineering-5-1">catenary equation (edwards/penney odes-bvps p43 no69)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#applications-physics-engineering-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.7"><a tabindex="-1" href="#applications-physics-engineering-5" title="Copy heading and permalink for Example 1.5.7" aria-label="Copy heading and permalink for Example 1.5.7">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Physics/Engineering Applications"><a tabindex="-1" href="#applications-physics-engineering" title="Copy heading and permalink for Subsection: Physics/Engineering Applications" aria-label="Copy heading and permalink for Subsection: Physics/Engineering Applications">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 1.5: FO5: Applications of First-Order Differential Equations"><a tabindex="-1" href="#fo5" title="Copy heading and permalink for Section 1.5: FO5: Applications of First-Order Differential Equations" aria-label="Copy heading and permalink for Section 1.5: FO5: Applications of First-Order Differential Equations">🔗</a></div>
 </section>

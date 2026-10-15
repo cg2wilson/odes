@@ -12,4 +12,48 @@
         </ul>
     </objectives>
     
+    <definition xml:id="def-slope-field">
+        <title>Slope Field</title>
+        <idx><h>slope field</h></idx>
+        <statement>
+            <p>
+                For a differential equation of the form <m>y' = f(x,y)</m>, its <term>slope field</term> is the collection of lines of slopes to solution curves at various points in the plane.
+            </p>
+        </statement>
+    </definition>
+
+    <example>
+        <statement>
+            <p>
+                The slope field for the differential equation <m>\dfrac{dy}{dx} = 3x^2-5</m> is given below.
+            </p>
+            <figure xml:id="fo6-slopegraph-1">
+                <image width="60%">
+                    <xi:include href="img/fo6-slopegraph-1.xml"/>
+                </image>
+                <caption>The slope field of <m>y' = 3x^2-5</m>, along with three solutions</caption>
+            </figure>
+            <p>
+                This is separable, and we get the family of solutions <m>y = x^3 -5x + C</m>, which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function. 
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation
+                <md>
+                    \dfrac{dy}{dt} = t - y^2 
+                </md>
+                This is neither linear nor separable, so we can't solve it using any known techniques. The 
+            </p>
+            <figure xml:id="fo6-slopegraph-2">
+                <image width="60%">
+                    <xi:include href="img/fo6-slopegraph-2.xml"/>
+                </image>
+                <caption>The slope field of <m>y' = t-y^2</m></caption>
+            </figure>
+        </statement>
+    </example>
 </section>
