@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="course-schedule" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Course Schedule</title>
+<section xml:id="course-details" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Course Details</title>
 
   <!-- Include chapters -->
   <subsection xml:id="sec-course-calendar">

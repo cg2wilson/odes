@@ -11,7 +11,21 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+    <introduction>
+        <p>
+            For this module, we will consider homogeneous (see <xref ref="def-homogeneous-nonhomogeneous-ode"/>), linear (see <xref ref="def-linear-nonlinear-odes"/>), constant coefficient differential equations.
+        </p>
+    </introduction>
+
+    <subsection xml:id="sec-linear-homo-const-coeff-so">
+        <title>Solving Second Order Linear Homogeneous Constant Coefficient ODEs</title>
+        
+        <example>
+            <statement>
+                <p>
+                    
+                </p>
+            </statement>
+        </example>
+    </subsection>
 </section>

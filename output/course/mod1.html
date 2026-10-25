@@ -61,14 +61,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.5';
+eBookConfig.runestone_version = '8.3.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.3adcbea95009347b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.7a45395f326e122c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -122,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="course-schedule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="mod1-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="course-details.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="root-1-2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="mod1-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -144,10 +144,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">0</span> <span class="title">Course Information</span></a></div>
 <ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="course-schedule.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Course Schedule</span></a></div>
-<ul id="ptx-toc-group-course-schedule" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-schedule.html#sec-course-calendar" class="internal"><span class="title">Course Calendar</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-schedule.html#sec-course-information" class="internal"><span class="title">Course Information</span></a></div></li>
+<div class="toc-title-box"><a href="course-details.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Course Details</span></a></div>
+<ul id="ptx-toc-group-course-details" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-details.html#sec-course-calendar" class="internal"><span class="title">Course Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="course-details.html#sec-course-information" class="internal"><span class="title">Course Information</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -158,51 +158,63 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">FO1: Solutions to Differential Equations</span></a></div>
 <ul id="ptx-toc-group-fo1" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#ode-what-is" class="internal"><span class="title">What Is a Differential Equation?</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#ode-solutions-to" class="internal"><span class="title">Testing Solutions to ODEs</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#ode-classifying" class="internal"><span class="title">Classifying Differential Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#sec-ode-what-is" class="internal"><span class="title">What Is a Differential Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#sec-ode-solutions-to" class="internal"><span class="title">Testing Solutions to ODEs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo1.html#sec-ode-classifying" class="internal"><span class="title">Classifying Differential Equations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">FO2: Separation of Variables</span></a></div>
 <ul id="ptx-toc-group-fo2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#separation-of-variables-intro" class="internal"><span class="title">Separation of Variables</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#separation-of-variables-applications" class="internal"><span class="title">Applications of Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#sec-separation-of-variables-intro" class="internal"><span class="title">Separation of Variables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo2.html#sec-separation-of-variables-applications" class="internal"><span class="title">Applications of Separation of Variables</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">FO3: The Integrating Factor</span></a></div>
 <ul id="ptx-toc-group-fo3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#linear-equations" class="internal"><span class="title">Linear Equations</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#integrating-factor" class="internal"><span class="title">The Integrating Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#sec-linear-equations" class="internal"><span class="title">Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo3.html#sec-integrating-factor" class="internal"><span class="title">The Integrating Factor</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">FO4: The Laplace Transform (First-Order Equations)</span></a></div>
 <ul id="ptx-toc-group-fo4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-intro" class="internal"><span class="title">The Laplace Transform</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-properties" class="internal"><span class="title">Properties of the Laplace Transform</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#laplace-transform-solving-first-order" class="internal"><span class="title">Solving First Order Equations with the Laplace Transform</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#sec-laplace-transform-intro" class="internal"><span class="title">The Laplace Transform</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#sec-laplace-transform-properties" class="internal"><span class="title">Properties of the Laplace Transform</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo4.html#sec-laplace-transform-solving-first-order" class="internal"><span class="title">Solving First Order Equations with the Laplace Transform</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="fo5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">FO5: Applications of First-Order Differential Equations</span></a></div>
 <ul id="ptx-toc-group-fo5" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-mixing-first-order" class="internal"><span class="title">Mixing Problems</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-finance" class="internal"><span class="title">Financial Applications</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#applications-physics-engineering" class="internal"><span class="title">Physics/Engineering Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#sec-first-order-applications-mixing-first-order" class="internal"><span class="title">Mixing Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#sec-first-order-applications-finance" class="internal"><span class="title">Financial Applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo5.html#sec-first-order-applications-physics-engineering" class="internal"><span class="title">Physics/Engineering Applications</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="fo6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">FO6: Slope Fields</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="fo8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">FO8: Bifurcations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="fo7.html" class="internal"><span class="codenumber">1.7</span> <span class="title">FO7: Equilibrium Points &amp; Autonomous Equations</span></a></div>
+<ul id="ptx-toc-group-fo7" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo7.html#sec-autonomous-equations" class="internal"><span class="title">Autonomous Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo7.html#sec-equilibrium-solutions-autonomous" class="internal"><span class="title">Equilibrium Solutions &amp; Phase Lines</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="fo8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">FO8: Bifurcations</span></a></div>
+<ul id="ptx-toc-group-fo8" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="fo8.html#sec-bifurcations" class="internal"><span class="title">Bifurcations</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="mod2.html" class="internal"><span class="codenumber">2</span> <span class="title">Module SO: Second-Order Differential Equations</span></a></div>
 <ul id="ptx-toc-group-mod2" class="structural toc-item-list">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="mod2-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">SO1: Linear Homogeneous Differential Equations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="so1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">SO1: Linear Homogeneous Differential Equations</span></a></div>
+<ul id="ptx-toc-group-so1" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="so1.html#sec-linear-homo-const-coeff-so" class="internal"><span class="title">Solving Second Order Linear Homogeneous Constant Coefficient ODEs</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">SO2: Linear Non-Homogeneous Differential Equations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">SO3: The Laplace Transform (Second-Order Equations)</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="so4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">SO4: The Laplace Transform (Unit Step and Impulse Functions)</span></a></div></li>
@@ -238,7 +250,7 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="fo8.html" class="internal"><span class="codenumber">1.8</span> <span class="title">FO8: Bifurcations</span></a></li>
 </ul></nav><div class="autopermalink" aria-hidden="true" data-description="Chapter 1: Module FO: First-Order Differential Equations"><a tabindex="-1" href="#mod1" title="Copy heading and permalink for Chapter 1: Module FO: First-Order Differential Equations" aria-label="Copy heading and permalink for Chapter 1: Module FO: First-Order Differential Equations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="course-schedule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="mod1-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="course-details.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="mod1-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

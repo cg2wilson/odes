@@ -12,7 +12,7 @@
         </ul>
     </objectives>
 
-    <subsection xml:id="linear-equations">
+    <subsection xml:id="sec-linear-equations">
         <title>Linear Equations</title>
         <definition xml:id="def-linear-equation">
             <title>Linear Equation</title>
@@ -44,7 +44,7 @@
         </example>
     </subsection>
 
-    <subsection xml:id="integrating-factor">
+    <subsection xml:id="sec-integrating-factor">
         <title>The Integrating Factor</title>
         
         <definition xml:id="def-integrating-factor">

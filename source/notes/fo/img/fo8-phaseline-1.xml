@@ -1,0 +1,66 @@
+<prefigure xmlns="https://prefigure.org" label="phaseline-fo8-1">
+    <diagram width="700" height="400">
+        <coordinates bbox="(-1,-2.5,11,2.5)">
+
+        <!-- Phase lines -->
+        <line endpoints="(0,-2.2),(0,2.2)"/>
+        <line endpoints="(2.5,-2.2),(2.5,2.2)"/>
+        <line endpoints="(5,-2.2),(5,2.2)"/>
+        <line endpoints="(7.5,-2.2),(7.5,2.2)"/>
+        <line endpoints="(10,-2.2),(10,2.2)"/>
+
+        <!-- Parameter labels -->
+        <label p="(0,2.35)"><m>\mu=-2</m></label>
+        <label p="(2.5,2.35)"><m>\mu=-1</m></label>
+        <label p="(5,2.35)"><m>\mu=0</m></label>
+        <label p="(7.5,2.35)"><m>\mu=1</m></label>
+        <label p="(10,2.35)"><m>\mu=2</m></label>
+
+        <!-- mu = -2 -->
+        <point p="(0,0)" fill="blue"/>
+        <label p="(0.2,0)"><m>0</m></label>
+        <vector v="(0,0.5)" tail="(0,0.6)"/>
+        <vector v="(0,-0.5)" tail="(0,-0.6)"/>
+
+        <!-- mu = -1 -->
+        <point p="(2.5,0)" fill="blue"/>
+        <label p="(2.7,0)"><m>0</m></label>
+        <vector v="(0,0.5)" tail="(2.5,0.6)"/>
+        <vector v="(0,-0.5)" tail="(2.5,-0.6)"/>
+
+        <!-- mu = 0 -->
+        <point p="(5,0)" fill="blue"/>
+        <label p="(5.2,0)"><m>0</m></label>
+        <vector v="(0,0.5)" tail="(5,0.6)"/>
+        <vector v="(0,-0.5)" tail="(5,-0.6)"/>
+
+        <!-- mu = 1 -->
+        <point p="(7.5,-1)" fill="blue"/>
+        <point p="(7.5,0)" fill="blue"/>
+        <point p="(7.5,1)" fill="blue"/>
+
+        <label p="(7.7,-1)"><m>-1</m></label>
+        <label p="(7.7,0)"><m>0</m></label>
+        <label p="(7.7,1)"><m>1</m></label>
+
+        <vector v="(0,-0.4)" tail="(7.5,-1.5)"/>
+        <vector v="(0,0.4)" tail="(7.5,-0.7)"/>
+        <vector v="(0,-0.4)" tail="(7.5,0.7)"/>
+        <vector v="(0,0.4)" tail="(7.5,1.5)"/>
+
+        <!-- mu = 2 -->
+        <point p="(10,-1.414)" fill="blue"/>
+        <point p="(10,0)" fill="blue"/>
+        <point p="(10,1.414)" fill="blue"/>
+
+        <label p="(10.2,-1.414)"><m>-\sqrt{2}</m></label>
+        <label p="(10.2,0)"><m>0</m></label>
+        <label p="(10.2,1.414)"><m>\sqrt{2}</m></label>
+
+        <vector v="(0,-0.3)" tail="(10,-1.85)"/>
+        <vector v="(0,0.3)" tail="(10,-0.8)"/>
+        <vector v="(0,-0.3)" tail="(10,0.8)"/>
+        <vector v="(0,0.3)" tail="(10,1.85)"/>
+        </coordinates>
+    </diagram>
+</prefigure>

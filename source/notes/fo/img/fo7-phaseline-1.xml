@@ -1,0 +1,18 @@
+<prefigure xmlns="https://prefigure.org" label="phaseline-fo7-1">
+    <diagram dimensions ="(300,300)" margins="5">
+        <coordinates bbox="(-1,-5,1,5)">
+
+            <vector v="(0,-3)" tail ="(0,0)" stroke="black" head-location="0.8"/>
+
+            <vector v="(0,-3)" tail="(0,3)" stroke="black" head-location="0.25"/>
+
+            <vector v="(0,2)" tail="(0,-1)" head-location="0.5"/>
+
+            <point p = "(0,1)" size="5" fill="red" stroke="black" offset="(5,-7.5)"><m>y(x) = 5</m></point>
+
+            <point p = "(0,-1)" size="5" fill="red" stroke="black" offset="(5,-7.5)"><m>y(x) = 0</m></point>
+
+        </coordinates>
+    </diagram>
+
+</prefigure>

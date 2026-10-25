@@ -27,8 +27,8 @@
             <slope-field function="f" stroke="black" spacings="((-2.5,gap/2,5),(-5,gap,10))" arrows="yes" thickness="1"/>
 
             <plot-de-solution function="f" t0="-2.5" y0="3" t1="5" stroke="blue"/>
-            <plot-de-solution function="f" t0="-2.5" y0="10" t1="5" stroke="red"/>
-            <plot-de-solution function="f" t0="-2.5" y0="50" t1="5" stroke="green"/>
+            <plot-de-solution function="f" t0="-2" y0="10" t1="5" stroke="red"/>
+            <plot-de-solution function="f" t0="-1.75" y0="50" t1="5" stroke="green"/>
         </coordinates>
     </diagram>
 

@@ -11,5 +11,84 @@
             </li>
         </ul>
     </objectives>
+
+    <subsection xml:id="sec-bifurcations">
+        <title>Bifurcations</title>
+
+        <definition xml:id="def-one-parameter-family">
+            <title>One-Parameter Family</title>
+            <idx><h>differential equation (one-parameter family)</h></idx>
+            <statement>
+                <p>
+                   A <term>one-parameter family</term> of differential equations is a collection which depends on some parameter, often denoted <m>\lambda</m> or <m>\mu</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Consider the equation
+                    <md>
+                       \dfrac{dx}{dt} = x^2 - 10x + 24
+                    </md>
+                    It can (and should) be checked that there are two equilibrium solutions, one at <m>x = 4</m> and one at <m>x = 6</m>.
+                </p>
+                <p>
+                    The phase diagram for the differential equation shows that that <m>x = 4</m> is a sink while <m>x= 6</m> is a source. 
+                </p>
+                <p>
+                    If we make the constant term a parameter, we have
+                    <md>
+                        \dfrac{dx}{dt} = x^2 - 10x + \mu
+                    </md>
+                    Now the phase diagram depends on the value of <m>\mu</m>; if <m>\mu = 25</m>, for example, we have one equilibrium solution at <m>x = 5</m>, while there are no equilibrium solutions for <m>\mu \gt 25</m>. 
+                </p>
+            </statement>
+        </example>
+
+        <definition xml:id="def-bifurcation">
+            <title>Bifurcation</title>
+            <idx><h>bifurcation</h></idx>
+            <statement>
+                <p>
+                    A <term>bifurcation</term> in the solution to a one-parameter family of differential equations is a change in the long-term behavior of the solution.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    For the equation
+                    <md>
+                        x' = x^2 - 10x + \mu
+                    </md>
+                    There is a bifurcation at <m>\mu = 25</m> because for values <m>\mu \lt 25</m>, there are two equilibrium solutions, one at <m>\mu = 25</m>, and none for <m>\mu \gt 25</m>.
+                </p>
+            </statement>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The equation 
+                    <md>
+                        y' = y^3 - \mu y
+                    </md>
+                    has equilibrium points at <m>y = 0</m> and <m>y = \pm \sqrt{\mu}</m>. Because the latter equilibria don't exist for <m>\mu \lt 0</m>, there is a bifurcation at <m>\mu = 0</m>.                   
+                </p>
+                <p>
+                    We can capture this behavior using phase lines and a phase diagram.
+                </p>
+                <figure xml:id="fo8-phasediagram-1">
+                    <image width="60%">
+                        <xi:include href="./img/fo8-phaseline-1.xml" />
+                    </image>
+                    <caption>The phase diagram for <m>y' = y^3-\mu y</m></caption>
+                </figure>
+            </statement>
+        </example>
+    </subsection>
     
 </section>

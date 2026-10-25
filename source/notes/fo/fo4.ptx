@@ -12,7 +12,7 @@
         </ul>
     </objectives>
     
-    <subsection xml:id="laplace-transform-intro">
+    <subsection xml:id="sec-laplace-transform-intro">
         <title>The Laplace Transform</title>
         
         <definition xml:id="def-laplace-transform">
@@ -126,7 +126,7 @@
         </table>
     </subsection>
 
-    <subsection xml:id="laplace-transform-properties">
+    <subsection xml:id="sec-laplace-transform-properties">
         <title>Properties of the Laplace Transform</title>
         
         <theorem xml:id="thm-laplace-transform-linear">
@@ -150,7 +150,7 @@
         </exercise>
     </subsection>
 
-    <subsection xml:id="laplace-transform-solving-first-order">
+    <subsection xml:id="sec-laplace-transform-solving-first-order">
         <title>Solving First Order Equations with the Laplace Transform</title>
         
         <example>

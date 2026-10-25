@@ -1,0 +1,50 @@
+<prefigure xmlns="https://prefigure.org" label="slopefield-fo7-1">
+    <diagram dimensions ="(300,300)" margins="(60,5,20,25)">
+        <definition>
+            f(x,y) = 0.1*y*(5-y)
+        </definition>
+        <coordinates bbox="[0,-5,20,10.5]"> 
+            <!--
+                bbox="[left,bottom,right,top]"
+            -->
+            <grid-axes/>
+
+            <axes decorations="yes"/>
+                <!--
+                    vlabels="(specific outputs for vertical axis)"
+                -->
+            <label anchor="(bbox[2],0)" alignment="e" offset="(8,0)">
+                <m>x</m>
+            </label>
+            <label anchor="(0,bbox[3])" offset="(0,8)">
+                <m>y(x)</m>
+            </label>
+
+            <definition>
+                gap = 1
+            </definition>
+
+            <slope-field function="f" stroke="black" spacings="((-0,gap/2,20),(-5,gap,10))" arrows="yes" thickness="1"/>
+
+            <!--
+                blue are within the growth constraints
+                red are decline from zero population
+                green are decline to carrying capacity
+            -->
+
+            <plot-de-solution function="f" t0="0" y0="1" t1="20" stroke="blue"/>
+            <plot-de-solution function="f" t0="0" y0="0.25" t1="20" stroke="blue"/>
+            <plot-de-solution function="f" t0="0" y0=".05" stroke="blue"/>
+
+            <plot-de-solution function="f" t0="0" y0="-0.01" t1="25" stroke="red"/>
+            <plot-de-solution function="f" t0="0" y0="-0.1" t1="25" stroke="red"/>
+            <plot-de-solution function="f" t0="0" y0="-0.5" t1="25" stroke="red"/>
+
+            <plot-de-solution function="f" t0="0" y0="10" t1="25" stroke="green"/>
+            <plot-de-solution function="f" t0="0" y0="8" t1="25" stroke="green"/>
+            <plot-de-solution function="f" t0="0" y0="6" t1="25" stroke="green"/>
+
+        </coordinates>
+    </diagram>
+
+</prefigure>

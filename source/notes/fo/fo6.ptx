@@ -25,7 +25,7 @@
     <example>
         <statement>
             <p>
-                The slope field for the differential equation <m>\dfrac{dy}{dx} = 3x^2-5</m> is given below.
+                The slope field for the differential equation <m>\dfrac{dy}{dx} = 3x^2-5</m> is given below, along with three solution curves.
             </p>
             <figure xml:id="fo6-slopegraph-1">
                 <image width="60%">
@@ -46,7 +46,7 @@
                 <md>
                     \dfrac{dy}{dt} = t - y^2 
                 </md>
-                This is neither linear nor separable, so we can't solve it using any known techniques. The 
+                This is neither linear nor separable, so we can't solve it using any known techniques. The slope field can help us determine the long-term behavior of the ODE.
             </p>
             <figure xml:id="fo6-slopegraph-2">
                 <image width="60%">
@@ -56,4 +56,33 @@
             </figure>
         </statement>
     </example>
+
+    <exercise>
+        <statement>
+            <p>
+                Below is the slope field for the differential equation <m>x' + 2tx = x</m>. 
+            </p>
+            <figure xml:id="fo6-slopegraph-3">
+                <image width="60%">
+                    <xi:include href="img/fo6-slopegraph-3.xml"/>
+                </image>
+                <caption>The slope field of <m>x' + 2tx = x</m>.</caption>
+            </figure>
+            <p>
+                <ol marker="a.">
+                    <li>
+                        <p>
+                            Describe the behavior of the solution when <m>x(0) = 5</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The equation is separable. Determine the solution and compare the behaviors.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
 </section>

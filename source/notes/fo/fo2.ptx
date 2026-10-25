@@ -13,7 +13,7 @@
     </objectives>
     
 
-    <subsection xml:id="separation-of-variables-intro">
+    <subsection xml:id="sec-separation-of-variables-intro">
         <title>Separation of Variables</title>
         
         <definition xml:id="def-separable-ode">
@@ -95,7 +95,7 @@
         </exercise>
     </subsection>
 
-    <subsection xml:id="separation-of-variables-applications">
+    <subsection xml:id="sec-separation-of-variables-applications">
         <title>Applications of Separation of Variables</title>
         
         <example xml:id="exponential-growth-proof">

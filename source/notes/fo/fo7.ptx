@@ -11,5 +11,188 @@
             </li>
         </ul>
     </objectives>
-    
+    <subsection xml:id="sec-autonomous-equations">
+        <title>Autonomous Equations</title>
+        <definition xml:id="def-autonomous-equation">
+            <title>Autonomous Equation</title>
+            <idx><h>autonomous equation</h></idx>
+            <statement>
+                <p>
+                    A differential equation is said to be <term>autonomous</term> if it can be written in the form 
+                    <md>
+                        y' = f(y)
+                    </md>
+                    That is, the differential equation does not depend on the independent variable.
+                </p>
+            </statement>
+        </definition>
+
+        <assemblage>
+            <title>Solving Autonomous Equations</title>
+            <p>
+                All autonomous equations are separable, and so can be solved using that technique; not all will result in closed-form solutions.
+            </p>
+        </assemblage>
+
+        <example xml:id="fo7-autonomous-ex-logistic">
+            <statement>
+                <p>
+                    Autonomous equations have particularly nice slope fields. 
+                </p>
+                <p>
+                    Consider the differential equation 
+                    <md>
+                        \dfrac{dy}{dx} = 0.1x(2-x)
+                    </md>
+                    This is of the form given by <xref ref="logistic-growth"/>, so we should expect solutions to look like logistic functions. Indeed, solving results in 
+                    <md>
+                        y(x) = \dfrac{5}{1+Ce^{0.5x}}
+                    </md>
+                    for some constant <m>C</m>. The resulting slope field takes the form below.
+                </p>
+                <figure xml:id="fo7-slopefield-1">
+                    <image width="60%">
+                        <xi:include href="img/fo7-slopefield-1.xml"/>
+                    </image>
+                    <caption>The slope field for the equation <m>y' = 0.1y(2-y)</m>.</caption>
+                </figure>
+                <p>
+                    The blue solution curves correspond to initial values for which the solution is bounded below by 0 and grows to the carrying capacity of the system; the red solution curves show initial values below zero, and the green solution curves show initial values above <m>y(x) = 5</m>.
+                </p>
+                <p>
+                    Note the horizontal lines which create asymptotes for the solution curves. We call these output values <em>equilibrium solutions</em>
+                </p>
+            </statement>
+        </example>
+    </subsection>
+
+    <subsection xml:id="sec-equilibrium-solutions-autonomous">
+        <title>Equilibrium Solutions &amp; Phase Lines</title>
+        
+        
+        <definition xml:id="def-equilibrium-solution">
+            <title>Equilibrium Solution</title>
+            <idx><h>equilibrium solution (autonomous equation)</h></idx>
+            <statement>
+                <p>
+                    An <term>equilibrium solution</term> for an autonomous ODE <m>y' = f(y)</m> occurs when
+                    <md>
+                        f(y) = 0
+                    </md>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    In <xref ref="fo7-autonomous-ex-logistic"/>, we see from <xref ref="fo7-slopefield-1"/> that there are two equilibrium solutions: <m>y(x) = 5</m> and <m>y(x) = 0</m>.
+                </p>
+                <p>
+                    If we assume that the example describes the growth of a population, then the equilibrium solutions are communicating the carrying capacity of the population (<m>y(x) = 5</m>) and the zero-population point (<m>y(x) = 0</m>).
+                </p>
+                <p>
+                    For initial values within the interval <m>[0,5]</m>, we see population growth to the equilibrium point; for initial values outside of the equilibrium solutions, we see either a tendency away from (initial conditions below 0) or toward (initial conditions above 5) the equilibrium solutions. Physically, the first set of initial conditions don't make sense in a population context, but the second set of initial conditions demonstrate that when population is above the carrying capacity, it will always tend back toward the carrying capacity of the system.
+                </p>
+            </statement>
+        </example>
+        
+        <note>
+            <p>
+                When analyzing the qualitative behavior of autonomous differential equations, we can use a <em>phase line</em> or <em>phase diagram</em> to capture the entirety of the behavior without sketching the slope field.
+            </p>
+        </note>
+
+        <definition xml:id="def-phase-line">
+            <title>Phase Line/Phase Diagram</title>
+            <idx><h>phase line</h></idx>
+            <idx><h>phase diagram</h></idx>
+            <statement>
+                <p>
+                    For an autonomous differential equation, the <term>phase line</term> or <term>phase diagram</term> for the differential equation is a diagram which captures the long-term behavior, drawn in the form of a line.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Again drawing on <xref ref="fo7-autonomous-ex-logistic"/>, from the slope field in <xref ref="fo7-slopefield-1"/>, we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward <m>-\infty</m>. 
+                </p>
+                <p>
+                    To draw the phase line, draw a line (traditionally vertical, but horizontal communicates the same idea) with the equilibrium points marked.
+                </p>
+                <p>
+                    Then, use the information given to draw arrows in the segments created to indicate the direction of flow of the solutions. 
+                </p>
+                <p>
+                    The phase line for <xref ref="fo7-autonomous-ex-logistic"/> is shown below.
+                </p>
+                <figure xml:id="fo7-phase-line">
+                    <image width ="60%">
+                        <xi:include href="img/fo7-phaseline-1.xml"/>
+                    </image>
+                    <caption>The phase line for the solutions to the equation <m>y' = 0.1y(5-y)</m></caption>
+                </figure>
+            </statement>
+        </example>
+
+        <definition xml:id="def-equilibrium-source-sink-node">
+            <title>Source/Sink/Node</title>
+            <idx><h>source</h></idx>
+            <idx><h>sink</h></idx>
+            <idx><h>node</h></idx>
+            <statement>
+                <p>
+                    An equilibrium solution is said to be a <term>source</term> if solution curves nearby tend away from the equilibrium solution.
+                </p>
+                <p>
+                    An equilibrium solution is said to be a <term>sink</term> if solution curves nearby tend toward the equilibrium solution.
+                </p>
+                <p>
+                    An equilibrium solution is said to be a <term>node</term> if it exhibits both source and sink behavior.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    For <xref ref="fo7-autonomous-ex-logistic"/> and <xref ref="fo7-phase-line"/>, the equilibrium solution <m>y(x) = 5</m> is a sink because the solutions on either side tend toward 5; on the other hand, <m>y(x) = 0</m> is a source because the solutions on either side tend away from 0.
+                </p>
+            </statement>
+        </example>
+        <exercise>
+            <statement>
+                <p>
+                    For each differential equation below, draw the phase line and classify each equilibrium solution as a sink, source, or node.
+                </p>
+                <p>
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                <m>y' = y(y-2)(y+3)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = y^2(y-2)(y+1)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = \cos(y)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = \sin^2(y)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+
 </section>
