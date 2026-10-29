@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "SO1: Linear Homogeneous Differential Equations",
-  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.      For this module, we will consider homogeneous (see ), linear (see ), constant coefficient differential equations.    Solving Second Order Linear Homogeneous Constant Coefficient ODEs         "
+  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.      For this module, we will consider homogeneous (see ), linear (see ), constant coefficient differential equations.    Solving Second Order Linear Homogeneous Constant Coefficient ODEs    Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots        Two Real Roots    The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is       One Repeated Root    The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .     In general, if a root has multiplicity , its corresponding solution will take the form      Two Complex Roots   Euler's Formula         If the characteristic equation for an ODE has roots , where , then the solution is given by      The equation has roots , so the solution is given by       "
 },
 {
   "id": "so1-2",
@@ -799,7 +799,43 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.1.1",
   "title": "",
-  "body": "     "
+  "body": "  Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots      "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-realroots-2",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-realroots-2",
+  "type": "Example",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is    "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-repeatedroots-2",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-repeatedroots-2",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .   "
+},
+{
+  "id": "thm-eulers-formula",
+  "level": "2",
+  "url": "so1.html#thm-eulers-formula",
+  "type": "Theorem",
+  "number": "2.1.4",
+  "title": "Euler’s Formula.",
+  "body": " Euler's Formula       "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-complexroots-4",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-complexroots-4",
+  "type": "Example",
+  "number": "2.1.5",
+  "title": "",
+  "body": "  The equation has roots , so the solution is given by    "
 },
 {
   "id": "so2",

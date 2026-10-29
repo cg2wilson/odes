@@ -23,9 +23,119 @@
         <example>
             <statement>
                 <p>
-                    
+                    Consider a differential equation of the form
+                    <md>
+                        ay'' + by' + cy = 0
+                    </md>
+                    where <m>a,b,c</m> are constants with <m>a\neq 0</m>. 
+                    We want a solution which stays relatively stable under differentiation; a natural choice is <m>y = e^{rx}</m>, since <m>y' = re^{rx}</m>, <m>y'' = r^2 e^{rx}</m>, and more generally <m>y^{(n)} = r^ne^{rx}</m>.
+                </p>
+                <p>
+                    Substituting this in to the equation gives
+                    <md>
+                        <mrow> ar^2e^{rx} + bre^{rx} + ce^{rx} \amp = 0 </mrow>
+                        <mrow> e^{rx}(ar^2 + br + c)  \amp = 0 </mrow>
+                    </md>
+                    Since <m>e^{rx}\neq 0</m>, the equation only holds if <m>ar^2 + br + c = 0</m>. We can solve this via the quadratic equation:
+                    <md>
+                        r = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
+                    </md>
+                    <m>ar^2 + br + c=0</m> is called the <term>characteristic equation</term> for the differential equation.
+                </p>
+                <p>
+                    Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:
+                    <ul>
+                        <li>
+                            <p>
+                                <m>b^2 - 4ac \gt 0</m>: 2 real roots
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>b^2-4ac = 0</m>: 1 repeated root
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>b^2 - 4ac \lt 0</m>: 2 complex roots
+                            </p>
+                        </li>
+                    </ul>
                 </p>
             </statement>
         </example>
+
+        <subsubsection xml:id="sec-linear-homo-const-coeff-so-realroots">
+            <title>Two Real Roots</title>
+
+            <example>
+                <statement>
+                    <p>
+                        The equation <m>y'' - 6y' + 5y = 0</m> has characteristic equation <m>r^2 - 6r + 5 = 0</m>, which has roots <m>r = 1, 5</m>. This means that, based on the guess <m>y = e^{rx}</m>, we have solutions of <m>y_1 = c_1e^{x}</m> and <m>y_2 = c_2e^{5x}</m>. By the principle of superposition (see <xref ref="thm-linear-combinations-odes-solution"/>), the solution for the differential equation is
+                        <md>
+                            y = c_1e^x + c_2e^{5x}
+                        </md>
+                    </p>
+                </statement>
+            </example>
+
+        </subsubsection>
+
+        <subsubsection xml:id="sec-linear-homo-const-coeff-so-repeatedroots">
+            <title>One Repeated Root</title>
+
+            <example>
+                <statement>
+                    <p>
+                        The equation <m>y'' + 2y' + 1 = 0</m> has a repeated root of <m>r = -1</m>. This means that we have a solution of <m>y_1 = c_1e^{-x}</m>; the second solution will take the form <m>y_2 = c_2xe^{-x}</m>.
+                    </p>
+                </statement>
+            </example>
+
+            <assemblage>
+                <p>
+                    In general, if a root <m>r</m> has multiplicity <m>m</m>, its corresponding solution will take the form
+                    <md>
+                        c_1e^{rx} + c_2xe^{rx} + \cdots + c_{m-1}x^{m-1}e^{rx} + c_mx^me^{rx}
+                    </md>
+                </p>
+            </assemblage>
+            
+        </subsubsection>
+
+        <subsubsection xml:id="sec-linear-homo-const-coeff-so-complexroots">
+            <title>Two Complex Roots</title>
+
+            <theorem xml:id="thm-eulers-formula">
+                <title>Euler's Formula</title>
+                <statement>
+                    <p>
+                        <m>e^{i\theta} = \cos\theta + i\sin\theta</m>
+                    </p>
+                </statement>
+            </theorem>
+            
+            <assemblage>
+                <p>
+                    If the characteristic equation for an ODE has roots <m>r = \alpha \pm i\beta</m>, where <m>\alpha,\beta\in\R</m>, then the solution is given by
+                    <md>
+                        y = e^{\alpha x}(c_1\cos (\beta x) + c_2\sin (\beta x))
+                    </md>
+                    
+                </p>
+            </assemblage>
+
+            <example>
+                <statement>
+                    <p>
+                        The equation <m>y'' + y' + y = 0</m> has roots <m>\dfrac{1}{2}\pm i\sqrt{3}</m>, so the solution is given by
+                        <md>
+                            y = e^{(1/2)x}\lrpar{c_1\cos (\sqrt{3}x) + c_2\sin (\sqrt{3}x)}
+                        </md>
+                    </p>
+                </statement>
+            </example>
+        </subsubsection>
+
     </subsection>
 </section>
