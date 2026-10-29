@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Logistic Growth/Decay.</span>
+</h2>
+<div class="para">Exponential growth is not realistic for most population situations. Environmental constraints such as access to food, shelter, etc. will naturally limit the rate of population growth.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#logistic-growth-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical">
+<div class="para">Let’s make the assumption that the rate of change of population is positive until a certain value is reached; call that number <span class="process-math">\(N\text{.}\)</span> After the population reaches <span class="process-math">\(N\text{,}\)</span> the growth rate becomes negative (note: not the <em class="emphasis">population</em>, its growth rate). Based on these assumptions, we modify the exponential growth equation by multiplying by a function <span class="process-math">\(f(P)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dP}{dt} = kP\cdot f(P)
+\end{equation*}
+</div>
+<div class="para">What does <span class="process-math">\(f(P)\)</span> look like? When <span class="process-math">\(P\)</span> is smaller than <span class="process-math">\(N\text{,}\)</span> we want <span class="process-math">\(f(P)\)</span> to be close to 1; when <span class="process-math">\(P \gt N\text{,}\)</span> we want <span class="process-math">\(f(P)\lt 0\text{.}\)</span> After some experimentation, we might settle on <span class="process-math">\(f(P) = 1 - \dfrac{P}{N}\text{.}\)</span> In particular, this tells us that when <span class="process-math">\(P = N\text{,}\)</span> there is zero population growth, which makes sense based on our assumptions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#logistic-growth-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical">
+<div class="para">Now we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dP}{dt} = kP\lrpar{1-\dfrac{P}{N}}
+\end{equation*}
+</div>
+<div class="para">which is a separable equation. You should check (this requires partial fraction decomposition, some log rules, and algebra) that the solution is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P = \dfrac{N}{1+Ce^{-kt}}
+\end{equation*}
+</div>
+<div class="para">here <span class="process-math">\(N\)</span> is called the <dfn class="terminology">carrying capacity</dfn> of the population/system.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#logistic-growth-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.2.6: Logistic Growth/Decay"><a tabindex="-1" href="#logistic-growth" title="Copy heading and permalink for Example 1.2.6: Logistic Growth/Decay" aria-label="Copy heading and permalink for Example 1.2.6: Logistic Growth/Decay">🔗</a></div>
+</article><span class="incontext"><a class="internal" href="fo2.html#logistic-growth">In Context</a></span>
+</body>
+</html>

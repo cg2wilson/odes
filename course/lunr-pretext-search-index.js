@@ -1,18 +1,18 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "course-schedule",
+  "id": "course-details",
   "level": "1",
-  "url": "course-schedule.html",
+  "url": "course-details.html",
   "type": "Section",
   "number": "0.1",
-  "title": "Course Schedule",
-  "body": " Course Schedule    Course Calendar       Course Information  This is the course information Math 2413-TR02S for Spring 2027.    Instructor  Cory Wilson    Office & Email  SEM 2B6(B) | email here     Student Hours  See Moodle    Class Meets  TR 11:00pm - 12:15pm, 2C4        "
+  "title": "Course Details",
+  "body": " Course Details    Course Calendar       Course Information  This is the course information Math 2413-TR02S for Spring 2027.    Instructor  Cory Wilson    Office & Email  SEM 2B6(B) | email here     Student Hours  See Moodle    Class Meets  TR 11:00pm - 12:15pm, 2C4        "
 },
 {
   "id": "sec-course-information-2",
   "level": "2",
-  "url": "course-schedule.html#sec-course-information-2",
+  "url": "course-details.html#sec-course-information-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -46,27 +46,27 @@ var ptx_lunr_docs = [
   "body": " (Ordinary\/Partial) Differential Equation  differential equation (ordinary)  differential equation (partial)   A differential equation is an equation which relates a function to its derivatives. There are two kinds of differential equations: ordinary differential equations (ODEs) and partial differential equations (PDEs). In this course, we will restrict our focus to ordinary differential equations.   "
 },
 {
-  "id": "ode-what-is-3",
+  "id": "sec-ode-what-is-3",
   "level": "2",
-  "url": "fo1.html#ode-what-is-3",
+  "url": "fo1.html#sec-ode-what-is-3",
   "type": "Example",
   "number": "1.1.2",
   "title": "",
   "body": "  An example of an ordinary differential equation is the familiar which asks the question: \"What function y(x) has a derivative equal to 2x?\" The solution to this differential equation is the family of functions where C is an arbitrary constant. We can check that this is a solution by differentiating; , so we have have satisfied the condition stated by the differential equation.   "
 },
 {
-  "id": "ode-what-is-4",
+  "id": "sec-ode-what-is-4",
   "level": "2",
-  "url": "fo1.html#ode-what-is-4",
+  "url": "fo1.html#sec-ode-what-is-4",
   "type": "Example",
   "number": "1.1.3",
   "title": "",
   "body": "  Other examples of ordinary differential equations are      "
 },
 {
-  "id": "ode-what-is-5",
+  "id": "sec-ode-what-is-5",
   "level": "2",
-  "url": "fo1.html#ode-what-is-5",
+  "url": "fo1.html#sec-ode-what-is-5",
   "type": "Example",
   "number": "1.1.4",
   "title": "",
@@ -82,9 +82,9 @@ var ptx_lunr_docs = [
   "body": " Solution to a Differential Equation  differential equation (solution to)   A solution to a differential equation is a function which satisfies the rules imposed by the equation.   "
 },
 {
-  "id": "ode-solutions-to-3",
+  "id": "sec-ode-solutions-to-3",
   "level": "2",
-  "url": "fo1.html#ode-solutions-to-3",
+  "url": "fo1.html#sec-ode-solutions-to-3",
   "type": "Example",
   "number": "1.1.6",
   "title": "",
@@ -100,36 +100,36 @@ var ptx_lunr_docs = [
   "body": " Exponential Growth   The family is a solution to the differential equation for some constant because and . Setting , we have .  This differential equation models exponential growth . In reality, few things grow exponentially due to constraints in the environment. Despite its lack of realism, we can use the exponential growth equation to help build other, more useful models.   "
 },
 {
-  "id": "ode-solutions-to-5",
+  "id": "sec-ode-solutions-to-5",
   "level": "2",
-  "url": "fo1.html#ode-solutions-to-5",
+  "url": "fo1.html#sec-ode-solutions-to-5",
   "type": "Example",
   "number": "1.1.8",
   "title": "",
   "body": "  The acceleration of an object in free-fall is given by where is the gravitational constant. Find its position function, knowing that m and m\/s.  You likely would have encountered this kind of problem when learning integration\/antiderivatives; the solution requires integrating acceleration to find velocity and then using velocity to find position. First, we have Since , we have and . Next, we integrate again to find position: Since , we have and .   "
 },
 {
-  "id": "ode-solutions-to-6",
+  "id": "sec-ode-solutions-to-6",
   "level": "2",
-  "url": "fo1.html#ode-solutions-to-6",
+  "url": "fo1.html#sec-ode-solutions-to-6",
   "type": "Checkpoint",
   "number": "1.1.9",
   "title": "",
   "body": "  Show that the family is is a solution to the differential equation    "
 },
 {
-  "id": "ode-solutions-to-7",
+  "id": "sec-ode-solutions-to-7",
   "level": "2",
-  "url": "fo1.html#ode-solutions-to-7",
+  "url": "fo1.html#sec-ode-solutions-to-7",
   "type": "Checkpoint",
   "number": "1.1.10",
   "title": "",
   "body": "  For the differential equation Show that the families and are both solutions to the ODE. Is a solution as well?   "
 },
 {
-  "id": "ode-solutions-to-8",
+  "id": "sec-ode-solutions-to-8",
   "level": "2",
-  "url": "fo1.html#ode-solutions-to-8",
+  "url": "fo1.html#sec-ode-solutions-to-8",
   "type": "Checkpoint",
   "number": "1.1.11",
   "title": "",
@@ -172,27 +172,27 @@ var ptx_lunr_docs = [
   "body": " (Non)Homogeneous Differential Equation  differential equation (homogeneous)  differential equation (nonhomogeneous)   A differential equation is homogeneous if all terms depend on the dependent variable, i.e. if no term is a function of the independent variable alone. Otherwise the equation is nonhomogeneous .   "
 },
 {
-  "id": "ode-classifying-5",
+  "id": "sec-ode-classifying-5",
   "level": "2",
-  "url": "fo1.html#ode-classifying-5",
+  "url": "fo1.html#sec-ode-classifying-5",
   "type": "Note",
   "number": "1.1.16",
   "title": "",
   "body": " A homogeneous, linear ODE can always be put into the form   "
 },
 {
-  "id": "ode-classifying-6",
+  "id": "sec-ode-classifying-6",
   "level": "2",
-  "url": "fo1.html#ode-classifying-6",
+  "url": "fo1.html#sec-ode-classifying-6",
   "type": "Example",
   "number": "1.1.17",
   "title": "",
   "body": "  The equation has order 3, is linear, and homogeneous. However, is nonhomogeneous.   "
 },
 {
-  "id": "ode-classifying-7",
+  "id": "sec-ode-classifying-7",
   "level": "2",
-  "url": "fo1.html#ode-classifying-7",
+  "url": "fo1.html#sec-ode-classifying-7",
   "type": "Checkpoint",
   "number": "1.1.18",
   "title": "",
@@ -226,18 +226,18 @@ var ptx_lunr_docs = [
   "body": " Separable Differential Equation  separable differential equation  differential equation (separable)   A differential equation is said to be separable if it can be written in the form   Alternately, one can write a separable equation as where .   "
 },
 {
-  "id": "separation-of-variables-intro-3",
+  "id": "sec-separation-of-variables-intro-3",
   "level": "2",
-  "url": "fo2.html#separation-of-variables-intro-3",
+  "url": "fo2.html#sec-separation-of-variables-intro-3",
   "type": "Example",
   "number": "1.2.2",
   "title": "",
   "body": "  The equation is separable because we can write it as To solve it, we integrate both sides:    "
 },
 {
-  "id": "separation-of-variables-intro-4",
+  "id": "sec-separation-of-variables-intro-4",
   "level": "2",
-  "url": "fo2.html#separation-of-variables-intro-4",
+  "url": "fo2.html#sec-separation-of-variables-intro-4",
   "type": "Checkpoint",
   "number": "1.2.3",
   "title": "",
@@ -253,9 +253,9 @@ var ptx_lunr_docs = [
   "body": " Exponential Growth\/Decay   Exponential growth, introduced in , is derived from a separable equation. We assume that growth of a population (bacteria, rabbits, etc.) is proportional to its population at time . Because growth describes a rate of change, we have Separation of variables shows that or If , we say that the population is experiencing growth; if , the population experiences decay.   "
 },
 {
-  "id": "separation-of-variables-applications-3",
+  "id": "sec-separation-of-variables-applications-3",
   "level": "2",
-  "url": "fo2.html#separation-of-variables-applications-3",
+  "url": "fo2.html#sec-separation-of-variables-applications-3",
   "type": "Checkpoint",
   "number": "1.2.5",
   "title": "",
@@ -280,9 +280,9 @@ var ptx_lunr_docs = [
   "body": " Newton's Law of Cooling   Consider an object taken from a hotter environment and placed in a cooler one. We might assume that it cools in a way that is proportional the difference of its temperature and the temperature of the cooler environment. This results in the following differential equation: where is the temperature of the object, is a proportionality constant, and is the ambient temperature. This is a separable equation and results in the solution    "
 },
 {
-  "id": "separation-of-variables-applications-6",
+  "id": "sec-separation-of-variables-applications-6",
   "level": "2",
-  "url": "fo2.html#separation-of-variables-applications-6",
+  "url": "fo2.html#sec-separation-of-variables-applications-6",
   "type": "Checkpoint",
   "number": "1.2.8",
   "title": "",
@@ -316,9 +316,9 @@ var ptx_lunr_docs = [
   "body": " Linear Equation  linear equation   A linear equation is a differential equation of the form where are known functions.   "
 },
 {
-  "id": "linear-equations-3",
+  "id": "sec-linear-equations-3",
   "level": "2",
-  "url": "fo3.html#linear-equations-3",
+  "url": "fo3.html#sec-linear-equations-3",
   "type": "Example",
   "number": "1.3.2",
   "title": "",
@@ -334,27 +334,27 @@ var ptx_lunr_docs = [
   "body": " The Integrating Factor  integrating factor   The integrating factor of a linear equation is the expression    "
 },
 {
-  "id": "integrating-factor-3",
+  "id": "sec-integrating-factor-3",
   "level": "2",
-  "url": "fo3.html#integrating-factor-3",
+  "url": "fo3.html#sec-integrating-factor-3",
   "type": "Example",
   "number": "1.3.4",
   "title": "",
   "body": "  Consider again the equation Here . This means that the integrating factor is given by We can ignore the constant of integration, as it gets taken care of later.  The purpose of the integrating factor is to help mimic the product rule; this means that we need to multiply both sides of the equation by : Using the product rule to collapse the left hand side gives us Now we can integrate both sides: so that    "
 },
 {
-  "id": "integrating-factor-4",
+  "id": "sec-integrating-factor-4",
   "level": "2",
-  "url": "fo3.html#integrating-factor-4",
+  "url": "fo3.html#sec-integrating-factor-4",
   "type": "Checkpoint",
   "number": "1.3.5",
   "title": "",
   "body": "  Show that the solution to the initial value problem is precisely    "
 },
 {
-  "id": "integrating-factor-5",
+  "id": "sec-integrating-factor-5",
   "level": "2",
-  "url": "fo3.html#integrating-factor-5",
+  "url": "fo3.html#sec-integrating-factor-5",
   "type": "Checkpoint",
   "number": "1.3.6",
   "title": "",
@@ -397,36 +397,36 @@ var ptx_lunr_docs = [
   "body": " Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.   "
 },
 {
-  "id": "laplace-transform-intro-4",
+  "id": "sec-laplace-transform-intro-4",
   "level": "2",
-  "url": "fo4.html#laplace-transform-intro-4",
+  "url": "fo4.html#sec-laplace-transform-intro-4",
   "type": "Example",
   "number": "1.4.3",
   "title": "",
   "body": "  The Laplace transform of a constant function is computed below: So    "
 },
 {
-  "id": "laplace-transform-intro-5",
+  "id": "sec-laplace-transform-intro-5",
   "level": "2",
-  "url": "fo4.html#laplace-transform-intro-5",
+  "url": "fo4.html#sec-laplace-transform-intro-5",
   "type": "Example",
   "number": "1.4.4",
   "title": "",
   "body": "  The inverse Laplace transform of the function is .   "
 },
 {
-  "id": "laplace-transform-intro-6",
+  "id": "sec-laplace-transform-intro-6",
   "level": "2",
-  "url": "fo4.html#laplace-transform-intro-6",
+  "url": "fo4.html#sec-laplace-transform-intro-6",
   "type": "Checkpoint",
   "number": "1.4.5",
   "title": "",
   "body": "  Show that for , . You will need to use integration by parts:    "
 },
 {
-  "id": "laplace-transform-intro-7",
+  "id": "sec-laplace-transform-intro-7",
   "level": "2",
-  "url": "fo4.html#laplace-transform-intro-7",
+  "url": "fo4.html#sec-laplace-transform-intro-7",
   "type": "Checkpoint",
   "number": "1.4.6",
   "title": "",
@@ -451,45 +451,45 @@ var ptx_lunr_docs = [
   "body": " The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,    "
 },
 {
-  "id": "laplace-transform-properties-3",
+  "id": "sec-laplace-transform-properties-3",
   "level": "2",
-  "url": "fo4.html#laplace-transform-properties-3",
+  "url": "fo4.html#sec-laplace-transform-properties-3",
   "type": "Checkpoint",
   "number": "1.4.9",
   "title": "",
   "body": "  Convince yourself why this is true- think about the definition of the transform.   "
 },
 {
-  "id": "laplace-transform-solving-first-order-2",
+  "id": "sec-laplace-transform-solving-first-order-2",
   "level": "2",
-  "url": "fo4.html#laplace-transform-solving-first-order-2",
+  "url": "fo4.html#sec-laplace-transform-solving-first-order-2",
   "type": "Example",
   "number": "1.4.10",
   "title": "",
   "body": "  We can compute the Laplace transform of a derivative. Consider a function and its derivative, . We can use integration by parts to find : So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function .   "
 },
 {
-  "id": "laplace-transform-solving-first-order-3",
+  "id": "sec-laplace-transform-solving-first-order-3",
   "level": "2",
-  "url": "fo4.html#laplace-transform-solving-first-order-3",
+  "url": "fo4.html#sec-laplace-transform-solving-first-order-3",
   "type": "Example",
   "number": "1.4.11",
   "title": "",
   "body": "  Let and ; to find , we know that But we also know that from , so we have or so that Using to find the inverse transform, we get which is what we would have gotten if we solved the initial value problem using the techniques we already know.   "
 },
 {
-  "id": "laplace-transform-solving-first-order-5",
+  "id": "sec-laplace-transform-solving-first-order-5",
   "level": "2",
-  "url": "fo4.html#laplace-transform-solving-first-order-5",
+  "url": "fo4.html#sec-laplace-transform-solving-first-order-5",
   "type": "Example",
   "number": "1.4.12",
   "title": "",
   "body": "  Suppose we wish to solve the initial value problem using the Laplace transform.  Begin by taking the transform of both sides. and So all together, the transformed equation is   Rearranging to solve for , we have The first term requires partial fraction decomposition. Write it as Now, from which we get the system and the solutions of , and . This gives   To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with . First, Now applying the inverse transform to each term gives us   We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.   "
 },
 {
-  "id": "laplace-transform-solving-first-order-6",
+  "id": "sec-laplace-transform-solving-first-order-6",
   "level": "2",
-  "url": "fo4.html#laplace-transform-solving-first-order-6",
+  "url": "fo4.html#sec-laplace-transform-solving-first-order-6",
   "type": "Checkpoint",
   "number": "1.4.13",
   "title": "",
@@ -514,36 +514,36 @@ var ptx_lunr_docs = [
   "body": "   I can solve applied problems resulting from first-order differential equations.    "
 },
 {
-  "id": "applications-mixing-first-order-2",
+  "id": "sec-first-order-applications-mixing-first-order-2",
   "level": "2",
-  "url": "fo5.html#applications-mixing-first-order-2",
+  "url": "fo5.html#sec-first-order-applications-mixing-first-order-2",
   "type": "Example",
   "number": "1.5.1",
   "title": "",
   "body": " A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?  We need to find the differential equation which results from this setup. Let be the number of kilograms of salt in the tank, and let denote the time in minutes. Let denote the inflow rate of brine, denote the outflow rate from the tank, denote the brine concentration for the inflow, and denote the brine outflow concentration.  For some small change in time, , the change in ( ) is approximately given by Dividing through by and taking the limit as , we get So for this example, we have                   , where , so that    This gives our differential equation   We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when , or . So,   "
 },
 {
-  "id": "applications-finance-2",
+  "id": "sec-first-order-applications-finance-2",
   "level": "2",
-  "url": "fo5.html#applications-finance-2",
+  "url": "fo5.html#sec-first-order-applications-finance-2",
   "type": "Example",
   "number": "1.5.2",
   "title": "",
   "body": " Suppose a sum of money is deposited in a savings account that pays interest compounded continuously at a constant rate of per unit of money per unit time. If is the size of the deposit at time , then the approximate increment in is given by which resolves to the equality This is a separable equation, so we get the solution   "
 },
 {
-  "id": "applications-finance-3",
+  "id": "sec-first-order-applications-finance-3",
   "level": "2",
-  "url": "fo5.html#applications-finance-3",
+  "url": "fo5.html#sec-first-order-applications-finance-3",
   "type": "Example",
   "number": "1.5.3",
   "title": "",
   "body": " Suppose is the amount of an outstanding loan at time , and let be the constant rate at which the money has been borrowed. Let be the repayment per unit time. For a short period of time, we have which resolves to which is a linear equation. Solving gives for the initial loan amount of .  "
 },
 {
-  "id": "applications-physics-engineering-2",
+  "id": "sec-first-order-applications-physics-engineering-2",
   "level": "2",
-  "url": "fo5.html#applications-physics-engineering-2",
+  "url": "fo5.html#sec-first-order-applications-physics-engineering-2",
   "type": "Example",
   "number": "1.5.4",
   "title": "",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.6",
   "title": "FO6: Slope Fields",
-  "body": " FO6: Slope Fields     I can use a slope field to analyze the behaviors of solutions to a differential equation.      Slope Field  slope field   For a differential equation of the form , its slope field is the collection of lines of slopes to solution curves at various points in the plane.      The slope field for the differential equation is given below.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.      Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of     "
+  "body": " FO6: Slope Fields     I can use a slope field to analyze the behaviors of solutions to a differential equation.      Slope Field  slope field   For a differential equation of the form , its slope field is the collection of lines of slopes to solution curves at various points in the plane.      The slope field for the differential equation is given below, along with three solution curves.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.      Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The slope field can help us determine the long-term behavior of the ODE.      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of       Below is the slope field for the differential equation .      f(t,y) = t - 2*t*y        t    x(t)   gap = 1          The slope field of .      Describe the behavior of the solution when .    The equation is separable. Determine the solution and compare the behaviors.       "
 },
 {
   "id": "fo6-2",
@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.6.2",
   "title": "",
-  "body": "  The slope field for the differential equation is given below.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.   "
+  "body": "  The slope field for the differential equation is given below, along with three solution curves.      f(x,y) = 3*x^2 -5        x    y(x)   gap = 1          The slope field of , along with three solutions   This is separable, and we get the family of solutions , which aligns well with the images in the graph above. The different curves drawn correspond to different initial values of the function.   "
 },
 {
   "id": "fo6-5",
@@ -592,7 +592,16 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.6.4",
   "title": "",
-  "body": "  Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of    "
+  "body": "  Slope fields can be used to analyze the qualitative behavior of solutions to functions. Take for example the differential equation This is neither linear nor separable, so we can't solve it using any known techniques. The slope field can help us determine the long-term behavior of the ODE.      f(t,y) = t - y^2        t    y(t)   gap = 1          The slope field of    "
+},
+{
+  "id": "fo6-6",
+  "level": "2",
+  "url": "fo6.html#fo6-6",
+  "type": "Checkpoint",
+  "number": "1.6.6",
+  "title": "",
+  "body": "  Below is the slope field for the differential equation .      f(t,y) = t - 2*t*y        t    x(t)   gap = 1          The slope field of .      Describe the behavior of the solution when .    The equation is separable. Determine the solution and compare the behaviors.      "
 },
 {
   "id": "fo7",
@@ -601,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.7",
   "title": "FO7: Equilibrium Points &amp; Autonomous Equations",
-  "body": " FO7: Equilibrium Points & Autonomous Equations     I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.     "
+  "body": " FO7: Equilibrium Points & Autonomous Equations     I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.      Autonomous Equations   Autonomous Equation  autonomous equation   A differential equation is said to be autonomous if it can be written in the form That is, the differential equation does not depend on the independent variable.     Solving Autonomous Equations  All autonomous equations are separable, and so can be solved using that technique; not all will result in closed-form solutions.     Autonomous equations have particularly nice slope fields.  Consider the differential equation This is of the form given by , so we should expect solutions to look like logistic functions. Indeed, solving results in for some constant . The resulting slope field takes the form below.      f(x,y) = 0.1*y*(5-y)        x    y(x)   gap = 1                 The slope field for the equation .   The blue solution curves correspond to initial values for which the solution is bounded below by 0 and grows to the carrying capacity of the system; the red solution curves show initial values below zero, and the green solution curves show initial values above .  Note the horizontal lines which create asymptotes for the solution curves. We call these output values equilibrium solutions       Equilibrium Solutions & Phase Lines   Equilibrium Solution  equilibrium solution (autonomous equation)   An equilibrium solution for an autonomous ODE occurs when       In , we see from that there are two equilibrium solutions: and .  If we assume that the example describes the growth of a population, then the equilibrium solutions are communicating the carrying capacity of the population ( ) and the zero-population point ( ).  For initial values within the interval , we see population growth to the equilibrium point; for initial values outside of the equilibrium solutions, we see either a tendency away from (initial conditions below 0) or toward (initial conditions above 5) the equilibrium solutions. Physically, the first set of initial conditions don't make sense in a population context, but the second set of initial conditions demonstrate that when population is above the carrying capacity, it will always tend back toward the carrying capacity of the system.     When analyzing the qualitative behavior of autonomous differential equations, we can use a phase line or phase diagram to capture the entirety of the behavior without sketching the slope field.    Phase Line\/Phase Diagram  phase line  phase diagram   For an autonomous differential equation, the phase line or phase diagram for the differential equation is a diagram which captures the long-term behavior, drawn in the form of a line.      Again drawing on , from the slope field in , we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward .  To draw the phase line, draw a line (traditionally vertical, but horizontal communicates the same idea) with the equilibrium points marked.  Then, use the information given to draw arrows in the segments created to indicate the direction of flow of the solutions.  The phase line for is shown below.          y(x) = 5  y(x) = 0      The phase line for the solutions to the equation      Source\/Sink\/Node  source  sink  node   An equilibrium solution is said to be a source if solution curves nearby tend away from the equilibrium solution.  An equilibrium solution is said to be a sink if solution curves nearby tend toward the equilibrium solution.  An equilibrium solution is said to be a node if it exhibits both source and sink behavior.      For and , the equilibrium solution is a sink because the solutions on either side tend toward 5; on the other hand, is a source because the solutions on either side tend away from 0.      For each differential equation below, draw the phase line and classify each equilibrium solution as a sink, source, or node.                             "
 },
 {
   "id": "fo7-2",
@@ -613,13 +622,103 @@ var ptx_lunr_docs = [
   "body": "   I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.    "
 },
 {
+  "id": "def-autonomous-equation",
+  "level": "2",
+  "url": "fo7.html#def-autonomous-equation",
+  "type": "Definition",
+  "number": "1.7.1",
+  "title": "Autonomous Equation.",
+  "body": " Autonomous Equation  autonomous equation   A differential equation is said to be autonomous if it can be written in the form That is, the differential equation does not depend on the independent variable.   "
+},
+{
+  "id": "fo7-autonomous-ex-logistic",
+  "level": "2",
+  "url": "fo7.html#fo7-autonomous-ex-logistic",
+  "type": "Example",
+  "number": "1.7.2",
+  "title": "",
+  "body": "  Autonomous equations have particularly nice slope fields.  Consider the differential equation This is of the form given by , so we should expect solutions to look like logistic functions. Indeed, solving results in for some constant . The resulting slope field takes the form below.      f(x,y) = 0.1*y*(5-y)        x    y(x)   gap = 1                 The slope field for the equation .   The blue solution curves correspond to initial values for which the solution is bounded below by 0 and grows to the carrying capacity of the system; the red solution curves show initial values below zero, and the green solution curves show initial values above .  Note the horizontal lines which create asymptotes for the solution curves. We call these output values equilibrium solutions    "
+},
+{
+  "id": "def-equilibrium-solution",
+  "level": "2",
+  "url": "fo7.html#def-equilibrium-solution",
+  "type": "Definition",
+  "number": "1.7.4",
+  "title": "Equilibrium Solution.",
+  "body": " Equilibrium Solution  equilibrium solution (autonomous equation)   An equilibrium solution for an autonomous ODE occurs when    "
+},
+{
+  "id": "sec-equilibrium-solutions-autonomous-3",
+  "level": "2",
+  "url": "fo7.html#sec-equilibrium-solutions-autonomous-3",
+  "type": "Example",
+  "number": "1.7.5",
+  "title": "",
+  "body": "  In , we see from that there are two equilibrium solutions: and .  If we assume that the example describes the growth of a population, then the equilibrium solutions are communicating the carrying capacity of the population ( ) and the zero-population point ( ).  For initial values within the interval , we see population growth to the equilibrium point; for initial values outside of the equilibrium solutions, we see either a tendency away from (initial conditions below 0) or toward (initial conditions above 5) the equilibrium solutions. Physically, the first set of initial conditions don't make sense in a population context, but the second set of initial conditions demonstrate that when population is above the carrying capacity, it will always tend back toward the carrying capacity of the system.   "
+},
+{
+  "id": "sec-equilibrium-solutions-autonomous-4",
+  "level": "2",
+  "url": "fo7.html#sec-equilibrium-solutions-autonomous-4",
+  "type": "Note",
+  "number": "1.7.6",
+  "title": "",
+  "body": " When analyzing the qualitative behavior of autonomous differential equations, we can use a phase line or phase diagram to capture the entirety of the behavior without sketching the slope field.  "
+},
+{
+  "id": "def-phase-line",
+  "level": "2",
+  "url": "fo7.html#def-phase-line",
+  "type": "Definition",
+  "number": "1.7.7",
+  "title": "Phase Line\/Phase Diagram.",
+  "body": " Phase Line\/Phase Diagram  phase line  phase diagram   For an autonomous differential equation, the phase line or phase diagram for the differential equation is a diagram which captures the long-term behavior, drawn in the form of a line.   "
+},
+{
+  "id": "sec-equilibrium-solutions-autonomous-6",
+  "level": "2",
+  "url": "fo7.html#sec-equilibrium-solutions-autonomous-6",
+  "type": "Example",
+  "number": "1.7.8",
+  "title": "",
+  "body": "  Again drawing on , from the slope field in , we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward .  To draw the phase line, draw a line (traditionally vertical, but horizontal communicates the same idea) with the equilibrium points marked.  Then, use the information given to draw arrows in the segments created to indicate the direction of flow of the solutions.  The phase line for is shown below.          y(x) = 5  y(x) = 0      The phase line for the solutions to the equation    "
+},
+{
+  "id": "def-equilibrium-source-sink-node",
+  "level": "2",
+  "url": "fo7.html#def-equilibrium-source-sink-node",
+  "type": "Definition",
+  "number": "1.7.10",
+  "title": "Source\/Sink\/Node.",
+  "body": " Source\/Sink\/Node  source  sink  node   An equilibrium solution is said to be a source if solution curves nearby tend away from the equilibrium solution.  An equilibrium solution is said to be a sink if solution curves nearby tend toward the equilibrium solution.  An equilibrium solution is said to be a node if it exhibits both source and sink behavior.   "
+},
+{
+  "id": "sec-equilibrium-solutions-autonomous-8",
+  "level": "2",
+  "url": "fo7.html#sec-equilibrium-solutions-autonomous-8",
+  "type": "Example",
+  "number": "1.7.11",
+  "title": "",
+  "body": "  For and , the equilibrium solution is a sink because the solutions on either side tend toward 5; on the other hand, is a source because the solutions on either side tend away from 0.   "
+},
+{
+  "id": "sec-equilibrium-solutions-autonomous-9",
+  "level": "2",
+  "url": "fo7.html#sec-equilibrium-solutions-autonomous-9",
+  "type": "Checkpoint",
+  "number": "1.7.12",
+  "title": "",
+  "body": "  For each differential equation below, draw the phase line and classify each equilibrium solution as a sink, source, or node.                           "
+},
+{
   "id": "fo8",
   "level": "1",
   "url": "fo8.html",
   "type": "Section",
   "number": "1.8",
   "title": "FO8: Bifurcations",
-  "body": " FO8: Bifurcations     I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.     "
+  "body": " FO8: Bifurcations     I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.      Bifurcations   One-Parameter Family  differential equation (one-parameter family)   A one-parameter family of differential equations is a collection which depends on some parameter, often denoted or .      Consider the equation It can (and should) be checked that there are two equilibrium solutions, one at and one at .  The phase diagram for the differential equation shows that that is a sink while is a source.  If we make the constant term a parameter, we have Now the phase diagram depends on the value of ; if , for example, we have one equilibrium solution at , while there are no equilibrium solutions for .     Bifurcation  bifurcation   A bifurcation in the solution to a one-parameter family of differential equations is a change in the long-term behavior of the solution.      For the equation There is a bifurcation at because for values , there are two equilibrium solutions, one at , and none for .      The equation has equilibrium points at and . Because the latter equilibria don't exist for , there is a bifurcation at .  We can capture this behavior using phase lines and a phase diagram.              \\mu=-2  \\mu=-1  \\mu=0  \\mu=1  \\mu=2    0      0      0        -1  0  1          -\\sqrt{2}  0  \\sqrt{2}          The phase diagram for      "
 },
 {
   "id": "fo8-2",
@@ -631,13 +730,58 @@ var ptx_lunr_docs = [
   "body": "   I can determine the bifurcation values of a one-parameter family of differential equations and describe the corresponding change in solution behavior using phase lines.    "
 },
 {
+  "id": "def-one-parameter-family",
+  "level": "2",
+  "url": "fo8.html#def-one-parameter-family",
+  "type": "Definition",
+  "number": "1.8.1",
+  "title": "One-Parameter Family.",
+  "body": " One-Parameter Family  differential equation (one-parameter family)   A one-parameter family of differential equations is a collection which depends on some parameter, often denoted or .   "
+},
+{
+  "id": "sec-bifurcations-3",
+  "level": "2",
+  "url": "fo8.html#sec-bifurcations-3",
+  "type": "Example",
+  "number": "1.8.2",
+  "title": "",
+  "body": "  Consider the equation It can (and should) be checked that there are two equilibrium solutions, one at and one at .  The phase diagram for the differential equation shows that that is a sink while is a source.  If we make the constant term a parameter, we have Now the phase diagram depends on the value of ; if , for example, we have one equilibrium solution at , while there are no equilibrium solutions for .   "
+},
+{
+  "id": "def-bifurcation",
+  "level": "2",
+  "url": "fo8.html#def-bifurcation",
+  "type": "Definition",
+  "number": "1.8.3",
+  "title": "Bifurcation.",
+  "body": " Bifurcation  bifurcation   A bifurcation in the solution to a one-parameter family of differential equations is a change in the long-term behavior of the solution.   "
+},
+{
+  "id": "sec-bifurcations-5",
+  "level": "2",
+  "url": "fo8.html#sec-bifurcations-5",
+  "type": "Example",
+  "number": "1.8.4",
+  "title": "",
+  "body": "  For the equation There is a bifurcation at because for values , there are two equilibrium solutions, one at , and none for .   "
+},
+{
+  "id": "sec-bifurcations-6",
+  "level": "2",
+  "url": "fo8.html#sec-bifurcations-6",
+  "type": "Example",
+  "number": "1.8.5",
+  "title": "",
+  "body": "  The equation has equilibrium points at and . Because the latter equilibria don't exist for , there is a bifurcation at .  We can capture this behavior using phase lines and a phase diagram.              \\mu=-2  \\mu=-1  \\mu=0  \\mu=1  \\mu=2    0      0      0        -1  0  1          -\\sqrt{2}  0  \\sqrt{2}          The phase diagram for    "
+},
+{
   "id": "so1",
   "level": "1",
   "url": "so1.html",
   "type": "Section",
   "number": "2.1",
   "title": "SO1: Linear Homogeneous Differential Equations",
-  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.       "
+  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.      For this module, we will consider homogeneous (see ), linear (see ), constant coefficient differential equations.    Solving Second Order Linear Homogeneous Constant Coefficient ODEs    Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots        Two Real Roots    The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is       One Repeated Root    The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .     In general, if a root has multiplicity , its corresponding solution will take the form      Two Complex Roots   Euler's Formula         If the characteristic equation for an ODE has roots , where , then the solution is given by      The equation has roots , so the solution is given by       "
 },
 {
   "id": "so1-2",
@@ -647,6 +791,51 @@ var ptx_lunr_docs = [
   "number": "2.1",
   "title": "",
   "body": "   I can solve linear, homogenous differential equations of any order.    "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-2",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-2",
+  "type": "Example",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots      "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-realroots-2",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-realroots-2",
+  "type": "Example",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is    "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-repeatedroots-2",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-repeatedroots-2",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .   "
+},
+{
+  "id": "thm-eulers-formula",
+  "level": "2",
+  "url": "so1.html#thm-eulers-formula",
+  "type": "Theorem",
+  "number": "2.1.4",
+  "title": "Euler’s Formula.",
+  "body": " Euler's Formula       "
+},
+{
+  "id": "sec-linear-homo-const-coeff-so-complexroots-4",
+  "level": "2",
+  "url": "so1.html#sec-linear-homo-const-coeff-so-complexroots-4",
+  "type": "Example",
+  "number": "2.1.5",
+  "title": "",
+  "body": "  The equation has roots , so the solution is given by    "
 },
 {
   "id": "so2",
