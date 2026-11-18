@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sd5" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>SD5: Applications of Systems of Equations</title>
+    <title>SD5: Phase Plane Analysis</title>
     <objectives>
         <ul>
             <li>
                 <p>
-                   I can use systems of differential equations to solve applied problems.
+                   I can describe the qualitative behavior of a system of differential equations by analyzing its phase plane.
                 </p>
             </li>
         </ul>

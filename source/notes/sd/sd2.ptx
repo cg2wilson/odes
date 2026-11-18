@@ -11,8 +11,16 @@
             </li>
         </ul>
     </objectives>
-    
-    <p>
-        
-    </p>
-</section>
+    <subsection xml:id="sec-systems-eigenvalues">
+        <title>Eigenvalues of a Matrix</title>
+        <p>
+            
+        </p>
+    </subsection>
+    <subsection xml:id="sec-systems-eigenvectors">
+        <title>Eigenvectors of a Matrix</title>
+        <p>
+            
+        </p>
+    </subsection>
+    </section>

@@ -11,7 +11,97 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+    <subsection xml:id="sec-second-order-apps-harmonic">
+        <title>Harmonic Motion</title>
+        
+        <example>
+            <statement>
+                <p>
+                    In this example, we will develop the equation for free damped motion in a mass-spring-damper system.
+                </p>
+                <p>
+                    Suppose that we have a mass attached to a spring (with sprint constant <m>k</m>) which moves in a straight line. Further suppose that the mass is connected to some sort of shock absorber, called a damper, which has coefficient <m>c</m>.
+                </p>
+                <p>
+                    Newton's second law of motion tells us that 
+                    <md>
+                        F = ma
+                    </md>
+                    If we consider a position function <m>y(x)</m>, then we can recast Newton's second law as
+                    <md>
+                        F = my''
+                    </md>
+                    In the spring system, we also must consider Hooke's law:
+                    <md>
+                        F = ky
+                    </md>
+                    Since the spring force opposes the direction of motion, we have
+                    <md>
+                        my'' = -ky
+                    </md>
+                    If we further assume that the damping constant is nonzero, and that damping is proportional to velocity, we have that
+                    <md>
+                        my'' = -ky - cy'
+                    </md>
+                    or
+                    <md>
+                        my'' + cy' + ky = 0
+                    </md>
+                </p>
+                <p>
+                    The equation <m>my'' + cy' + ky = 0</m> can be rewritten as
+                    <md>
+                        y'' + 2\lambda y' + \omega^2 y = 0
+                    </md>
+                    where <m>\lambda = \dfrac{c}{2m}</m> and <m>\omega = \sqrt{k/m}</m>. 
+                </p>
+                <p>
+                    The equation represents <em>free</em> motion because we assume no forcing term; <term>forced harmonic motion</term> occurs when we have a forcing term on the right hand side (generally in terms of cosine).
+                </p>
+            </statement>
+        </example>
+
+        <definition xml:id="def-over-critical-under-damped">
+            <title>Overdamped/Critically Damped/Underdamped Systems</title>
+            <idx><h>overdamped system</h></idx>
+            <idx><h>critically damped system</h></idx>
+            <idx><h>underdamped system</h></idx>
+            <statement>
+                <p>
+                    Consider a mass-spring-damper system with mass <m>m</m>, damping coefficient <m>c</m>, and spring constant <m>k</m>, modeled by the equation
+                    <md>
+                        y'' + 2\lambda y' +\omega^2 y = 0
+                    </md>
+                    with <m>\lambda = \dfrac{c}{2m}</m> and <m>\omega = \sqrt{k/m}</m>. 
+                </p>
+                <p>
+                    The system is said to be <term>overdamped</term> if <m>\lamba^2 \gt \omega^2</m>, <term>critically damped</term> if <m>\lambda^2 = \omega^2</m>, and <term>underdamped</term> if <m>\lambda^2 \lt \omega^2</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <remark>
+            <p>
+                To be overdamped means that the damping coefficient is large compared to the spring constant, which results 
+            </p>
+        </remark>
+        <example>
+            <statement>
+                <p>
+                    
+                </p>
+            </statement>
+        </example>
+        
+    </subsection>
+
+    <subsection xml:id="sec-second-order-apps-circuits">
+        <title>Circuits</title>
+        
+    </subsection>
+
+    <subsection xml:id="sec-second-order-apps-">
+        <title></title>
+        
+    </subsection>
 </section>

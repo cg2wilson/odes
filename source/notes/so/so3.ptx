@@ -11,7 +11,60 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+   <subsection xml:id="sec-laplace-second-order-deriv">
+    <title>The Laplace Transform for Second-Order Derivatives</title>
+        <assemblage>
+            <title>Laplace Transform of a Second Derivative</title>
+            <p>
+                Using the techniques developed in <xref ref="sec-laplace-transform-solving-first-order"/>, it can be shown that, given a function <m>f(t)</m>,
+                <md>
+                    \mathcal{L}(f''(t)) = s^2F(s) - sf(0) - f'(0)
+                </md>
+            </p>
+        </assemblage>
+
+        <example>
+            <statement>
+                <p>
+                    We'll use the Laplace transform to solve the equation
+                    <md>
+                        y'' - 2y' + 5y = -5
+                    </md>
+                    with <m>y(0) = 0</m> and <m>y'(0) = -3</m>.
+                </p>
+                <p>
+                    Transform each component:
+                    <md>
+                        \mathcal{L}(y'') = s^2Y(s) - sy(0) - y'(0) = s^2 Y(s) + 3
+                    </md>
+                    <md>
+                        \mathcal{L}(y') = sY(s) - y(0) = sY(s)
+                    </md>
+                    and
+                    <md>
+                        \mathcal{L}(y) = Y(s)
+                    </md>
+                    so that we have
+                    <md>
+                        s^2Y(s) + 3 - 2sY(s) + 5Y(s) = \dfrac{-5}{s}
+                    </md>
+                    and
+                    <md>
+                        Y(s) = -\dfrac{3}{s^2-2s+5} + \dfrac{-5}{s(s^2-2s+5)}
+                    </md>
+                </p>
+                <p>
+                    Decomposing and working the algebra gives
+                    <md>
+                        Y(s) = -\dfrac{1}{s} + \dfrac{s-1}{(s-1)^2 + 4} - 2\cdot \dfrac{2}{(s-1)^2 + 4}
+                    </md>
+                    which, after comparing to <xref ref="table-laplace-transforms-first"/>, gives the solution
+                    <md>
+                        y(t) = -1 + e^t[\cos (2t) - 2\sin(2t)]
+                    </md>
+                    
+                </p>
+            </statement>
+        </example>
+   </subsection>
 </section>

@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "FO4: The Laplace Transform (First-Order Equations)",
-  "body": " FO4: The Laplace Transform (First-Order Equations)     I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.      The Laplace Transform   The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be      Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.      The Laplace transform of a constant function is computed below: So       The inverse Laplace transform of the function is .      Show that for , . You will need to use integration by parts:       Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?     Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    , ,        Properties of the Laplace Transform   The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,       Convince yourself why this is true- think about the definition of the transform.      Solving First Order Equations with the Laplace Transform    We can compute the Laplace transform of a derivative. Consider a function and its derivative, . We can use integration by parts to find : So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function .      Let and ; to find , we know that But we also know that from , so we have or so that Using to find the inverse transform, we get which is what we would have gotten if we solved the initial value problem using the techniques we already know.     Solving First-Order ODEs with the Laplace Transform  To solve a differential equation of the form ,   Compute the transform of the left hand side    Find the transform of the right hand side    Solve for     Use algebra to rewrite the right hand side so that you can apply the inverse transform from .        Suppose we wish to solve the initial value problem using the Laplace transform.  Begin by taking the transform of both sides. and So all together, the transformed equation is   Rearranging to solve for , we have The first term requires partial fraction decomposition. Write it as Now, from which we get the system and the solutions of , and . This gives   To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with . First, Now applying the inverse transform to each term gives us   We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.      Show that the solution to the IVP is given by      "
+  "body": " FO4: The Laplace Transform (First-Order Equations)     I can use the Laplace transform to solve first-order, linear differential equations with or without forcing terms.      The Laplace Transform   The Laplace Transform  Laplace transform   For a function which satisfies the condition for some constants . Then, we define the Laplace transform of to be      Inverse Laplace Transform  Laplace transform (inverse)   The inverse Laplace transform of a function is the function whose Laplace transform is , i.e the inverse Laplace transform undoes the Laplace transform.      The Laplace transform of a constant function is computed below: So       The inverse Laplace transform of the function is .      Show that for , . You will need to use integration by parts:       Show that for (where is constant), What condition(s) on must be considered in order for the Laplace transform to exist?     Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    ,    , ,        Properties of the Laplace Transform   The Laplace Transform Is Linear   Let be two functions with Laplace transforms and , respectively. Let be constants. Then,       Convince yourself why this is true- think about the definition of the transform.      Solving First Order Equations with the Laplace Transform    We can compute the Laplace transform of a derivative. Consider a function and its derivative, . We can use integration by parts to find : So, taking the Laplace transform of a derivative requires the knowledge of the initial value of the function .      Let and ; to find , we know that But we also know that from , so we have or so that Using to find the inverse transform, we get which is what we would have gotten if we solved the initial value problem using the techniques we already know.     Solving First-Order ODEs with the Laplace Transform  To solve a differential equation of the form ,   Compute the transform of the left hand side    Find the transform of the right hand side    Solve for     Use algebra to rewrite the right hand side so that you can apply the inverse transform from .        Suppose we wish to solve the initial value problem using the Laplace transform.  Begin by taking the transform of both sides. and So all together, the transformed equation is   Rearranging to solve for , we have The first term requires partial fraction decomposition. Write it as Now, from which we get the system and the solutions of , and . This gives   To use the inverse transform, we need to write each term on the right hand side in a way which is consistent with . First, Now applying the inverse transform to each term gives us   We could have used the integrating factor instead of the Laplace transform; this would be a good place to practice that technique.      Show that the solution to the IVP is given by      "
 },
 {
   "id": "fo4-2",
@@ -439,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "1.4.7",
   "title": "Table of Laplace Transforms (First)",
-  "body": " Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    , ,     "
+  "body": " Table of Laplace Transforms (First)       1 ,    ,    , ,    ,    ,    ,    ,    ,    ,    ,    , ,     "
 },
 {
   "id": "thm-laplace-transform-linear",
@@ -781,7 +781,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "SO1: Linear Homogeneous Differential Equations",
-  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.      For this module, we will consider homogeneous (see ), linear (see ), constant coefficient differential equations.    Solving Second Order Linear Homogeneous Constant Coefficient ODEs    Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots        Two Real Roots    The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is       One Repeated Root    The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .     In general, if a root has multiplicity , its corresponding solution will take the form      Two Complex Roots   Euler's Formula         If the characteristic equation for an ODE has roots , where , then the solution is given by      The equation has roots , so the solution is given by       "
+  "body": " SO1: Linear Homogeneous Differential Equations     I can solve linear, homogenous differential equations of any order.      For this module, we will consider homogeneous (see ), linear (see ), constant coefficient differential equations.    Solving Second Order Linear Homogeneous Constant Coefficient ODEs    Consider a differential equation of the form where are constants with . We want a solution which stays relatively stable under differentiation; a natural choice is , since , , and more generally .  Substituting this in to the equation gives Since , the equation only holds if . We can solve this via the quadratic equation:  is called the characteristic equation for the differential equation.  Because there are three possibilities for roots of the characteristic equation (2 real roots, 1 repeated real root, 2 complex roots), we have three corresponding possibilities for the roots of a second-order, linear, homogeneous, constant coefficient differential equation:    : 2 real roots     : 1 repeated root     : 2 complex roots         Two Real Roots    The equation has characteristic equation , which has roots . This means that, based on the guess , we have solutions of and . By the principle of superposition (see ), the solution for the differential equation is       One Repeated Root    The equation has a repeated root of . This means that we have a solution of ; the second solution will take the form .     In general, if a root has multiplicity , its corresponding solution will take the form      Two Complex Roots   Euler's Formula         If the characteristic equation for an ODE has roots , where , then the solution is given by      The equation has roots , so the solution is given by      "
 },
 {
   "id": "so1-2",
@@ -844,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "SO2: Linear Non-Homogeneous Differential Equations",
-  "body": " SO2: Linear Non-Homogeneous Differential Equations     I can solve linear, non-homogeneous differential equations of any order.       "
+  "body": " SO2: Linear Non-Homogeneous Differential Equations     I can solve linear, non-homogeneous differential equations of any order.      Solving Second Order Linear Nonhomogeneous Constant Coefficient ODEs   Solving nonhomogeneous equations is very similar to solving homogeneous equations; we add an extra step to the original solution process.    Forcing Term  forcing tem   In the differential equation  is referred to as the forcing term .      To solve the differential equation , we begin by solving the associated homogeneous equation.  Since the associated homogeneous equation is given by , its characteristic equation is given by , which results in the homogeneous solution . For the non-homogeneous solution, the particular solution , we will use the method of undetermined coefficients.  Since our forcing term is given by , our guess is that the particular solution, , is given by It's possible that , but we need to assume that lower-order terms arise and they must be accounted for in the guess.  Now that we have our guess, , we plug it into the differention equation to determine the values of and which satisfy the equation. and so that In order to have equality, it must be the case that so that and . This means that our particular solution is given by   Now, from the principle of superposition ( ), the solution to the nonhomogeneous equation is given by so that       Solving equations whose forcing terms are similar to homogeneous solutions requires a little more extra care. Consider the equation The complementary solution, , is given by the latter term of which is similar to our forcing function. To account for this difference, we'll suppose that the guess for our particular solution is in a similar way to how we modify solutions when repeated roots of the characteristic equation occur.  Now, so that plugging into the ODE gives After reducing, we have the system so that and      "
 },
 {
   "id": "so2-2",
@@ -856,13 +856,49 @@ var ptx_lunr_docs = [
   "body": "   I can solve linear, non-homogeneous differential equations of any order.    "
 },
 {
+  "id": "sec-linear-nonhomo-const-coeff-so-2",
+  "level": "2",
+  "url": "so2.html#sec-linear-nonhomo-const-coeff-so-2",
+  "type": "Remark",
+  "number": "2.2.1",
+  "title": "",
+  "body": " Solving nonhomogeneous equations is very similar to solving homogeneous equations; we add an extra step to the original solution process.  "
+},
+{
+  "id": "def-forcing-term",
+  "level": "2",
+  "url": "so2.html#def-forcing-term",
+  "type": "Definition",
+  "number": "2.2.2",
+  "title": "Forcing Term.",
+  "body": " Forcing Term  forcing tem   In the differential equation  is referred to as the forcing term .   "
+},
+{
+  "id": "sec-linear-nonhomo-const-coeff-so-4",
+  "level": "2",
+  "url": "so2.html#sec-linear-nonhomo-const-coeff-so-4",
+  "type": "Example",
+  "number": "2.2.3",
+  "title": "",
+  "body": "  To solve the differential equation , we begin by solving the associated homogeneous equation.  Since the associated homogeneous equation is given by , its characteristic equation is given by , which results in the homogeneous solution . For the non-homogeneous solution, the particular solution , we will use the method of undetermined coefficients.  Since our forcing term is given by , our guess is that the particular solution, , is given by It's possible that , but we need to assume that lower-order terms arise and they must be accounted for in the guess.  Now that we have our guess, , we plug it into the differention equation to determine the values of and which satisfy the equation. and so that In order to have equality, it must be the case that so that and . This means that our particular solution is given by   Now, from the principle of superposition ( ), the solution to the nonhomogeneous equation is given by so that    "
+},
+{
+  "id": "sec-linear-nonhomo-const-coeff-so-5",
+  "level": "2",
+  "url": "so2.html#sec-linear-nonhomo-const-coeff-so-5",
+  "type": "Example",
+  "number": "2.2.4",
+  "title": "",
+  "body": "  Solving equations whose forcing terms are similar to homogeneous solutions requires a little more extra care. Consider the equation The complementary solution, , is given by the latter term of which is similar to our forcing function. To account for this difference, we'll suppose that the guess for our particular solution is in a similar way to how we modify solutions when repeated roots of the characteristic equation occur.  Now, so that plugging into the ODE gives After reducing, we have the system so that and    "
+},
+{
   "id": "so3",
   "level": "1",
   "url": "so3.html",
   "type": "Section",
   "number": "2.3",
   "title": "SO3: The Laplace Transform (Second-Order Equations)",
-  "body": " SO3: The Laplace Transform (Second-Order Equations)     I can use the Laplace transform to solve second-order, linear differential equations.       "
+  "body": " SO3: The Laplace Transform (Second-Order Equations)     I can use the Laplace transform to solve second-order, linear differential equations.      The Laplace Transform for Second-Order Derivatives   Laplace Transform of a Second Derivative  Using the techniques developed in , it can be shown that, given a function ,      We'll use the Laplace transform to solve the equation with and .  Transform each component:  and so that we have and   Decomposing and working the algebra gives which, after comparing to , gives the solution      "
 },
 {
   "id": "so3-2",
@@ -874,13 +910,22 @@ var ptx_lunr_docs = [
   "body": "   I can use the Laplace transform to solve second-order, linear differential equations.    "
 },
 {
+  "id": "sec-laplace-second-order-deriv-3",
+  "level": "2",
+  "url": "so3.html#sec-laplace-second-order-deriv-3",
+  "type": "Example",
+  "number": "2.3.1",
+  "title": "",
+  "body": "  We'll use the Laplace transform to solve the equation with and .  Transform each component:  and so that we have and   Decomposing and working the algebra gives which, after comparing to , gives the solution    "
+},
+{
   "id": "so4",
   "level": "1",
   "url": "so4.html",
   "type": "Section",
   "number": "2.4",
   "title": "SO4: The Laplace Transform (Unit Step and Impulse Functions)",
-  "body": " SO4: The Laplace Transform (Unit Step and Impulse Functions)     I can use the Laplace transform to solve differential equations involving unit step or impulse functions.       "
+  "body": " SO4: The Laplace Transform (Unit Step and Impulse Functions)     I can use the Laplace transform to solve differential equations involving unit step or impulse functions.      Unit Step\/Heaviside Functions   Unit Step Function  unit step function  Heaviside function   The unit step function , also called the Heaviside function , is the piecewise function This can be generalized as   Other notations for are or .      f(x) = 1  g(x) = 0       p0 = 1  p1 = f(1)   t    y    a           The graph of a general Heaviside function,      The Heaviside function can be thought of as turning an object on at the input .     We can write functions in terms of the Heaviside function. Consider the function The graph of the function is given below.      f(x) = x  g(x) = 0       p0 = 1  p1 = f(1)   t    y    a           The graph of   The first part of the function behaves like , but we must contend with the second part of the definition. Since , we can write       Suppose a capacitor takes two seconds to charge, discharges immediately, and does not charge again. Graphically, we have the image below.      f(x) = x        t    y    2           The graph of a charging and discharging capacitor   Let be the function describing the charge of the capacitor at time . Since we want to be equal to on , we have We can start by writing , whose graph is given below:      f(x) = x        t    y    2           The graph of   Now, we can write in terms of the Heaviside function: .      Write the graph of below in terms of the unit step function.      f(x) = x        t    y    2           The graph of       Solving Equations with Discontinuous Forcing    One of the advantages of the Laplace transform is that it allows us to more easily solve differential equations whose forcing terms are discontinuous  The Laplace transform of the Heaviside function itself is not particularly difficult; since We have So .  A similar computation shows that for a function like , we get where is the Laplace transform of . Note : the definition of this transform requires that we use rather than simply .     Laplace Transforms Involving Unit Step Functions  The above example gives rise to two new transform rules:        Consider the differential equation where and , . Transforming gives so that   For decomposition, we want to treat the fraction as so that we get From the equations above, we get which can be rewritten in piecewise form as   We can interpret this solution as saying that until , the system is switched off , but at , the system is switched on and begins oscillating.      Impulse\/Delta Functions   Impulse\/Delta Functions  impulse function  delta function   The impulse function , also known as the Dirac delta , is a function which describes a force applied at a specific moment in time. has two key properties and      An impulse function isn't really a function at all; technically, it is a generalized function , objects which are far beyond the scope of this course. It suffices to say that is an object which models a momentary force applied to the system modeled by the differential equation.    Laplace Transforms Involving Unit Impulse  There are two transforms associated with the Dirac delta:      Solving Equations with Impulse-like Forcing    Consider the equation with and . Transforming the equation gives which yields   Rewrite as Transforming back to the time domain gives   The physical interpretation is that the system behaves like for 1 time unit (say, seconds) until the force is applied. After the force is applied, the system never quite recovers, as it behaves like from that point on.     "
 },
 {
   "id": "so4-2",
@@ -892,13 +937,103 @@ var ptx_lunr_docs = [
   "body": "   I can use the Laplace transform to solve differential equations involving unit step or impulse functions.    "
 },
 {
+  "id": "def-unit-step-function",
+  "level": "2",
+  "url": "so4.html#def-unit-step-function",
+  "type": "Definition",
+  "number": "2.4.1",
+  "title": "Unit Step Function.",
+  "body": " Unit Step Function  unit step function  Heaviside function   The unit step function , also called the Heaviside function , is the piecewise function This can be generalized as   Other notations for are or .      f(x) = 1  g(x) = 0       p0 = 1  p1 = f(1)   t    y    a           The graph of a general Heaviside function,    "
+},
+{
+  "id": "sec-laplace-unit-functions-3",
+  "level": "2",
+  "url": "so4.html#sec-laplace-unit-functions-3",
+  "type": "Note",
+  "number": "2.4.3",
+  "title": "",
+  "body": " The Heaviside function can be thought of as turning an object on at the input .  "
+},
+{
+  "id": "sec-laplace-unit-functions-4",
+  "level": "2",
+  "url": "so4.html#sec-laplace-unit-functions-4",
+  "type": "Example",
+  "number": "2.4.4",
+  "title": "",
+  "body": "  We can write functions in terms of the Heaviside function. Consider the function The graph of the function is given below.      f(x) = x  g(x) = 0       p0 = 1  p1 = f(1)   t    y    a           The graph of   The first part of the function behaves like , but we must contend with the second part of the definition. Since , we can write    "
+},
+{
+  "id": "sec-laplace-unit-functions-5",
+  "level": "2",
+  "url": "so4.html#sec-laplace-unit-functions-5",
+  "type": "Example",
+  "number": "2.4.6",
+  "title": "",
+  "body": "  Suppose a capacitor takes two seconds to charge, discharges immediately, and does not charge again. Graphically, we have the image below.      f(x) = x        t    y    2           The graph of a charging and discharging capacitor   Let be the function describing the charge of the capacitor at time . Since we want to be equal to on , we have We can start by writing , whose graph is given below:      f(x) = x        t    y    2           The graph of   Now, we can write in terms of the Heaviside function: .   "
+},
+{
+  "id": "sec-laplace-unit-functions-6",
+  "level": "2",
+  "url": "so4.html#sec-laplace-unit-functions-6",
+  "type": "Checkpoint",
+  "number": "2.4.9",
+  "title": "",
+  "body": "  Write the graph of below in terms of the unit step function.      f(x) = x        t    y    2           The graph of    "
+},
+{
+  "id": "sec-laplace-discontinuous-forcing-2",
+  "level": "2",
+  "url": "so4.html#sec-laplace-discontinuous-forcing-2",
+  "type": "Example",
+  "number": "2.4.11",
+  "title": "",
+  "body": "  One of the advantages of the Laplace transform is that it allows us to more easily solve differential equations whose forcing terms are discontinuous  The Laplace transform of the Heaviside function itself is not particularly difficult; since We have So .  A similar computation shows that for a function like , we get where is the Laplace transform of . Note : the definition of this transform requires that we use rather than simply .   "
+},
+{
+  "id": "sec-laplace-discontinuous-forcing-4",
+  "level": "2",
+  "url": "so4.html#sec-laplace-discontinuous-forcing-4",
+  "type": "Example",
+  "number": "2.4.12",
+  "title": "",
+  "body": "  Consider the differential equation where and , . Transforming gives so that   For decomposition, we want to treat the fraction as so that we get From the equations above, we get which can be rewritten in piecewise form as   We can interpret this solution as saying that until , the system is switched off , but at , the system is switched on and begins oscillating.   "
+},
+{
+  "id": "def-impulse-function",
+  "level": "2",
+  "url": "so4.html#def-impulse-function",
+  "type": "Definition",
+  "number": "2.4.13",
+  "title": "Impulse\/Delta Functions.",
+  "body": " Impulse\/Delta Functions  impulse function  delta function   The impulse function , also known as the Dirac delta , is a function which describes a force applied at a specific moment in time. has two key properties and    "
+},
+{
+  "id": "sec-laplace-impulse-functions-3",
+  "level": "2",
+  "url": "so4.html#sec-laplace-impulse-functions-3",
+  "type": "Remark",
+  "number": "2.4.14",
+  "title": "",
+  "body": " An impulse function isn't really a function at all; technically, it is a generalized function , objects which are far beyond the scope of this course. It suffices to say that is an object which models a momentary force applied to the system modeled by the differential equation.  "
+},
+{
+  "id": "sec-laplace-impulse-forcing-2",
+  "level": "2",
+  "url": "so4.html#sec-laplace-impulse-forcing-2",
+  "type": "Example",
+  "number": "2.4.15",
+  "title": "",
+  "body": "  Consider the equation with and . Transforming the equation gives which yields   Rewrite as Transforming back to the time domain gives   The physical interpretation is that the system behaves like for 1 time unit (say, seconds) until the force is applied. After the force is applied, the system never quite recovers, as it behaves like from that point on.   "
+},
+{
   "id": "so5",
   "level": "1",
   "url": "so5.html",
   "type": "Section",
   "number": "2.5",
   "title": "SO5: The Laplace Transform (Convolutions)",
-  "body": " SO5: The Laplace Transform (Convolutions)     I can use the Laplace transform to compute the convolution of two functions.       "
+  "body": " SO5: The Laplace Transform (Convolutions)     I can use the Laplace transform to compute the convolution of two functions.      Convolutions   Convolution  convolution   Given two functions and , we define the convolution of and to be the integral for      A few words about the convolution:   The convolution of two functions (of ) is again a function of .    The convolution of two functions intuitively tells us how one function changes the shape of another.    The Laplace transform of a convolution is the product of Laplace transforms, which is an unusual (but helpful!) property to have.        The convolution of the functions and (for constant ) is given by       Find the convolution of and .      Convolutions & The Laplace Transform   Laplace Transform of a Convolution  For piecewise continuous functions and ,   This directly implies another characterization of the convolution, namely that      We can compute by using the above statement.   and , so After partial fraction decomposition, we get so that which is given by      "
 },
 {
   "id": "so5-2",
@@ -910,13 +1045,58 @@ var ptx_lunr_docs = [
   "body": "   I can use the Laplace transform to compute the convolution of two functions.    "
 },
 {
+  "id": "def-convolution",
+  "level": "2",
+  "url": "so5.html#def-convolution",
+  "type": "Definition",
+  "number": "2.5.1",
+  "title": "Convolution.",
+  "body": " Convolution  convolution   Given two functions and , we define the convolution of and to be the integral for    "
+},
+{
+  "id": "sec-convolution-3",
+  "level": "2",
+  "url": "so5.html#sec-convolution-3",
+  "type": "Remark",
+  "number": "2.5.2",
+  "title": "",
+  "body": " A few words about the convolution:   The convolution of two functions (of ) is again a function of .    The convolution of two functions intuitively tells us how one function changes the shape of another.    The Laplace transform of a convolution is the product of Laplace transforms, which is an unusual (but helpful!) property to have.     "
+},
+{
+  "id": "sec-convolution-4",
+  "level": "2",
+  "url": "so5.html#sec-convolution-4",
+  "type": "Example",
+  "number": "2.5.3",
+  "title": "",
+  "body": "  The convolution of the functions and (for constant ) is given by    "
+},
+{
+  "id": "sec-convolution-5",
+  "level": "2",
+  "url": "so5.html#sec-convolution-5",
+  "type": "Checkpoint",
+  "number": "2.5.4",
+  "title": "",
+  "body": "  Find the convolution of and .   "
+},
+{
+  "id": "sec-convolution-laplace-3",
+  "level": "2",
+  "url": "so5.html#sec-convolution-laplace-3",
+  "type": "Example",
+  "number": "2.5.5",
+  "title": "",
+  "body": "  We can compute by using the above statement.   and , so After partial fraction decomposition, we get so that which is given by    "
+},
+{
   "id": "so6",
   "level": "1",
   "url": "so6.html",
   "type": "Section",
   "number": "2.6",
   "title": "SO6: Applications of Second-Order Differential Equations",
-  "body": " SO6: Applications of Second-Order Differential Equations     I can solve applied problems resulting from second-order differential equations.       "
+  "body": " SO6: Applications of Second-Order Differential Equations     I can solve applied problems resulting from second-order differential equations.      Harmonic Motion    In this example, we will develop the equation for free damped motion in a mass-spring-damper system.  Suppose that we have a mass attached to a spring (with sprint constant ) which moves in a straight line. Further suppose that the mass is connected to some sort of shock absorber, called a damper, which has coefficient .  Newton's second law of motion tells us that If we consider a position function , then we can recast Newton's second law as In the spring system, we also must consider Hooke's law: Since the spring force opposes the direction of motion, we have If we further assume that the damping constant is nonzero, and that damping is proportional to velocity, we have that or   The equation can be rewritten as where and .  The equation represents free motion because we assume no forcing term; forced harmonic motion occurs when we have a forcing term on the right hand side (generally in terms of cosine).     Overdamped\/Critically Damped\/Underdamped Systems  overdamped system  critically damped system  underdamped system   Consider a mass-spring-damper system with mass , damping coefficient , and spring constant , modeled by the equation with and .  The system is said to be overdamped if , critically damped if , and underdamped if .     To be overdamped means that the damping coefficient is large compared to the spring constant, which results           Circuits      "
 },
 {
   "id": "so6-2",
@@ -928,13 +1108,49 @@ var ptx_lunr_docs = [
   "body": "   I can solve applied problems resulting from second-order differential equations.    "
 },
 {
+  "id": "sec-second-order-apps-harmonic-2",
+  "level": "2",
+  "url": "so6.html#sec-second-order-apps-harmonic-2",
+  "type": "Example",
+  "number": "2.6.1",
+  "title": "",
+  "body": "  In this example, we will develop the equation for free damped motion in a mass-spring-damper system.  Suppose that we have a mass attached to a spring (with sprint constant ) which moves in a straight line. Further suppose that the mass is connected to some sort of shock absorber, called a damper, which has coefficient .  Newton's second law of motion tells us that If we consider a position function , then we can recast Newton's second law as In the spring system, we also must consider Hooke's law: Since the spring force opposes the direction of motion, we have If we further assume that the damping constant is nonzero, and that damping is proportional to velocity, we have that or   The equation can be rewritten as where and .  The equation represents free motion because we assume no forcing term; forced harmonic motion occurs when we have a forcing term on the right hand side (generally in terms of cosine).   "
+},
+{
+  "id": "def-over-critical-under-damped",
+  "level": "2",
+  "url": "so6.html#def-over-critical-under-damped",
+  "type": "Definition",
+  "number": "2.6.2",
+  "title": "Overdamped\/Critically Damped\/Underdamped Systems.",
+  "body": " Overdamped\/Critically Damped\/Underdamped Systems  overdamped system  critically damped system  underdamped system   Consider a mass-spring-damper system with mass , damping coefficient , and spring constant , modeled by the equation with and .  The system is said to be overdamped if , critically damped if , and underdamped if .   "
+},
+{
+  "id": "sec-second-order-apps-harmonic-4",
+  "level": "2",
+  "url": "so6.html#sec-second-order-apps-harmonic-4",
+  "type": "Remark",
+  "number": "2.6.3",
+  "title": "",
+  "body": " To be overdamped means that the damping coefficient is large compared to the spring constant, which results  "
+},
+{
+  "id": "sec-second-order-apps-harmonic-5",
+  "level": "2",
+  "url": "so6.html#sec-second-order-apps-harmonic-5",
+  "type": "Example",
+  "number": "2.6.4",
+  "title": "",
+  "body": "     "
+},
+{
   "id": "sd1",
   "level": "1",
   "url": "sd1.html",
   "type": "Section",
   "number": "3.1",
   "title": "SD1: Solutions to Differential Equations",
-  "body": " SD1: Solutions to Differential Equations     I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.       "
+  "body": " SD1: Solutions to Differential Equations     I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.      Matrices   Matrix  matrix (definition)  matrix (square)   A matrix is an array of the form where represents the number of rows in the matrix and represents the number of columns in the matrix.  If , i.e. the number of rows and columns are the same, then we say matrix is a square matrix .      A matrix is given by       Matrix Algebra      Determinants     "
 },
 {
   "id": "sd1-2",
@@ -946,13 +1162,31 @@ var ptx_lunr_docs = [
   "body": "   I can use matrix algebra to compute linear combinations, products of matrices, and determinants of matrices, as well as determine when these are not possible.    "
 },
 {
+  "id": "def-matrix",
+  "level": "2",
+  "url": "sd1.html#def-matrix",
+  "type": "Definition",
+  "number": "3.1.1",
+  "title": "Matrix.",
+  "body": " Matrix  matrix (definition)  matrix (square)   A matrix is an array of the form where represents the number of rows in the matrix and represents the number of columns in the matrix.  If , i.e. the number of rows and columns are the same, then we say matrix is a square matrix .   "
+},
+{
+  "id": "sec-matrices-3",
+  "level": "2",
+  "url": "sd1.html#sec-matrices-3",
+  "type": "Example",
+  "number": "3.1.2",
+  "title": "",
+  "body": "  A matrix is given by    "
+},
+{
   "id": "sd2",
   "level": "1",
   "url": "sd2.html",
   "type": "Section",
   "number": "3.2",
   "title": "SD2: Eigenvalues &amp; Eigenvectors; Linear Independence",
-  "body": " SD2: Eigenvalues & Eigenvectors; Linear Independence     I can find the eigenvalues and eigenvectors for a 2x2 matrix, and determine when any two vectors are linearly independent.       "
+  "body": " SD2: Eigenvalues & Eigenvectors; Linear Independence     I can find the eigenvalues and eigenvectors for a 2x2 matrix, and determine when any two vectors are linearly independent.      Eigenvalues of a Matrix      Eigenvectors of a Matrix     "
 },
 {
   "id": "sd2-2",

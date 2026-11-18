@@ -1,4 +1,4 @@
-<prefigure xmlns="https://prefigure.org" label="slopefield-fo7-1">
+<prefigure xmlns="https://prefigure.org" label="autonomous-logistic-slopefield-1">
     <diagram dimensions ="(300,300)" margins="(60,5,20,25)">
         <definition>
             f(x,y) = 0.1*y*(5-y)

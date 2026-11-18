@@ -11,7 +11,305 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+    <subsection xml:id="sec-laplace-unit-functions">
+        <title>Unit Step/Heaviside Functions</title>
+            <definition xml:id="def-unit-step-function">
+                <title>Unit Step Function</title>
+                <idx><h>unit step function</h></idx>
+                <idx><h>Heaviside function</h></idx>
+                <statement>
+                    <p>
+                        The <term>unit step function</term>, also called the <term>Heaviside function</term>, is the piecewise function
+                        <md>
+                            u(t) = 
+                            \begin{cases}
+                                0 \amp t \lt 0\\
+                                1 \amp t \geq 0
+                            \end{cases}
+                        </md>
+                        This can be generalized as
+                        <md>
+                            u(t-a) = 
+                            \begin{cases}
+                                0 \amp t \lt a \\
+                                1 \amp t \geq a
+                            \end{cases}
+                        </md>
+                    </p>
+                    <p>
+                        Other notations for <m>u(t-a)</m> are <m>u_a(t)</m> or <m>H(t-a)</m>. 
+                    </p>
+                    <figure xml:id="so4-heaviside-1">
+                        <image width = "60%">
+                            <xi:include href="img/so4-heaviside-1.xml"/>
+                        </image>
+                        <caption>The graph of a general Heaviside function, <m>u(t-a)</m></caption>
+                    </figure>
+                </statement>
+            </definition>
+            
+            <note>
+                <p>
+                    The Heaviside function <m>u(t-a)</m> can be thought of as turning an object <q>on</q> at the input <m>a</m>.
+                </p>
+            </note>
+
+            <example>
+                <statement>
+                    <p>
+                        We can write functions in terms of the Heaviside function. Consider the function 
+                        <md>
+                            f(t) = 
+                            \begin{cases}
+                                0 \amp t \lt 1 \\
+                                t \amp t \geq 1
+                            \end{cases}
+                        </md>
+                        The graph of the function is given below.
+                    </p>
+                    <figure xml:id="so4-heaviside-2">
+                        <image width="60%">
+                            <xi:include href="img/so4-heaviside-2.xml"/>
+                        </image>
+                        <caption>The graph of <m>f(t)</m></caption>
+                    </figure>
+                    <p>
+                        The first part of the function behaves like <m>u(t-1)</m>, but we must contend with the second part of the definition. Since <m>1\cdot t = t</m>, we can write
+                        <md>
+                            f(t) = tu_1(t)
+                        </md>
+                    </p>
+                </statement>
+            </example>
+            <example>
+                <statement>
+                    <p>
+                        Suppose a capacitor takes two seconds to charge, discharges immediately, and does not charge again. Graphically, we have the image below.
+                    </p>
+                    <figure xml:id="so4-heaviside-3">
+                        <image width="60%">
+                            <xi:include href="./img/so4-heaviside-3.xml"/>
+                        </image>
+                        <caption>The graph of a charging and discharging capacitor</caption>
+                    </figure>
+                    <p>
+                        Let <m>C(t)</m> be the function describing the charge of the capacitor at time <m>t</m>. Since we want <m>C(t)</m> to be equal to <m>t</m> on <m>[0,2]</m>, we have
+                        <md>
+                            C(t) = 
+                            \begin{cases}
+                                t \amp 0 \geq t \lt 2 \\
+                                0 \amp t\geq 2
+                            \end{cases}
+                        </md>
+                        We can start by writing <m>u(2-t)</m>, whose graph is given below: 
+                    </p>
+                    <figure xml:id="so4-heaviside-4">
+                        <image width="60%">
+                            <xi:include href="img/so4-heaviside-4.xml"/>
+                        </image>
+                        <caption>The graph of <m>u(2-t)</m></caption>
+                    </figure>
+                    <p>
+                        Now, we can write <m>C(t)</m> in terms of the Heaviside function: <m>C(t) = tu(2-t)</m>. 
+                    </p>
+                </statement>
+            </example>
+
+            <exercise>
+                <statement>
+                    <p>
+                        Write the graph of <m>f(t)</m> below in terms of the unit step function.
+                    </p>
+                    <figure xml:id="so4-heaviside-5">
+                        <image width="60%">
+                            <xi:include href="img/so4-heaviside-5.xml"/>
+                        </image>
+                        <caption>The graph of <m>f(t)</m></caption>
+                    </figure>
+                </statement>
+            </exercise>
+    </subsection>
+
+    <subsection xml:id="sec-laplace-discontinuous-forcing">
+        <title>Solving Equations with Discontinuous Forcing</title>
+        
+        <example>
+            <statement>
+                <p>
+                    One of the advantages of the Laplace transform is that it allows us to more easily solve differential equations whose forcing terms are discontinuous
+                </p>
+                <p>
+                    The Laplace transform of the Heaviside function itself is not particularly difficult; since 
+                    <md>
+                        u(t-a) = 
+                        \begin{cases}
+                            0 \amp t \lt a \\
+                            1 \amp t \geq a
+                        \end{cases}
+                    </md>
+                    We have
+                    <md>
+                        <mrow> \mathcal{L}(u(t-a)) \amp = \begin{cases} \mathcal{L}(0) \amp t \lt a \\ \mathcal{L}(1) \amp t \geq a \end{cases}  </mrow>
+                        <mrow> \amp = \begin{cases} \ds \int_0^a 0e^{-st}\, dt \\ \ds \int_a^\infty 1e^{-st}\, dt \end{cases} </mrow>
+                        <mrow> \amp = \begin{cases} 0 \amp t \lt a \\ \ds \lim_{N\to\infty} -\dfrac{1}{s}e^{-st}\bigg\rvert_a^N\amp t \geq a\end{cases}</mrow>
+                        <mrow> \amp = \begin{cases} 0 \amp t \lt a \\ \dfrac{1}{s}e^{-as}\end{cases}</mrow>
+                    </md>
+                    So <m>\mathcal{L}(u(t-a)) = \dfrac{1}{s}e^{-as}</m>. 
+                </p>
+                <p>
+                    A similar computation shows that for a function like <m>f(t-a)u(t-a)</m>, we get 
+                    <md>
+                        \mathcal{L}(f(t-a)u(t-a)) = e^{-as}F(s)
+                    </md>
+                    where <m>F(s)</m> is the Laplace transform of <m>f(t)</m>. <alert>Note</alert>: the definition of this transform <em>requires</em> that we use <m>f(t-a)</m> rather than simply <m>f(t)</m>. 
+                </p>
+            </statement>
+        </example>
+
+        <assemblage>
+            <title>Laplace Transforms Involving Unit Step Functions</title>
+            <p>
+                The above example gives rise to two new transform rules:
+            </p>
+            <p>
+                <md>
+                    <mrow>\mathcal{L}(u(t-a)) \amp = \dfrac{1}{s}e^{-as} </mrow>
+                    <mrow>\mathcal{L}(f(t-a)u(t-a)) \amp = e^{-as}F(s) </mrow>
+                </md>
+            </p>
+        </assemblage>
+
+        <example>
+            <statement>
+                <p>
+                    Consider the differential equation
+                    <md>
+                        y'' + 4y = f(t)
+                    </md>
+                    where 
+                    <md>
+                        f(x) = 
+                        \begin{cases}
+                            0 \amp t \lt 1 \\
+                            1 \amp t \geq 1
+                        \end{cases}
+                    </md>
+                    and <m>f(0) = 0</m>, <m>f'(0) = 0</m>. Transforming gives 
+                    <md>
+                        [s^2Y(s)-s(0) - 0] + 4Y(s) = \dfrac{1}{s}e^{-s}
+                    </md>
+                    so that 
+                    <md>
+                        Y(s) = \dfrac{e^{-s}}{s(s^2+4)}
+                    </md>
+                </p>
+                <p>
+                    For decomposition, we want to treat the fraction as
+                    <md>
+                        Y(s) = \dfrac{1}{s(s^2+4)}e^{-s}
+                    </md>
+                    so that we get 
+                    <md>
+                        Y(s) = \lrpar{\dfrac{1/4}{s} - \dfrac{1}{4} \dfrac{s}{s^2 + 4}}e^{-s}
+                    </md>
+                    From the equations above, we get
+                    <md>
+                        y(x) = \dfrac{1}{4}u(t-1)(1-\cos (2(t-1)))
+                    </md>
+                    which can be rewritten in piecewise form as
+                    <md>
+                        y(x) = 
+                        \begin{cases}
+                            0 \amp t \lt 1 \\
+                            \dfrac{1}{4} (1-\cos(2(t-1))) \amp t \geq 1
+                        \end{cases}
+                    </md>
+                </p>
+                <p>
+                    We can interpret this solution as saying that until <m>t=1</m>, the system is <q>switched off</q>, but at <m>t=1</m>, the system is <q>switched on</q> and begins oscillating. 
+                </p>
+            </statement>
+        </example>
+    </subsection>
+
+    <subsection xml:id="sec-laplace-impulse-functions">
+        <title>Impulse/Delta Functions</title>
+        
+        <definition xml:id="def-impulse-function">
+            <title>Impulse/Delta Functions</title>
+            <idx><h>impulse function</h></idx>
+            <idx><h>delta function</h></idx>
+            <statement>
+                <p>
+                    The <term>impulse function</term>, also known as the <term>Dirac delta</term>, is a <q>function</q> which describes a force applied at a specific moment in time. <m>\delta</m> has two key properties
+                    <md>
+                        \int_{-\infty}^\infty \delta(t-t_0) = 1
+                    </md>
+                    and
+                    <md>
+                        \delta(t-t_0) = 0 \text{ when } t\neq t_0
+                    </md>
+                    
+                    
+                </p>
+            </statement>
+        </definition>
+
+        <remark>
+            <p>
+                An impulse function isn't really a function at all; technically, it is a <em>generalized function</em>, objects which are far beyond the scope of this course. It suffices to say that <m>\delta</m> is an object which models a momentary force applied to the system modeled by the differential equation.
+            </p>
+        </remark>
+
+        <assemblage>
+            <title>Laplace Transforms Involving Unit Impulse</title>
+            <p>
+                There are two transforms associated with the Dirac delta:
+                <md>
+                    <mrow>\mathcal{L}(\delta (t-t_0)) \amp = e^{-st_0}</mrow>
+                    <mrow>\mathcal{L}(f(t)\delta(t-t_0)) \amp = f(t_0)e^{-st_0} </mrow>
+                </md>
+            </p>
+        </assemblage>
+    </subsection>
+
+    <subsection xml:id="sec-laplace-impulse-forcing">
+        <title>Solving Equations with Impulse-like Forcing</title>
+        
+        <example>
+            <statement>
+                <p>
+                    Consider the equation
+                    <md>
+                        y'' + \pi^2 y = \delta (t-1)
+                    </md>
+                    with <m>y(0) = 1</m> and <m>y'(0) = 0</m>. Transforming the equation gives
+                    <md>
+                        [s^2Y(s) - s] + \pi^2 Y(s) = e^{-s}
+                    </md>
+                    which yields 
+                    <md>
+                        Y(s) = \dfrac{s+e^{-s}}{s^2 + \pi^2}
+                    </md>
+                </p>
+                <p>
+                    Rewrite <m>Y(s)</m> as 
+                    <md>
+                        \dfrac{s}{s^2 + \pi^2} + \dfrac{1}{\pi} \dfrac{\pi}{s^2 + \pi^2}e^{-s}
+                    </md>
+                    Transforming back to the time domain gives 
+                    <md>
+                        y(t) = \cos(\pi t) + \dfrac{1}{\pi}\sin(\pi(t-1))u(t-1)
+                    </md>
+                </p>
+                <p>
+                    The physical interpretation is that the system behaves like <m>\cos (\pi t)</m> for 1 time unit (say, seconds) until the force is applied. After the force is applied, the system never quite recovers, as it behaves like 
+                    <md>
+                        \cos(\pi t) + \dfrac{1}{\pi}\sin(\pi(t-1))
+                    </md>
+                    from that point on.
+                </p>
+            </statement>
+        </example>
+    </subsection>
 </section>

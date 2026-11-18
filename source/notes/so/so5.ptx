@@ -11,7 +11,113 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+   
+    <subsection xml:id="sec-convolution">
+        <title>Convolutions</title>
+        <definition xml:id="def-convolution">
+            <title>Convolution</title>
+            <idx><h>convolution</h></idx>
+            <statement>
+                <p>
+                    Given two functions <m>f(t)</m> and <m>g(t)</m>, we define the <term>convolution</term> of <m>f(t)</m> and <m>g(t)</m> to be the integral
+                    <md>
+                        (f*g)(t) = \int_0^t f(t-\tau)g(\tau)\, d\tau
+                    </md>
+                    for <m>t \gt 0</m>
+                </p>
+            </statement>
+        </definition>
+        <remark>
+            <p>
+                A few words about the convolution:
+                <ul>
+                    <li>
+                        <p>
+                            The convolution of two functions (of <m>t</m>) is again a function of <m>t</m>. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The convolution of two functions intuitively tells us how one function <q>changes the shape</q> of another. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The Laplace transform of a convolution is the product of Laplace transforms, which is an unusual (but helpful!) property to have.
+                        </p>
+                    </li>
+                </ul> 
+            </p>
+        </remark>
+
+        <example>
+            <statement>
+                <p>
+                    The convolution of the functions <m>f(t) = t</m> and <m>g(t) = k</m> (for constant <m>k</m>) is given by 
+                    <md>
+                        <mrow>(t*k)(t) \amp = \int_0^t k(t-\tau)\, d\tau</mrow>
+                        <mrow> \amp = k\int_0^t t-\tau \, d\tau </mrow>
+                        <mrow> \amp = k \left[t\tau - \dfrac{1}{2}\tau^2\right]_0^t </mrow>
+                        <mrow> \amp = k \left[(t^2 - \dfrac{1}{2}t^2) - 0\right] </mrow>
+                        <mrow> \amp = \dfrac{k}{2}t^2 </mrow>
+                    </md>
+                </p>
+            </statement>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>
+                    Find the convolution of <m>f(t) = e^t</m> and <m>g(t) = t</m>. 
+                </p>
+            </statement>
+        </exercise>
+
+    </subsection>
+
+    <subsection xml:id="sec-convolution-laplace">
+        <title>Convolutions &amp; The Laplace Transform</title>
+        
+        <assemblage>
+            <title>Laplace Transform of a Convolution</title>
+            <p>
+                For piecewise continuous functions <m>f(t)</m> and <m>g(t)</m>, 
+                <md>
+                    \mathcal{L}(f(t)*g(t)) = \mathcal{L}(f(t))\mathcal{L}(g(t)) = F(s)G(s)
+                </md>
+            </p>
+            <p>
+                This directly implies another characterization of the convolution, namely that 
+                <md>
+                    f(t)*g(t) = \inv{\mathcal{L}}(F(s)G(s))
+                </md>
+            </p>
+        </assemblage>
+
+        <example>
+            <statement>
+                <p>
+                    We can compute <m>e^t*\cos(t)</m> by using the above statement.                  
+                </p>
+                <p>
+                    <m>\mathcal{L}(e^t) = \dfrac{1}{s-1}</m> and <m>\mathcal{L}(\cos (t)) = \dfrac{s}{s^2+1}</m>, so
+                    <md>
+                        F(s)G(s) = \dfrac{s}{(s-1)(s^2+1)}
+                    </md>
+                    After partial fraction decomposition, we get
+                    <md>
+                        F(s)G(s) = \dfrac{1/2}{s-1} - \dfrac{(1/2)s}{s^2+1} + \dfrac{1/2}{s^2+1}
+                    </md>
+                    so that
+                    <md>
+                        f*g = \inv{\mathcal{L}}\lrpar{\dfrac{1/2}{s-1} - \dfrac{(1/2)s}{s^2+1} + \dfrac{1/2}{s^2+1}}
+                    </md>
+                    which is given by
+                    <md>
+                        f*g = \dfrac{1}{2}(e^t - \cos (t) + \sin (t))
+                    </md>
+                </p>
+            </statement>
+        </example>
+    </subsection>
 </section>

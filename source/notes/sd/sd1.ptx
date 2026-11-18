@@ -11,8 +11,56 @@
             </li>
         </ul>
     </objectives>
-    
-    <p>
+    <subsection xml:id="sec-matrices">
+        <title>Matrices</title>
         
-    </p>
+        <definition xml:id="def-matrix">
+            <title>Matrix</title>
+            <idx><h>matrix (definition)</h></idx>
+            <idx><h>matrix (square)</h></idx>
+            <statement>
+                <p>
+                    A <term>matrix</term> is an array of the form 
+                    <md>
+                        \begin{pmatrix}
+                            a_{11} \amp a_{12} \amp \cdots \amp a_{1n} \\
+                            a_{21} \amp a_{22} \amp \cdots \amp a_{2n} \\
+                            \vdots \amp \vdots \amp \ddots \amp \cdots \\
+                            a_{m1} \amp a_{m2} \amp \cdots \amp a_{mn} \\
+                        \end{pmatrix}
+                    </md>
+                    where <m>m</m> represents the number of <em>rows</em> in the matrix and <m>n</m> represents the number of <em>columns</em> in the matrix. 
+                </p>
+                <p>
+                    If <m>m = n</m>, i.e. the number of rows and columns are the same, then we say matrix is a <term>square matrix</term>. 
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    An example of a <m>3\times 4</m> matrix is given by <m>\begin{pmatrix} 2 \amp 1 \amp -1 \amp 0 \\ 7 \amp \dfrac{1}{7} \amp e \amp \pi \\ 0 \amp 0 \amp 1 \amp 0\end{pmatrix}</m>
+                </p>
+            </statement>
+        </example>
+    </subsection>
+
+    <subsection xml:id="sec-matrix-algebra">
+        <title>Matrix Algebra</title>
+        
+        <assemblage>
+            <title></title>
+            <p>
+                
+            </p>
+        </assemblage>
+    </subsection>
+
+    <subsection xml:id="sec-matrix-determinants">
+        <title>Determinants</title>
+        <p>
+            
+        </p>
+    </subsection>
 </section>

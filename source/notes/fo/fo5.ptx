@@ -1,146 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="fo5" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>FO5: Applications of First-Order Differential Equations</title>
+    <title>FO5: Equilibrium Points &amp; Autonomous Equations</title>
     <objectives>
         <ul>
             <li>
                 <p>
-                    I can solve applied problems resulting from first-order differential equations.
+                    I can determine the equilibrium solutions of autonomous differential equations and use a phase line (and associated terminology) to describe their behavior.
                 </p>
             </li>
         </ul>
     </objectives>
-    
-    <subsection xml:id="sec-first-order-applications-mixing-first-order">
-        <title>Mixing Problems</title>
-        
-        <example>
+    <subsection xml:id="sec-autonomous-equations">
+        <title>Autonomous Equations</title>
+        <definition xml:id="def-autonomous-equation">
+            <title>Autonomous Equation</title>
+            <idx><h>autonomous equation</h></idx>
+            <statement>
+                <p>
+                    A differential equation is said to be <term>autonomous</term> if it can be written in the form 
+                    <md>
+                        y' = f(y)
+                    </md>
+                    That is, the differential equation does not depend on the independent variable.
+                </p>
+            </statement>
+        </definition>
+
+        <assemblage>
+            <title>Solving Autonomous Equations</title>
             <p>
-                A 100-liter tank contains 10 kilograms of salt dissolved in 60 liters of water. A solution of water and salt (brine) with a concentration of 0.1 kilograms per liter is flowing in at the rate of 5 liters a minute. The solution in the tank is well stirred and flows out at a rate of 3 liters a minute. How much salt is in the tank when the tank is full?
+                All autonomous equations are separable, and so can be solved using that technique; not all will result in closed-form solutions.
             </p>
-            <p>
-                We need to find the differential equation which results from this setup. Let <m>x</m> be the number of kilograms of salt in the tank, and let <m>t</m> denote the time in minutes. Let <m>r_{in}</m> denote the inflow rate of brine, <m>r_{out}</m> denote the outflow rate from the tank,<m>C_{in}</m> denote the brine concentration for the inflow, and <m>C_{out}</m> denote the brine outflow concentration.
-            </p>
-            <p>
-                For some small change in time, <m>\Delta t</m>, the change in <m>x</m> (<m>\Delta x</m>) is approximately given by
-                <md>
-                    \Delta x\approx (r_{in}\cdot C_{in})\Delta t - (r_{out}\cdot C_{out})\Delta t.
-                </md>
-                Dividing through by <m>\Delta t</m> and taking the limit as <m>\Delta t\to 0</m>, we get
-                <md>
-                    \dfrac{dx}{dt} = r_{in}C_{in} - r_{out}C_{out}
-                </md>
-                So for this example, we have
-                <ul>
-                    <li>
-                        <p>
-                            <m>r_{in} = 5</m> 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <m>C_{in} = 0.1</m>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <m>r_{out} = 3</m>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <m>C_{out} = \dfrac{x}{V}</m>, where <m>V = V_0 + (r_{in} - r_{out})t = 60 + 2t</m>, so that <m>C_{out} = \dfrac{x}{60+2t}</m>
-                        </p>
-                    </li>
-                </ul>
-                This gives our differential equation
-                <md>
-                    \dfrac{dx}{dt} = 0.5 - 3\lrpar{\dfrac{x}{60+2t}}
-                </md>
-            </p>
-            <p>
-                We can solve using the integrating factor or the Laplace transform; no matter the method of solution, we end with 
-                <md>
-                    x = \dfrac{60+2t}{10} + \dfrac{240\sqrt{60}}{(60+2t)^{3/2}}
-                </md>
-                To find the amount of salt, note that the net inflow rate is 2 liters per minute; this means that the tank is full when <m>60 + 2t = 100</m>, or <m>t=20</m>. So, 
-                <md>
-                    x(20) = 10 + \dfrac{240\sqrt{60}}{(100)^{3/2}}\approx 11.86
-                </md>
-            </p>
+        </assemblage>
+
+        <example xml:id="ex-autonomous-logistic">
+            <statement>
+                <p>
+                    Autonomous equations have particularly nice slope fields. 
+                </p>
+                <p>
+                    Consider the differential equation 
+                    <md>
+                        \dfrac{dy}{dx} = 0.1x(2-x)
+                    </md>
+                    This is of the form given by <xref ref="logistic-growth"/>, so we should expect solutions to look like logistic functions. Indeed, solving results in 
+                    <md>
+                        y(x) = \dfrac{5}{1+Ce^{0.5x}}
+                    </md>
+                    for some constant <m>C</m>. The resulting slope field takes the form below.
+                </p>
+                <figure xml:id="ex-autonomous-logistic-slopefield-1">
+                    <image width="60%">
+                        <xi:include href="img/autonomous-logistic-slopefield-1.xml"/>
+                    </image>
+                    <caption>The slope field for the equation <m>y' = 0.1y(2-y)</m>.</caption>
+                </figure>
+                <p>
+                    The blue solution curves correspond to initial values for which the solution is bounded below by 0 and grows to the carrying capacity of the system; the red solution curves show initial values below zero, and the green solution curves show initial values above <m>y(x) = 5</m>.
+                </p>
+                <p>
+                    Note the horizontal lines which create asymptotes for the solution curves. We call these output values <em>equilibrium solutions</em>
+                </p>
+            </statement>
         </example>
     </subsection>
 
-    <subsection xml:id="sec-first-order-applications-finance">
-        <title>Financial Applications</title>
+    <subsection xml:id="sec-equilibrium-solutions-autonomous">
+        <title>Equilibrium Solutions &amp; Phase Lines</title>
         
-        <example>
-            <p>
-                Suppose a sum of money <m>S_0</m> is deposited in a savings account that pays interest compounded continuously at a constant rate of <m>r</m> per unit of money per unit time. If <m>S(t)</m> is the size of the deposit at time <m>t</m>, then the approximate increment <m>\Delta S</m> in <m>S</m> is given by
-                <md>
-                    \Delta S \approx rS\Delta t
-                </md>
-                 which resolves to the equality
-                 <md>
-                    \dfrac{dS}{dt} = rS
-                 </md>
-                 This is a separable equation, so we get the solution
-                 <md>
-                    S = S_0e^{rt}
-                 </md>
-            </p>
-        </example>
+        
+        <definition xml:id="def-equilibrium-solution">
+            <title>Equilibrium Solution</title>
+            <idx><h>equilibrium solution (autonomous equation)</h></idx>
+            <statement>
+                <p>
+                    An <term>equilibrium solution</term> for an autonomous ODE <m>y' = f(y)</m> occurs when
+                    <md>
+                        f(y) = 0
+                    </md>
+                </p>
+            </statement>
+        </definition>
 
         <example>
-            <p>
-                Suppose <m>A(t)</m> is the amount of an outstanding loan at time <m>t</m>, and let <m>r \gt 0</m> be the constant rate at which the money has been borrowed. Let <m>p \gt 0</m> be the repayment per unit time. For a short period of time, we have
-                <md>
-                    \Delta A \approx rA\Delta t - p\Delta t
-                </md>
-                which resolves to
-                <md>
-                    \dfrac{dA}{dt} - rA = -p
-                </md>
-                which is a linear equation. Solving gives 
-                <md>
-                    A(t) = \dfrac{p}{r} + \lrpar{A_0 - \dfrac{p}{r}}e^{rt}
-                </md>
-                for the initial loan amount of <m>A_0</m>.
-            </p>
+            <statement>
+                <p>
+                    In <xref ref="ex-autonomous-logistic"/>, we see from <xref ref="fo7-slopefield-1"/> that there are two equilibrium solutions: <m>y(x) = 5</m> and <m>y(x) = 0</m>.
+                </p>
+                <p>
+                    If we assume that the example describes the growth of a population, then the equilibrium solutions are communicating the carrying capacity of the population (<m>y(x) = 5</m>) and the zero-population point (<m>y(x) = 0</m>).
+                </p>
+                <p>
+                    For initial values within the interval <m>[0,5]</m>, we see population growth to the equilibrium point; for initial values outside of the equilibrium solutions, we see either a tendency away from (initial conditions below 0) or toward (initial conditions above 5) the equilibrium solutions. Physically, the first set of initial conditions don't make sense in a population context, but the second set of initial conditions demonstrate that when population is above the carrying capacity, it will always tend back toward the carrying capacity of the system.
+                </p>
+            </statement>
         </example>
+        
+        <note>
+            <p>
+                When analyzing the qualitative behavior of autonomous differential equations, we can use a <em>phase line</em> or <em>phase diagram</em> to capture the entirety of the behavior without sketching the slope field.
+            </p>
+        </note>
+
+        <definition xml:id="def-phase-line">
+            <title>Phase Line/Phase Diagram</title>
+            <idx><h>phase line</h></idx>
+            <idx><h>phase diagram</h></idx>
+            <statement>
+                <p>
+                    For an autonomous differential equation, the <term>phase line</term> or <term>phase diagram</term> for the differential equation is a diagram which captures the long-term behavior, drawn in the form of a line.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Again drawing on <xref ref="ex-autonomous-logistic"/>, from the slope field in <xref ref="ex-autonomous-logistic-slopefield-1"/>, we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward <m>-\infty</m>. 
+                </p>
+                <p>
+                    To draw the phase line, draw a line (traditionally vertical, but horizontal communicates the same idea) with the equilibrium points marked.
+                </p>
+                <p>
+                    Then, use the information given to draw arrows in the segments created to indicate the direction of flow of the solutions. 
+                </p>
+                <p>
+                    The phase line for <xref ref="ex-autonomous-logistic-slopefield-1"/> is shown below.
+                </p>
+                <figure xml:id="fo7-phase-line">
+                    <image width ="60%">
+                        <xi:include href="img/autonomous-logistic-phaseline-1.xml"/>
+                    </image>
+                    <caption>The phase line for the solutions to the equation <m>y' = 0.1y(5-y)</m></caption>
+                </figure>
+            </statement>
+        </example>
+
+        <definition xml:id="def-equilibrium-source-sink-node">
+            <title>Source/Sink/Node</title>
+            <idx><h>source</h></idx>
+            <idx><h>sink</h></idx>
+            <idx><h>node</h></idx>
+            <statement>
+                <p>
+                    An equilibrium solution is said to be a <term>source</term> if solution curves nearby tend away from the equilibrium solution.
+                </p>
+                <p>
+                    An equilibrium solution is said to be a <term>sink</term> if solution curves nearby tend toward the equilibrium solution.
+                </p>
+                <p>
+                    An equilibrium solution is said to be a <term>node</term> if it exhibits both source and sink behavior.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    For <xref ref="fo7-autonomous-ex-logistic"/> and <xref ref="fo7-phase-line"/>, the equilibrium solution <m>y(x) = 5</m> is a sink because the solutions on either side tend toward 5; on the other hand, <m>y(x) = 0</m> is a source because the solutions on either side tend away from 0.
+                </p>
+            </statement>
+        </example>
+        <exercise>
+            <statement>
+                <p>
+                    For each differential equation below, draw the phase line and classify each equilibrium solution as a sink, source, or node.
+                </p>
+                <p>
+                    <ol marker="a.">
+                        <li>
+                            <p>
+                                <m>y' = y(y-2)(y+3)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = y^2(y-2)(y+1)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = \cos(y)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y' = \sin^2(y)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
     </subsection>
 
-    <subsection xml:id="sec-first-order-applications-physics-engineering">
-        <title>Physics/Engineering Applications</title>
-        
-        <example>
-            <p>
-                We will derive the formula for free fall in gravity. Let <m>m\gt 0</m> be the constant mass of an object falling in a gravitational field and let <m>y(t), v(t), a(t)</m> be the position, velocity, and acceleration (respectively) for the object at time <m>t</m>. Let <m>g</m> be the acceleration due to gravity, and let <m>\gamma \gt 0</m> be a coefficient which characterizes the resistance of the ambient medium to the motion of the object. 
-            </p>
-            <p>
-                Newton's Second Law of motion indicates that <m>F = ma</m>. To build the model, we make the assumption that the resistance in the falling body is proportional to the object's velocity. This means that the force experienced by the body is given by
-                <md>
-                    ma = mg - \gamma v
-                </md>
-                Since <m>a(t) = v'(t)</m>, we can rewrite
-                <md>
-                    mv' = mg - \gamma v
-                </md>
-                which is a linear equation. Rearranging, we have
-                <md>
-                    v' + \dfrac{\gamma}{m}v = g
-                </md>
-                Whether by the techniques of <xref ref="fo3"/> or <xref ref="fo4"/> (and noting that <m>v(0) = v_0</m>), we have
-                <md>
-                    v(t) = \dfrac{mg}{\gamma} + \lrpar{v_0 - \dfrac{mg}{\gamma}}e^{-(\gamma/m)t}
-                </md>
-                Since <m>v(t) = y'(t)</m>, using the initial condition <m>y(0) = y_0</m>, we can solve for <m>y(t)</m>:
-                <md>
-                    y(t) = \dfrac{mg}{\gamma}t + \dfrac{m}{\gamma}\lrpar{\dfrac{mg}{\gamma} - v_0}(e^{-(\gamma/m)t} - 1) + y_0
-                </md>
-                
-            </p>
-        </example>
-    </subsection>
 </section>

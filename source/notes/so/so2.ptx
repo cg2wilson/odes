@@ -11,7 +11,111 @@
             </li>
         </ul>
     </objectives>
-   <p>
-    
-   </p>
+   <subsection xml:id="sec-linear-nonhomo-const-coeff-so">
+    <title>Solving Second Order Linear Nonhomogeneous Constant Coefficient ODEs</title>
+
+        <remark>
+            <p>
+                Solving nonhomogeneous equations is very similar to solving homogeneous equations; we add an extra step to the original solution process.        
+            </p>
+        </remark>
+
+        <definition xml:id="def-forcing-term">
+            <title>Forcing Term</title>
+            <idx><h>forcing tem</h></idx>
+            <statement>
+                <p>
+                    In the differential equation 
+                    <md>
+                        a_ny^{(n)} + a_{n-1}y^{(n-1)} + \cdots + a_1y' + a_0 = g(x)
+                    </md>
+                    <m>g(x)</m> is referred to as the <term>forcing term</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    To solve the differential equation <m>y'' - 4y = x + 1</m>, we begin by solving the associated homogeneous equation. 
+                </p>
+                <p>
+                    Since the associated homogeneous equation is given by <m>y'' - 4y = 0</m>, its characteristic equation is given by <m>r^2 - 4 = 0</m>, which results in the homogeneous solution <m>y_h = c_1e^{2x} + c_2e^{-2x}</m>. For the non-homogeneous solution, the <term>particular solution</term>, we will use the method of undetermined coefficients.
+                </p>
+                <p>
+                    Since our forcing term is given by <m>x</m>, our guess is that the particular solution, <m>y_p</m>, is given by 
+                    <md>
+                        y_p = Ax + B
+                    </md>
+                    It's possible that <m>B = 0</m>, but we need to assume that lower-order terms arise and they must be accounted for in the guess.
+                </p>
+                <p>
+                    Now that we have our guess, <m>y_p = Ax + B</m>, we plug it into the differention equation to determine the values of <m>A</m> and <m>B</m> which satisfy the equation. <m>y_p' = A</m> and <m>y_p'' = 0</m> so that 
+                    <md>
+                        <mrow> y_p'' - 4y_p \amp = x+1</mrow>
+                        <mrow>\Rightarrow 0 - 4(Ax+B) \amp = x+1 </mrow>
+                    </md>
+                    In order to have equality, it <em>must be the case</em> that 
+                    <md>
+                        <mrow> -4Ax \amp = x </mrow>
+                        <mrow> -B \amp = 1</mrow>
+                    </md>
+                    so that <m>-4A = 1 \iff A = -\dfrac{1}{4}</m> and <m>B = -1</m>. This means that our particular solution is given by
+                    <md>
+                        y_p = -\dfrac{1}{4}x - 1
+                    </md>
+                </p>
+                <p>
+                    Now, from the principle of superposition (<xref ref="thm-linear-combinations-odes-solution"/>), the solution to the nonhomogeneous equation is given by
+                    <md>
+                        y = y_h + y_p
+                    </md>
+                    so that
+                    <md>
+                        y = c_1e^{2x} + c_2e^{-2x} - \dfrac{1}{4}x - 1
+                    </md>                    
+                </p>
+            </statement>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Solving equations whose forcing terms are similar to homogeneous solutions requires a little more extra care. Consider the equation
+                    <md>
+                        y'' -3y' - 4y = e^{4x}
+                    </md>
+                    The complementary solution, <m>y_h</m>, is given by
+                    <md>
+                        y_h = c_1e^{-x} + c_2e^{4x}
+                    </md>
+                    the latter term of which is similar to our forcing function. To account for this difference, we'll suppose that the guess for our particular solution is 
+                    <md>
+                        y_p = Axe^{4x}
+                    </md>
+                    in a similar way to how we modify solutions when repeated roots of the characteristic equation occur.
+                </p>
+                <p>
+                    Now,
+                    <md>
+                        <mrow>y_p' \amp = 4Axe^{4x} + Ae^{4x} </mrow>
+                        <mrow>y_p'' \amp = 4Ae^{4x} + 16Axe^{4x} + 4Ae^{4x}</mrow>
+                    </md>
+                    so that plugging into the ODE gives
+                    <md>
+                        [16Axe^{4x} + 8Ae^{4x}] - 3[4Axe^{4x} + Ae^{4x}] - 4[Axe^{4x}] = e^{4x}
+                    </md>
+                    After reducing, we have the system
+                    <md>
+                        5Ae^{4x} = e^{4x}
+                    </md>
+                    so that <m>A = \dfrac{1}{5}</m> and 
+                    <md>
+                        y = c_1e^{-x} + c_2e^{4x} + \dfrac{1}{5}e^{4x}
+                    </md>
+                </p>
+            </statement>
+        </example>
+
+   </subsection>
 </section>

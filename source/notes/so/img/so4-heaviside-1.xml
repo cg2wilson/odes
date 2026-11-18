@@ -1,0 +1,43 @@
+<prefigure xmlns="https://prefigure.org" label="heaviside-1">
+    <diagram dimensions ="(300,300)" margins="(60,5,20,25)">
+        <definition>
+            f(x) = 1
+        </definition>
+        <definition>
+            g(x) = 0
+        </definition>
+        <coordinates bbox="[-1,-1,2,2]"> 
+            <!--
+                bbox="[left,bottom,right,top]"
+            -->
+            <grid-axes hlabels = "no"/>
+
+            <axes decorations="no" />
+                <!--
+                    vlabels="(specific outputs for vertical axis)"
+                -->
+            <definition>
+                p0 = 1
+            </definition>
+            <definition>
+                p1 = f(1)
+            </definition>
+            <label anchor="(bbox[2],0)" alignment="e" offset="(8,0)">
+                <m>t</m>
+            </label>
+            <label anchor="(0,bbox[3])" offset="(0,8)">
+                <m>y</m>
+            </label>
+            <tick-mark location = "p0">
+                <m>a</m>
+            </tick-mark>
+
+            <line endpoints="((-1,0),(1,0))" stroke="black" thickness="5"/>
+            <line endpoints="((1,1),(2,1))" stroke="black" thickness="5"/>
+            <point p="(1,0)" fill="white" size="7"/>
+            <point p="(1,1)" fill="red" size="7"/>
+            
+        </coordinates>
+    </diagram>
+
+</prefigure>

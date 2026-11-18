@@ -17,7 +17,8 @@
       <xi:include href="./fo5.ptx"/>
       <xi:include href="./fo6.ptx"/>
       <xi:include href="./fo7.ptx"/>
+      <!--
       <xi:include href="./fo8.ptx"/>
-
+    -->
 
     </chapter>

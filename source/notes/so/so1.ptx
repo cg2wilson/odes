@@ -64,8 +64,9 @@
                 </p>
             </statement>
         </example>
+    </subsection>
 
-        <subsubsection xml:id="sec-linear-homo-const-coeff-so-realroots">
+        <subsection xml:id="sec-linear-homo-const-coeff-so-realroots">
             <title>Two Real Roots</title>
 
             <example>
@@ -79,9 +80,9 @@
                 </statement>
             </example>
 
-        </subsubsection>
+        </subsection>
 
-        <subsubsection xml:id="sec-linear-homo-const-coeff-so-repeatedroots">
+        <subsection xml:id="sec-linear-homo-const-coeff-so-repeatedroots">
             <title>One Repeated Root</title>
 
             <example>
@@ -101,9 +102,9 @@
                 </p>
             </assemblage>
             
-        </subsubsection>
+        </subsection>
 
-        <subsubsection xml:id="sec-linear-homo-const-coeff-so-complexroots">
+        <subsection xml:id="sec-linear-homo-const-coeff-so-complexroots">
             <title>Two Complex Roots</title>
 
             <theorem xml:id="thm-eulers-formula">
@@ -135,7 +136,5 @@
                     </p>
                 </statement>
             </example>
-        </subsubsection>
-
-    </subsection>
+        </subsection>
 </section>
