@@ -50,7 +50,7 @@
                     </md>
                     for some constant <m>C</m>. The resulting slope field takes the form below.
                 </p>
-                <figure xml:id="ex-autonomous-logistic-slopefield-1">
+                <figure xml:id="autonomous-logistic-slopefield-1">
                     <image width="60%">
                         <xi:include href="img/autonomous-logistic-slopefield-1.xml"/>
                     </image>
@@ -86,7 +86,7 @@
         <example>
             <statement>
                 <p>
-                    In <xref ref="ex-autonomous-logistic"/>, we see from <xref ref="fo7-slopefield-1"/> that there are two equilibrium solutions: <m>y(x) = 5</m> and <m>y(x) = 0</m>.
+                    In <xref ref="ex-autonomous-logistic"/>, we see from <xref ref="autonomous-logistic-slopefield-1"/> that there are two equilibrium solutions: <m>y(x) = 5</m> and <m>y(x) = 0</m>.
                 </p>
                 <p>
                     If we assume that the example describes the growth of a population, then the equilibrium solutions are communicating the carrying capacity of the population (<m>y(x) = 5</m>) and the zero-population point (<m>y(x) = 0</m>).
@@ -117,7 +117,7 @@
         <example>
             <statement>
                 <p>
-                    Again drawing on <xref ref="ex-autonomous-logistic"/>, from the slope field in <xref ref="ex-autonomous-logistic-slopefield-1"/>, we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward <m>-\infty</m>. 
+                    Again drawing on <xref ref="ex-autonomous-logistic"/>, from the slope field in <xref ref="autonomous-logistic-slopefield-1"/>, we note that initial conditions above the carrying capacity result in solutions tending down toward the carrying capacity, while those below the zero-point tend toward <m>-\infty</m>. 
                 </p>
                 <p>
                     To draw the phase line, draw a line (traditionally vertical, but horizontal communicates the same idea) with the equilibrium points marked.
@@ -126,7 +126,7 @@
                     Then, use the information given to draw arrows in the segments created to indicate the direction of flow of the solutions. 
                 </p>
                 <p>
-                    The phase line for <xref ref="ex-autonomous-logistic-slopefield-1"/> is shown below.
+                    The phase line for <xref ref="autonomous-logistic-slopefield-1"/> is shown below.
                 </p>
                 <figure xml:id="fo7-phase-line">
                     <image width ="60%">
@@ -158,7 +158,7 @@
         <example>
             <statement>
                 <p>
-                    For <xref ref="fo7-autonomous-ex-logistic"/> and <xref ref="fo7-phase-line"/>, the equilibrium solution <m>y(x) = 5</m> is a sink because the solutions on either side tend toward 5; on the other hand, <m>y(x) = 0</m> is a source because the solutions on either side tend away from 0.
+                    For <xref ref="autonomous-logistic-slopefield-1"/> and <xref ref="fo7-phase-line"/>, the equilibrium solution <m>y(x) = 5</m> is a sink because the solutions on either side tend toward 5; on the other hand, <m>y(x) = 0</m> is a source because the solutions on either side tend away from 0.
                 </p>
             </statement>
         </example>

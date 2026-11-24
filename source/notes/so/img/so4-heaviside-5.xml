@@ -7,7 +7,7 @@
             <!--
                 bbox="[left,bottom,right,top]"
             -->
-            <grid-axes hlabels = "no"/>
+            <grid-axes />
 
             <axes decorations="no" />
                 <!--

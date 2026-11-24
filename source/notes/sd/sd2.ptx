@@ -13,9 +13,18 @@
     </objectives>
     <subsection xml:id="sec-systems-eigenvalues">
         <title>Eigenvalues of a Matrix</title>
-        <p>
-            
-        </p>
+        
+        <definition xml:id="def-eigenvalue">
+            <title>Eigenvalue of a Matrix</title>
+            <idx><h>eigenvalue</h></idx>
+            <statement>
+                <p>
+                    Let <m>A</m> be a square matrix. An <term>eigenvalue</term> of <m>A</m>
+                </p>
+            </statement>
+        </definition>
+
+        
     </subsection>
     <subsection xml:id="sec-systems-eigenvectors">
         <title>Eigenvectors of a Matrix</title>
